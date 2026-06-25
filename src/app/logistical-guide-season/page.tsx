@@ -5,6 +5,7 @@ import InternalHero from "@/components/organisms/InternalHero"; // <-- Importado
 import Testimonials from "@/components/organisms/Testimonials";
 import CinematicVideo from "@/components/organisms/CinematicVideo";
 import Footer from "@/components/organisms/Footer";
+import Link from 'next/link';
 
 // ========================================================
 // OPTIMIZACIÓN SEO: METADATA ESTATICA (SSR)
@@ -161,14 +162,14 @@ export default function FishingSeasonPage() {
                   To fish legally in the Aysén region, all domestic and foreign anglers are strictly required by Chilean law to carry an active recreational fishing license issued by <strong>Sernapesca</strong>. Our guiding team coordinates beats within highly regulated areas where enforcement is mandatory. Please secure your credential prior to arrival.
                 </p>
               </div>
-              <a 
+              <Link 
                 href="https://www.sernapesca.cl/informacion-utilidad/obtener-licencia-para-pesca-recreativa/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center whitespace-nowrap px-px24 py-px12 font-sans font-medium text-brand-charcoal bg-brand-gold rounded-[8px] hover:bg-brand-gold/90 transition-all uppercase text-xs tracking-wider"
               >
                 Obtain Official License
-              </a>
+              </Link>
             </div>
           </section>
 

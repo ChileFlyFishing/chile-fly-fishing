@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import Link from 'next/link';
 
 interface BlogPost {
   slug: string;
@@ -128,12 +129,12 @@ export default function BlogGridClient({ blogPosts, destinationsRegistry }: Blog
 
                   {/* Footer de Tarjeta Optimizado: Eliminamos "Aysén System • Core Intel" */}
                   <div className="pt-4 border-t border-white/5 flex items-center justify-end">
-                    <a
+                    <Link
                       href={`/${post.slug}`}
                       className="font-sans text-xs uppercase tracking-widest text-[#C4944E] font-semibold border-b border-[#C4944E]/20 pb-1 hover:border-[#C4944E] transition-all"
                     >
                       Examine Report
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </article>

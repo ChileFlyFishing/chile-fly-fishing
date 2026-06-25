@@ -9,6 +9,7 @@ import Partners from "@/components/organisms/Partners";
 import CinematicVideo from "@/components/organisms/CinematicVideo";
 import Footer from "@/components/organisms/Footer";
 import TextAnimationProvider from "@/components/providers/TextAnimationProvider"; // <-- Importamos el motor GSAP
+import Link from 'next/link';
 
 // ========================================================
 // OPTIMIZACIÓN SEO: METADATA ESTÁTICA HOME (SSR Next.js 15)
@@ -63,9 +64,9 @@ export default function HomePage() {
               <a href="/contact-us" className="inline-flex items-center justify-center px-12 py-4 font-sans font-semibold text-[#202020] bg-[#C4944E] rounded-[20px] shadow-xl hover:bg-white transition-all uppercase text-xs tracking-wider">
                 Secure Your Dates
               </a>
-              <a href="/fishing-program" className="inline-flex items-center justify-center px-8 py-4 font-sans font-semibold text-white border border-white/20 rounded-[20px] hover:bg-white/5 hover:border-white transition-all uppercase text-xs tracking-wider">
+              <Link href="/fishing-program" className="inline-flex items-center justify-center px-8 py-4 font-sans font-semibold text-white border border-white/20 rounded-[20px] hover:bg-white/5 hover:border-white transition-all uppercase text-xs tracking-wider">
                 Explore Programs
-              </a>
+              </Link>
             </div>
           </div>
         </header>

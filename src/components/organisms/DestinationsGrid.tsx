@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Link from 'next/link';
 
 export default function DestinationsGrid() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -81,7 +82,7 @@ export default function DestinationsGrid() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10 h-full md:h-[300px]">
               
               {/* Card 2: Spring Creek Adventures */}
-              <a
+              <Link
                 href="/patagonia-fly-fishing"
                 className="destination-fade-card opacity-0 translate-y-8 transition-all duration-1000 ease-out [transition-delay:150ms] relative rounded-lg overflow-hidden group border border-white/5 bg-neutral-900 block cursor-pointer"
               >
@@ -102,10 +103,10 @@ export default function DestinationsGrid() {
                     Challenge wild trout in technical, hidden waters.
                   </p>
                 </div>
-              </a>
+              </Link>
 
               {/* Card 3: High-Andes Lakes */}
-              <a
+              <Link
                 href="/patagonia-fly-fishing"
                 className="destination-fade-card opacity-0 translate-y-8 transition-all duration-1000 ease-out [transition-delay:300ms] relative rounded-lg overflow-hidden group border border-white/5 bg-neutral-900 block cursor-pointer"
               >
@@ -126,11 +127,11 @@ export default function DestinationsGrid() {
                     Fish deep, crystal-clear lakes for legendary browns.
                   </p>
                 </div>
-              </a>
+              </Link>
             </div>
 
             {/* Fila Inferior: Card 4 (Patagonian Lagoons Horizontal Ancha) */}
-            <a
+            <Link
               href="/patagonia-fly-fishing"
               className="destination-fade-card opacity-0 translate-y-8 transition-all duration-1000 ease-out [transition-delay:450ms] relative h-[300px] rounded-lg overflow-hidden group border border-white/5 bg-neutral-900 block cursor-pointer"
             >
@@ -151,7 +152,7 @@ export default function DestinationsGrid() {
                   Explore untouched stillwaters full of surprises.
                 </p>
               </div>
-            </a>
+            </Link>
 
           </div>
         </div>

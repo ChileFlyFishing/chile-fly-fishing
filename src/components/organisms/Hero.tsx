@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import Lenis from "lenis";
 import { WaterSceneController } from "@/lib/three/waterScene"; 
+import Link from "next/link";
 
 // Definimos qué textos e información puede recibir este Hero desde cualquier página
 interface HeroProps {
@@ -111,13 +112,13 @@ export default function Hero({
         </p>
 
         {/* Cambiado a etiqueta <a> nativa para soportar la navegación fluida */}
-        <a
+        <Link
           href={buttonHref}
           data-animate="action-btn"
           className="mt-[30px] inline-flex items-center justify-center px-[36px] py-[18px] font-sans font-medium text-white bg-[#006DC6] rounded-[30px] shadow-lg hover:bg-[#006DC6]/90 active:scale-[0.98] transition-all duration-200 cursor-pointer text-sm tracking-wide uppercase font-semibold"
         >
           {buttonText}
-        </a>
+        </Link>
 
       </div>
     </section>

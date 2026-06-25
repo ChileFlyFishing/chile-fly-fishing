@@ -6,6 +6,7 @@ import ImageGallery from "@/components/organisms/ImageGallery";
 import Testimonials from "@/components/organisms/Testimonials";
 import CinematicVideo from "@/components/organisms/CinematicVideo";
 import Footer from "@/components/organisms/Footer";
+import Link from 'next/link';
 
 // ========================================================
 // OPTIMIZACIÓN SEO: METADATA ESTÁTICA (SSR Next.js 15)
@@ -115,12 +116,12 @@ export default function AboutUsPage() {
                 </div>
               ))}
             </div>
-            <a 
+            <Link 
               href="/contact-us" 
               className="inline-flex items-center justify-center px-10 py-4 bg-[#C4944E] hover:bg-[#C4944E]/90 text-white rounded-[20px] font-sans text-xs uppercase tracking-widest font-semibold transition-all duration-300"
             >
               Secure your fishing trips
-            </a>
+            </Link>
           </div>
         </section>
 
