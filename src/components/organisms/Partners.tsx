@@ -1,9 +1,9 @@
 export default function Partners() {
   const partners = [
-    { name: "Douglas", src: "https://chileflyfishingexpeditions.com/wp-content/uploads/2025/04/douglas-logo.svg" },
-    { name: "Patagonia", src: "https://chileflyfishingexpeditions.com/wp-content/uploads/2025/04/logo-patagonia.svg" },
-    { name: "Mitsubishi Motors", src: "https://chileflyfishingexpeditions.com/wp-content/uploads/2025/04/logo-mitsubishi.svg" },
-    { name: "Turtlebox", src: "https://chileflyfishingexpeditions.com/wp-content/uploads/2025/04/logo-turtle-box.png" }
+    { name: "Douglas", src: "assets/images/douglas-logo.svg" },
+    { name: "Patagonia", src: "assets/images/logo-patagonia.svg" },
+    { name: "Mitsubishi Motors", src: "assets/images/logo-mitsubishi.svg" },
+    { name: "Turtlebox", src: "assets/images/logo-turtle-box.png" }
   ];
 
   return (
