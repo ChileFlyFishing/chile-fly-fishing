@@ -45,7 +45,7 @@ export default function AboutUsPage() {
 
         {/* SECCIÓN 3: Contenido Editorial (Profundización técnica sin redundancias) */}
         <section className="w-full py-[92px] px-[24px] md:px-[48px] bg-[#202020]">
-          <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-[48px]">
+          <div className="max-w-[1260px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-[48px]">
             {/* Columna de Título Destacado (Playfair Display) */}
             <div className="lg:col-span-5">
               <h2 className="font-display text-3xl md:text-4xl text-[#C4944E] tracking-tight leading-tight">
@@ -102,7 +102,7 @@ export default function AboutUsPage() {
 
         {/* NUEVA SECCIÓN: LOCAL EXPERTISE (4 Columnas Dark) */}
         <section className="w-full py-[92px] px-[24px] md:px-[48px] bg-[#202020] border-t border-white/5">
-          <div className="max-w-[1440px] mx-auto text-center">
+          <div className="max-w-[1260px] mx-auto text-center">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
               {[
                 { t: "Local expertise", d: "Our expert guides are native to Coyhaique and know every secret spot for trophy wild trout." },
