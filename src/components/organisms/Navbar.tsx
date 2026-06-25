@@ -53,7 +53,7 @@ export default function Navbar() {
       <div className="max-w-[1260px] mx-auto flex items-center justify-between">
         
         {/* LOGO PRINCIPAL ESCRITORIO */}
-        <Link href="/" className="transition-opacity hover:opacity-90 block relative w-[240px] sm:w-[480px] h-[100px] z-50">
+        <Link href="/" className="transition-opacity hover:opacity-90 block relative w-[240px] sm:w-[300px] h-[100px] z-50">
           <Image 
             src="https://chileflyfishingexpeditions.com/logos/logo-chileflyfishing.svg" 
             alt="Chile Fly Fishing"
