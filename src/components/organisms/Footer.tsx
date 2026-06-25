@@ -32,7 +32,7 @@ export default function Footer() {
               </Link>
               <Link href="https://www.tiktok.com/@chileflyfishing" target="_blank" rel="noopener noreferrer" className="hover:text-brand-gold transition-colors" title="TikTok">
                 <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.17-2.86-.74-3.94-1.74-.22-.2-.42-.43-.61-.67-.02 3.22-.01 6.44-.02 9.65-.07 2.44-1.23 4.83-3.33 6.09-2.05 1.26-4.76 1.44-6.95.48-2.47-1.05-4.13-3.67-4.01-6.41.1-2.92 2.28-5.54 5.17-5.98.41-.07.83-.09 1.24-.07v4.14c-.62-.05-1.25.07-1.8.38-.85.45-1.39 1.39-1.38 2.36.01 1.32 1.11 2.43 2.43 2.42 1.48.01 2.53-1.26 2.43-2.67-.02-3.83-.01-7.67-.01-11.51z"/></svg>
-              </a>
+              </Link>
               <Link href="https://www.facebook.com/chileflyfishingcl" target="_blank" rel="noopener noreferrer" className="hover:text-brand-gold transition-colors" title="Facebook">
                 <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
               </Link>
