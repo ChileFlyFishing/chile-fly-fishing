@@ -74,7 +74,7 @@ export default function PatagoniaFlyFishingPage() {
 
         {/* NUEVA SECCIÓN: EXPEDITION DETAILS (Inclusión del programa de pesca) */}
         <section className="w-full py-[96px] px-6 md:px-12 bg-neutral-950 border-t border-white/5">
-          <div className="max-w-[1440px] mx-auto">
+          <div className="max-w-[1260px] mx-auto">
             
             <div className="mb-[54px]">
               {/* Título H2 Estandarizado Dark Background (Playfair Display) */}

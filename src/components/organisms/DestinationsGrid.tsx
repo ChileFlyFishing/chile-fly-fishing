@@ -38,7 +38,7 @@ export default function DestinationsGrid() {
 
   return (
     <section className="w-full py-32 px-6 md:px-12 bg-neutral-950 border-t border-white/5">
-      <div ref={containerRef} className="max-w-[1440px] mx-auto">
+      <div ref={containerRef} className="max-w-[1260px] mx-auto">
         
         {/* Encabezado Principal */}
         <div className="mb-16">

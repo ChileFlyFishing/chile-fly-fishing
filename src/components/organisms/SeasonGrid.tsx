@@ -25,7 +25,7 @@ export default function SeasonGrid() {
   return (
     <section className="w-full py-32 px-6 md:px-12 bg-brand-charcoal relative z-20">
       {/* Ensanchado de la sección completa a 1440px */}
-      <div className="max-w-[1440px] mx-auto">
+      <div className="max-w-[1260px] mx-auto">
         
         {/* Encabezado Premium */}
         <div className="mb-20 max-w-3xl">

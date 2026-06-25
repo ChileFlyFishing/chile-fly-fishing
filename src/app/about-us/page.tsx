@@ -67,7 +67,7 @@ export default function AboutUsPage() {
 
         {/* NUEVA SECCIÓN: OUR FOUNDERS */}
         <section className="w-full py-[92px] px-[24px] md:px-[48px] bg-[#F9F6F0] text-neutral-900 border-t border-black/5">
-          <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+          <div className="max-w-[1260px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
             <div className="w-full aspect-[4/3] rounded-[8px] overflow-hidden shadow-xl">
               <img 
                 src="assets/images/matias-sebastian-owner-chileflyfishing.webp" 

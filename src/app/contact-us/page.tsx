@@ -81,7 +81,7 @@ export default function ContactUsPage() {
 
           {/* SECCIÓN 1: Matriz de Temporadas (Texto Puro) */}
           <section id="reservation-matrix" className="w-full pt-[92px] pb-[46px] px-[24px] md:px-[48px] bg-[#202020] scroll-mt-[42px]">
-            <div className="max-w-[1440px] mx-auto">
+            <div className="max-w-[1260px] mx-auto">
               <div className="border-b border-white/5 pb-[66px]">
                 <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-white font-normal tracking-tight mb-[54px] max-w-4xl leading-tight">
                   Your next fly-fishing adventure in Patagonia is here. <br className="hidden md:block"/>The choice is yours.

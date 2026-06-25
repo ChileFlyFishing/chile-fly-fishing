@@ -58,7 +58,7 @@ export default function BlogGridClient({ blogPosts, destinationsRegistry }: Blog
 
   return (
     <section id="intelligence-grid" className="w-full py-32 px-6 md:px-12 bg-brand-charcoal scroll-mt-px36">
-      <div className="max-w-[1440px] mx-auto">
+      <div className="max-w-[1260px] mx-auto">
         
         {/* Barra de Filtros Premium (Quiet Luxury Style) */}
         <div className="flex items-center gap-6 mb-16 border-b border-white/5 pb-6">

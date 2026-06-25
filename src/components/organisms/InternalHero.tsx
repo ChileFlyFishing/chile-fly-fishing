@@ -34,7 +34,7 @@ export default function InternalHero({
       </div>
       
       {/* Contenedor de Contenido Semántico */}
-      <div className="max-w-[1440px] mx-auto w-full relative z-10">
+      <div className="max-w-[1260px] mx-auto w-full relative z-10">
         {/* SUBTITLE: Átomo Badge */}
         <span className="font-sans text-xs uppercase tracking-widest text-[#C4944E] font-semibold mb-[12px] block">
           {subtitle}

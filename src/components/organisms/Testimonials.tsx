@@ -22,7 +22,7 @@ export default function Testimonials() {
 
   return (
     <section className="w-full bg-brand-charcoal py-px92 px-px24 md:px-px48 border-t border-white/5">
-      <div className="max-w-[1440px] mx-auto">
+      <div className="max-w-[1260px] mx-auto">
         
         {/* Cabecera Estricta */}
         <div className="mb-px60">

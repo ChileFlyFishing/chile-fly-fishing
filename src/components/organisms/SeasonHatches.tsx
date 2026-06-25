@@ -27,7 +27,7 @@ export default function SeasonHatches() {
 
   return (
     <section className="w-full bg-brand-sand py-px92 px-px24 md:px-px48">
-      <div className="max-w-[1440px] mx-auto">
+      <div className="max-w-[1260px] mx-auto">
         
         {/* Cabecera optimizada: max-w-5xl permite que el manifiesto respire a lo ancho */}
         <div className="mb-px60 text-center max-w-5xl mx-auto">

@@ -141,7 +141,7 @@ export default function PrivacyPolicyPage() {
           >
             <div 
               ref={contentRef} 
-              className="max-w-[800px] mx-auto font-sans text-white/70 space-y-px42"
+              className="max-w-[1260px] mx-auto font-sans text-white/70 space-y-px42"
             >
               {legalFramework.map((section, idx) => {
                 

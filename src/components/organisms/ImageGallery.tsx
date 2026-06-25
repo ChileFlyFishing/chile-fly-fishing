@@ -74,7 +74,7 @@ export default function ImageGallery() {
   return (
     <>
       <section className="w-full bg-white py-24 md:py-32 px-6 md:px-12 lg:px-24 border-t border-black/5 overflow-hidden">
-        <div className="max-w-[1440px] mx-auto">
+        <div className="max-w-[1260px] mx-auto">
           
           {/* Cabecera Editorial */}
           <div className="mb-16 md:mb-24 text-center max-w-3xl mx-auto">

@@ -11,7 +11,7 @@ export default function Partners() {
       className="w-full py-24 px-6 md:px-12 border-t border-b border-black/5" 
       style={{ backgroundColor: '#F8F6F2' }}
     >
-      <div className="max-w-[1440px] mx-auto text-center">
+      <div className="max-w-[1260px] mx-auto text-center">
         
         {/* Título en color oscuro para legibilidad sobre el fondo crema */}
         <h2 className="font-display text-2xl md:text-4xl text-brand-charcoal font-normal tracking-tight mb-16 max-w-2xl mx-auto leading-tight">

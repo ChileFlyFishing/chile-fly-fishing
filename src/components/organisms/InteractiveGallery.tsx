@@ -57,7 +57,7 @@ export default function InteractiveGallery() {
 
   return (
     <section className="w-full py-[144px] bg-[#202020] px-[24px] md:px-[48px]">
-      <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-start">
+      <div className="max-w-[1260px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-start">
         
         {/* Columna Izquierda: Accordeon UI con Delay Animado */}
         <div className="flex flex-col space-y-4">
