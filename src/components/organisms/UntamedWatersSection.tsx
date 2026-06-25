@@ -2,7 +2,7 @@
 export default function UntamedWatersSection() {
   return (
     <section className="w-full py-[92px] px-[24px] md:px-[48px] bg-[#202020] border-b border-white/5">
-      <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-[48px] items-center">
+      <div className="max-w-[1260px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-[48px] items-center">
         
         {/* Título */}
         <div className="lg:col-span-5">
