@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  /* --- PALETA DE COLORES OFICIAL CHILE FLY FISHING --- */
+  --color-brand-blue: #006DC6;       /* Corporate Blue */
+  --color-brand-charcoal: #202020;   /* Charcoal */
+  --color-brand-gold: #7B541C;       /* Luxury Gold */
+  --color-brand-cream: #F8F6F2;      /* Cream Base */
+  --color-brand-white: #ffffff;      /* Brand White */
+
+  /* --- TIPOGRAFÍAS DE MARCA --- */
+  --font-display: var(--font-display), "Playfair Display", serif;
+  --font-sans: var(--font-sans), "Inter", sans-serif;
+
+  /* --- REGLA DEL 6 EN MEDIDAS NATIVAS DE TAILWIND --- */
+  --spacing-px6: 6px;
+  --spacing-px12: 12px;
+  --spacing-px18: 18px;
+  --spacing-px24: 24px;
+  --spacing-px30: 30px;
+  --spacing-px36: 36px;
+  --spacing-px42: 42px;
+  --spacing-px48: 48px;
+  --spacing-px54: 54px;
+  --spacing-px60: 60px;
+  --spacing-px72: 72px;
+  --spacing-px80: 80px;
+  --spacing-px92: 92px;
+}
+
+/* --- CONFIGURACIÓN BASE GLOBAL --- */
+html,
+body {
+  background-color: #202020;
+  color: #FFFFFF;
+  overflow-x: hidden;
+  height: auto;
+}
+
+/* --- REGLA INTERNA: BLOQUEO DE ROJO --- */
+[class*="text-red"], .text-red-500, .text-danger {
+  color: inherit !important;
+}
+
+/* ========================================================
+   ESTILOS COMPORTAMENTALES DE BOTONES REUTILIZABLES
+   ======================================================== */
+
+.btn-primary {
+  background-color: #006DC6;
+  color: #FFFFFF;
+  padding: 12px 24px;
+  border-radius: 20px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease;
+  cursor: pointer;
+  border: none;
+  text-transform: none;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #7B541C;
+  padding: 12px 0px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  transition: opacity 0.2s ease;
+  cursor: pointer;
+  border: none;
+  text-transform: none;
+}
+
+.btn-secondary:hover {
+  opacity: 0.8;
+}
