@@ -30,12 +30,13 @@ export async function POST(request: Request) {
       Terms accepted: ${agree ? 'Yes' : 'No'}
     `;
 
-    const data = await resend.emails.send({
-      from: 'Dispatch <dispatch@chileflyfishingexpeditions.com/>', // Nota: Reemplaza con tu dominio verificado cuando puedas
-      to: 'matias@chileflyfishingexpeditions.com', // <--- PON AQUÍ TU CORREO DONDE RECIBIRÁS LOS LEADS
-      subject: `[NEW MANIFEST] ${name} - ${dates}`,
-      text: emailContent,
-    });
+    // En src/app/api/send/route.ts
+const data = await resend.emails.send({
+  from: 'Dispatch <dispatch@chileflyfishingexpeditions.com>', // Ya puedes usar tu dominio real
+  to: 'tu-email@ejemplo.com', // Asegúrate de poner tu correo real aquí
+  subject: `[NEW MANIFEST] ${name} - ${dates}`,
+  text: emailContent,
+});
 
     return NextResponse.json({ success: true, data });
   } catch (error) {
