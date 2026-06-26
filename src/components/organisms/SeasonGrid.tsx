@@ -6,7 +6,7 @@ export default function SeasonGrid() {
       title: "Early Season: Big Rainbows",
       dates: "October 12 - December",
       description: "High water velocity and aggressive pre-hatch feeding. Target migratory and massive resident rainbow trout tight against the structure using heavy streamers and sink-tips.",
-      imageSrc: "assets/images/big-rainbow-trout-early-season-close-up.avif"
+      imageSrc: "assets/images/early-season-patagonia-flyfishing.avif"
     },
     {
       title: "High Season: World-Class Dry Fly",
