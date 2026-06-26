@@ -39,6 +39,14 @@ export const metadata: Metadata = {
   },
 };
 
+export const metadata = {
+  title: 'Chile Fly Fishing',
+  description: 'Expediciones premium en Patagonia',
+  icons: {
+    icon: '/favicon.ico', // Esto le indica dónde buscar
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
