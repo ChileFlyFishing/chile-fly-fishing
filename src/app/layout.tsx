@@ -29,9 +29,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   icons: {
-    icon: "https://chileflyfishingexpeditions.com/logos/logo-chileflyfishing.svg",
-    shortcut: "https://chileflyfishingexpeditions.com/logos/logo-chileflyfishing.svg",
-    apple: "https://chileflyfishingexpeditions.com/logos/logo-chileflyfishing.svg",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
   },
   robots: {
     index: true,
@@ -39,13 +39,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const metadata = {
-  title: 'Chile Fly Fishing',
-  description: 'Expediciones premium en Patagonia',
-  icons: {
-    icon: '/favicon.ico', // Esto le indica dónde buscar
-  },
-};
+
 
 export default function RootLayout({
   children,
