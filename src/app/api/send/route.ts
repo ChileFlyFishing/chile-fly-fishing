@@ -20,7 +20,7 @@ export async function POST(request: Request) {
         <div style="font-family: sans-serif; max-width: 600px; color: #171717;">
           <img src="https://www.chileflyfishingexpeditions.com/assets/images/logo-chileflyfishing.svg" alt="Logo" style="width: 150px; margin-bottom: 20px;" />
           
-          <h2 style="font-weight: bold; font-size: 18px; color: #006DC6; margin-bottom: 10px;">EXPEDITION MANIFEST - NEW LEAD</h2>
+          <h2 style="font-weight: bold; font-size: 18px; color: #006DC6; margin-bottom: 10px;">Nuevo lead</h2>
           <p style="margin: 5px 0;"><strong>CLIENT:</strong> ${name}</p>
           <p style="margin: 5px 0;"><strong>EMAIL:</strong> ${email}</p>
           <p style="margin: 5px 0;"><strong>PHONE:</strong> ${phone}</p>
