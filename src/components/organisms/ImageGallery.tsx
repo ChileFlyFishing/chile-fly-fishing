@@ -20,9 +20,9 @@ export default function ImageGallery() {
     { id: 4, url: "assets/images/brown-trout-in-a-boat-coyhaique.avif", alt: "Fly fisherman showcasing a trophy brown trout inside a jet boat" },
     { id: 5, url: "assets/images/brown-trout-fishing-spring-creek-patagonia.avif", alt: "Colorful wild brown trout at a private spring creek" },
     { id: 6, url: "assets/images/brow-trout-patagonia-fly-fishing.avif", alt: "Releasing a healthy wild brown trout back into the Aysén river system" },
-    { id: 7, url: "assets/images/apertura-temporada-flyfishing-rainbow-trout.jpg", alt: "Giant trophy rainbow trout during early season opening in Patagonia" },
+    { id: 7, url: "assets/images/angler-nirehuao-river-patagonia-fly-fishing.avif", alt: "Anglers fishing in chilean patagonia" },
     { id: 8, url: "assets/images/anglers-fishing-blue-river-and-lake.avif", alt: "Panoramic landscape of a cataraft drifting down a turquoise river" },
-    { id: 9, url: "assets/images/anglers-enjoying-patagonia.jpg", alt: "Fly fishing guests enjoying a traditional riverside lunch and wine" },
+    { id: 9, url: "assets/images/apertura-temporada-flyfishing-rainbow-trout.avif", alt: "Big rainbow trout in chilean patagonia" },
     { id: 10, url: "assets/images/angler-nirehuao-river-patagonia-fly-fishing.avif", alt: "Technical angler casting dry flies on the Ñirehuao River" },
   ];
 
