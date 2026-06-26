@@ -30,12 +30,22 @@ export default function ContactForm() {
     setIsSubmitting(true);
 
     try {
-      // Simulación de latencia de red para la microinteracción de carga
-      await new Promise((resolve) => setTimeout(resolve, 1400));
-      console.log("Booking Manifest Sent successfully:", formData);
+      const response = await fetch('/api/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to transmit the manifest.');
+      }
+
       setIsSubmitted(true);
     } catch (error) {
       console.error("Submission error:", error);
+      alert("There was an error transmitting your manifest. Please try again.");
     } finally {
       setIsSubmitting(false);
     }

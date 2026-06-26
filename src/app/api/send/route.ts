@@ -30,16 +30,16 @@ export async function POST(request: Request) {
       Terms accepted: ${agree ? 'Yes' : 'No'}
     `;
 
-    // En src/app/api/send/route.ts
-const data = await resend.emails.send({
-  from: 'Dispatch <dispatch@chileflyfishingexpeditions.com>', // Ya puedes usar tu dominio real
-  to: 'mat.araneda@gmail.com', // Asegúrate de poner tu correo real aquí
-  subject: `[NEW MANIFEST] ${name} - ${dates}`,
-  text: emailContent,
-});
+    const data = await resend.emails.send({
+      from: 'Dispatch <dispatch@chileflyfishingexpeditions.com>',
+      to: ['mat.araneda@gmail.com'], // Usa solo tu Gmail personal para empezar sin riesgos
+      subject: `[NEW MANIFEST] ${name} - ${dates}`,
+      text: emailContent,
+    });
 
     return NextResponse.json({ success: true, data });
   } catch (error) {
+    console.error("Resend error:", error); // Esto te dirá el error exacto en los logs de Vercel
     return NextResponse.json({ error: 'Failed to send manifest' }, { status: 500 });
   }
 }
