@@ -33,7 +33,7 @@ export async function POST(request: Request) {
     // En src/app/api/send/route.ts
 const data = await resend.emails.send({
   from: 'Dispatch <dispatch@chileflyfishingexpeditions.com>', // Ya puedes usar tu dominio real
-  to: 'tu-email@ejemplo.com', // Asegúrate de poner tu correo real aquí
+  to: 'matias@chileflyfishingexpeditions.com', // Asegúrate de poner tu correo real aquí
   subject: `[NEW MANIFEST] ${name} - ${dates}`,
   text: emailContent,
 });
