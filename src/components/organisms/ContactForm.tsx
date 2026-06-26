@@ -8,12 +8,15 @@ export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "",
+    phone: "+1 ",
+    country: "Chile",
     dates: "",
     experience: "",
     message: "",
     agree: false,
   });
+
+  const countries = ["Chile", "United States", "Argentina", "Canada", "United Kingdom", "Australia", "New Zealand", "Others"];
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value, type } = e.target;
@@ -32,16 +35,11 @@ export default function ContactForm() {
     try {
       const response = await fetch('/api/send', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       });
 
-      if (!response.ok) {
-        throw new Error('Failed to transmit the manifest.');
-      }
-
+      if (!response.ok) throw new Error('Failed to transmit.');
       setIsSubmitted(true);
     } catch (error) {
       console.error("Submission error:", error);
@@ -51,15 +49,15 @@ export default function ContactForm() {
     }
   };
 
-  const inputClasses = "w-full bg-white border border-neutral-200 text-neutral-900 rounded-[8px] px-4 py-3 text-sm focus:outline-none focus:border-[#C4944E]/50 transition-all font-sans placeholder:text-neutral-400";
+  // Ajuste de padding + 5px adicionales (de 12px/16px a 17px/21px)
+  const inputClasses = "w-full bg-white border border-neutral-200 text-neutral-900 rounded-[8px] px-5 py-[17px] text-sm focus:outline-none focus:border-[#C4944E]/50 transition-all font-sans placeholder:text-neutral-400";
 
-  // AJUSTE 1: Sin caja blanca. Texto limpio centrado vertical y horizontalmente sobre el fondo crema.
   if (isSubmitted) {
     return (
-      <div className="w-full min-h-[450px] lg:min-h-[580px] flex flex-col items-center justify-center text-center px-4 md:px-8 transition-all duration-500">
+      <div className="w-full min-h-[450px] flex flex-col items-center justify-center text-center px-4 transition-all duration-500">
         <div className="max-w-xl flex flex-col items-center gap-4">
-          <div className="w-12 h-12 rounded-full bg-[#C4944E]/10 flex items-center justify-center mb-2 animate-bounce">
-            <svg className="w-6 h-6 text-[#C4944E]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center mb-2 animate-bounce">
+            <svg className="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
             </svg>
           </div>
@@ -75,58 +73,47 @@ export default function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="w-full flex flex-col gap-5 text-left">
-      
-      <div className="flex flex-col gap-1.5">
+    <form onSubmit={handleSubmit} className="w-full flex flex-col gap-6 text-left">
+      <div className="flex flex-col gap-2">
         <label className="font-sans text-xs uppercase tracking-wider text-neutral-500 font-semibold">Full Name</label>
-        <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Matias Araneda" required className={inputClasses} />
+        <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="John Doe" required className={inputClasses} />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-        <div className="flex flex-col gap-1.5">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="flex flex-col gap-2">
           <label className="font-sans text-xs uppercase tracking-wider text-neutral-500 font-semibold">Email Address</label>
-          <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="your@email.com" required className={inputClasses} />
+          <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="john@email.com" required className={inputClasses} />
         </div>
-        <div className="flex flex-col gap-1.5">
-          <label className="font-sans text-xs uppercase tracking-wider text-neutral-500 font-semibold">Phone / WhatsApp</label>
-          <input type="tel" name="phone" value={formData.phone} onChange={handleChange} placeholder="+56 9 ...." required className={inputClasses} />
-        </div>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-        <div className="flex flex-col gap-1.5">
-          <label className="font-sans text-xs uppercase tracking-wider text-neutral-500 font-semibold">Preferred Window</label>
-          <input type="text" name="dates" value={formData.dates} onChange={handleChange} placeholder="e.g., Mid-January" className={inputClasses} />
-        </div>
-        <div className="flex flex-col gap-1.5">
-          <label className="font-sans text-xs uppercase tracking-wider text-neutral-500 font-semibold">Fly Fishing Proficiency</label>
-          <select name="experience" value={formData.experience} onChange={handleChange} className={`${inputClasses} appearance-none cursor-pointer`}>
-            <option value="" disabled>Select proficiency level</option>
-            <option value="beginner">Beginner (First times on water)</option>
-            <option value="intermediate">Intermediate (Comfortable casting)</option>
-            <option value="advanced">Advanced (Technical dry fly & wind proficient)</option>
-          </select>
+        <div className="flex flex-col gap-2">
+          <label className="font-sans text-xs uppercase tracking-wider text-neutral-500 font-semibold">Phone Number (inc. area code)</label>
+          <input type="tel" name="phone" value={formData.phone} onChange={handleChange} placeholder="+1 555 000 0000" required className={inputClasses} />
         </div>
       </div>
 
-      <div className="flex flex-col gap-1.5">
+      <div className="flex flex-col gap-2">
+        <label className="font-sans text-xs uppercase tracking-wider text-neutral-500 font-semibold">Country</label>
+        <select name="country" value={formData.country} onChange={handleChange} className={`${inputClasses} appearance-none cursor-pointer`}>
+          {countries.map(c => <option key={c} value={c}>{c}</option>)}
+        </select>
+      </div>
+
+      <div className="flex flex-col gap-2">
         <label className="font-sans text-xs uppercase tracking-wider text-neutral-500 font-semibold">Expedition Goals & Notes</label>
-        <textarea name="message" value={formData.message} onChange={handleChange} rows={5} placeholder="Detail target requirements..." className={`${inputClasses} resize-none`} />
+        <textarea name="message" value={formData.message} onChange={handleChange} rows={6} placeholder="Detail target requirements..." className={`${inputClasses} resize-none`} />
       </div>
 
       <div className="flex items-start gap-3 my-2">
         <input type="checkbox" name="agree" id="agree" checked={formData.agree} onChange={handleChange} required className="mt-1 w-4 h-4 rounded border-neutral-300 text-[#C4944E] focus:ring-[#C4944E]/30 accent-[#C4944E] cursor-pointer" />
         <label htmlFor="agree" className="font-sans text-xs text-neutral-800 leading-relaxed font-light cursor-pointer select-none">
-          I understand that prime river beats and hosted trips are strictly limited by seasonal capacity. I submit this manifest to coordinate final booking dates with the operational guiding team in Coyhaique.
+          I acknowledge that premier river beats and guided excursions are strictly limited by seasonal capacity. My submission serves to initiate coordination of final booking dates with the operational guiding team in Coyhaique. I accept the <a href="https://www.chileflyfishingexpeditions.com/privacy-policy" target="_blank" className="text-[#C4944E] underline hover:text-[#006DC6]">privacy policies</a>.
         </label>
       </div>
 
-      {/* AJUSTE 2 Y 3: Botón Azul Corporativo con Microinteracción de Carga */}
       <div className="w-full pt-2">
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full md:w-auto inline-flex items-center justify-center px-10 py-4 bg-[#006DC6] hover:bg-[#005091] disabled:bg-neutral-400 text-white rounded-[20px] font-sans text-xs uppercase tracking-widest font-semibold transition-all duration-300 shadow-md min-w-[240px] disabled:cursor-not-allowed"
+          className="w-full inline-flex items-center justify-center px-10 py-5 bg-[#006DC6] hover:bg-[#005091] disabled:bg-neutral-400 text-white rounded-[20px] font-sans text-xs uppercase tracking-widest font-semibold transition-all duration-300 shadow-md disabled:cursor-not-allowed"
         >
           {isSubmitting ? (
             <div className="flex items-center gap-2">
@@ -134,14 +121,13 @@ export default function ContactForm() {
                 <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
                 <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
               </svg>
-              <span>Transmitting Manifest...</span>
+              <span>Transmitting...</span>
             </div>
           ) : (
             <span>Submit Manifest of Intent</span>
           )}
         </button>
       </div>
-
     </form>
   );
 }
