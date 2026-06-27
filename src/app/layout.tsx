@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import ScrollProvider from "@/components/providers/ScrollProvider"; // Integración de Lenis
 import TextAnimationProvider from "@/components/providers/TextAnimationProvider"; // Animación de tipografías nativa
+import { GoogleAnalytics } from "@next/third-parties/google"; // <-- 1. Importación del componente oficial de Vercel/Next.js
 import "../styles/globals.css";
-
-
 
 const inter = Inter({
   variable: "--font-sans",
@@ -41,8 +40,6 @@ export const metadata: Metadata = {
   },
 };
 
-
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -60,6 +57,9 @@ export default function RootLayout({
             {children}
           </TextAnimationProvider>
         </ScrollProvider>
+
+        {/* 2. INYECCIÓN NATIVA Y OPTIMIZADA DE GA4 (No bloquea el renderizado) */}
+        <GoogleAnalytics gaId="G-538364884" />
       </body>
     </html>
   );
