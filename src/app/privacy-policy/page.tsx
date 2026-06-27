@@ -2,7 +2,6 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import type { Metadata } from "next";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Navbar from "@/components/organisms/Navbar";
@@ -12,12 +11,10 @@ import Testimonials from "@/components/organisms/Testimonials";
 import CinematicVideo from "@/components/organisms/CinematicVideo";
 import Footer from "@/components/organisms/Footer";
 
-// Registrar plugins de GSAP de forma segura en entornos SSR
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
 
-// Interface de datos para Modularidad de Políticas (Listo para Headless CMS)
 interface LegalSection {
   type: "standard" | "list-bullet" | "list-block" | "footer-note";
   subtitle?: string;
@@ -29,7 +26,6 @@ interface LegalSection {
 export default function PrivacyPolicyPage() {
   const contentRef = useRef<HTMLDivElement>(null);
 
-  // Datos estructurados del marco legal
   const legalFramework: LegalSection[] = [
     {
       type: "standard",
@@ -70,7 +66,6 @@ export default function PrivacyPolicyPage() {
     }
   ];
 
-  // Orquestación de Animación Cinemática mediante GSAP
   useEffect(() => {
     if (!contentRef.current) return;
 
@@ -99,12 +94,12 @@ export default function PrivacyPolicyPage() {
     return () => ctx.revert();
   }, []);
 
-  // Esquema JSON-LD nativo para SEO
+  // Esquema JSON-LD optimizado con las entidades core de tu operación en Coyhaique
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "Privacy Policy | Chile Fly Fishing",
-    "description": "Official legal and data protection policy statement for Chile Fly Fishing operations.",
+    "description": "Official legal and data protection policy statement for Chile Fly Fishing operations based out of Coyhaique, Chilean Patagonia.",
     "url": "https://chileflyfishingexpeditions.com/privacy-policy",
     "mainEntity": {
       "@type": "DigitalDocument",
@@ -124,11 +119,11 @@ export default function PrivacyPolicyPage() {
         <Navbar />
 
         <main>
-          {/* REUTILIZACIÓN DE ORGANISMO MIGRADO: INTERNAL HERO */}
+          {/* OPTIMIZACIÓN AEO: Alineación exacta y aplicación de la regla BLUF en el párrafo introductorio */}
           <InternalHero 
             subtitle="Legal Framework"
-            title="Privacy Policy"
-            paragraph="This privacy document establishes how Chile Fly Fishing secures, structures, and manages data when you coordinate an operation, interface with our reservation infrastructure, or interact with our digital points of contact."
+            title="Privacy Policy: Data Protocols"
+            paragraph="This privacy policy establishes how Chile Fly Fishing secures, structures, and manages data when you book Patagonia fly fishing packages, coordinate logistics with our Coyhaique basecamp, or interact with our digital reservation matrix."
             imageUrl="assets/images/patagonia-flyfishing-spring-creek.webp"
             buttonText="Examine Protocol"
             buttonHref="#policy-content"
@@ -145,7 +140,6 @@ export default function PrivacyPolicyPage() {
             >
               {legalFramework.map((section, idx) => {
                 
-                // Renderizado Condicional de Bloque Estándar
                 if (section.type === "standard") {
                   return (
                     <div key={idx} className="legal-block-anim border-b border-white/5 pb-px36">
@@ -164,7 +158,6 @@ export default function PrivacyPolicyPage() {
                   );
                 }
 
-                // Renderizado Condicional de Listas de Bloques (Bold Superior)
                 if (section.type === "list-block") {
                   return (
                     <div key={idx} className="legal-block-anim border-b border-white/5 pb-px36">
@@ -183,7 +176,6 @@ export default function PrivacyPolicyPage() {
                   );
                 }
 
-                // Renderizado Condicional de Listas con Viñetas Clásicas
                 if (section.type === "list-bullet") {
                   return (
                     <div key={idx} className="legal-block-anim border-b border-white/5 pb-px36">
@@ -199,7 +191,6 @@ export default function PrivacyPolicyPage() {
                   );
                 }
 
-                // Renderizado Condicional de Nota al Pie del Framework
                 if (section.type === "footer-note") {
                   return (
                     <div key={idx} className="legal-block-anim pt-px36 border-t border-white/5 text-xs text-white/40 italic">
@@ -216,7 +207,6 @@ export default function PrivacyPolicyPage() {
             </div>
           </section>
 
-          {/* ECOSISTEMA DE CIERRE OBLIGATORIO Y CONSISTENTE */}
           <ImageGallery />
           <Testimonials />
           <CinematicVideo />

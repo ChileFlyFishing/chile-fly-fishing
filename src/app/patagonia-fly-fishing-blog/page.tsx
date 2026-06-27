@@ -6,25 +6,27 @@ import ImageGallery from "@/components/organisms/ImageGallery";
 import Testimonials from "@/components/organisms/Testimonials";
 import CinematicVideo from "@/components/organisms/CinematicVideo";
 import Footer from "@/components/organisms/Footer";
-import BlogGridClient from "@/components/organisms/BlogGridClient"; // <-- Importamos la grilla interactiva
+import BlogGridClient from "@/components/organisms/BlogGridClient"; 
 import { destinationsRegistry } from "../data";
 
+// ========================================================
+// OPTIMIZACIÓN SEO: METADATA DE SERVIDOR (SSR Next.js 15)
+// ========================================================
 export const metadata: Metadata = {
-  title: "Patagonia Fly Fishing Intelligence | Coyhaique Field Reports",
-  description: "Technical fly fishing logs, river mapping, and biological analysis from Coyhaique, Chile. Expert hatch calendars and gear configurations for untamed trout.",
+  title: "Patagonia Fly Fishing Field Reports | Chile Fly Fishing Blog",
+  description: "Technical intelligence, river mapping, and seasonal logs for fly fishing in Coyhaique, Chile. Expert hatch calendars and gear advice for Patagonian trout.",
   alternates: {
     canonical: "https://chileflyfishingexpeditions.com/blog",
   },
   openGraph: {
-    title: "Patagonia Fly Fishing Intelligence | Coyhaique Field Reports",
-    description: "Technical fly fishing logs, river mapping, and biological analysis from Coyhaique, Chile.",
+    title: "Patagonia Fly Fishing Field Reports | Chile Fly Fishing Blog",
+    description: "Technical intelligence, river mapping, and seasonal logs for fly fishing in Coyhaique, Chile.",
     url: "https://chileflyfishingexpeditions.com/blog",
     type: "website",
   },
 };
 
 export default function PatagoniaFlyFishingBlog() {
-  // Listado oficializado de reportes (puedes setear algunos con fecha "2025" si deseas probar el filtrado)
   const blogPosts = [
     {
       slug: "why-coyhaique-chile-is-world-famous-for-dry-fly-fishing",
@@ -59,7 +61,7 @@ export default function PatagoniaFlyFishingBlog() {
     {
       slug: "best-time-to-go-fly-fishing-in-coyhaique-patagonia-chile",
       excerpt: "Timing the hatch perfectly. Your guide to high-water early seasons, mid-summer terrestrial explosions, and windless autumn days.",
-      date: "2025", // Ejemplo fijado en 2025 para comprobar la efectividad del filtro
+      date: "2025", 
       tag: "Chilean Patagonia"
     },
     {
@@ -71,7 +73,7 @@ export default function PatagoniaFlyFishingBlog() {
     {
       slug: "essential-fly-fishing-gear-to-bring-patagonia-trip-coyhaique",
       excerpt: "A rigorous equipment list. Fast-action 6-weight rods, aggressive front-taper floating lines, and mandatory technical wading layers.",
-      date: "2025", // Ejemplo fijado en 2025 para comprobar la efectividad del filtro
+      date: "2025", 
       tag: "Chilean Patagonia"
     },
     {
@@ -92,7 +94,7 @@ export default function PatagoniaFlyFishingBlog() {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Patagonia Fly Fishing Intelligence Reports",
-    "description": "Comprehensive index of tactical and biological field reports for angling in Coyhaique, Chile.",
+    "description": "Comprehensive index of tactical and biological field reports for fly fishing in Coyhaique, Chile.",
     "url": "https://chileflyfishingexpeditions.com/blog",
     "mainEntity": {
       "@type": "ItemList",
@@ -123,16 +125,16 @@ export default function PatagoniaFlyFishingBlog() {
         <Navbar />
 
         <main>
+          {/* OPTIMIZACIÓN AEO: Alineación exacta de intenciones y uso de la regla BLUF en el párrafo */}
           <InternalHero 
-            subtitle="Field Intelligence & Strategy"
-            title="Patagonia Fly Fishing Intelligence: Reports from Coyhaique, Chile"
-            paragraph="Welcome to the official Chile Fly Fishing operational archive. Access verified biological assessments, precision hatch timelines, and local tactical intelligence designed for technical anglers targeting wild trout across the unpressured aquatic systems of the Aysén region."
+            subtitle="Chile Fly Fishing Expeditions"
+            title="Patagonia Fly Fishing Intelligence: Coyhaique Field Logs"
+            paragraph="Welcome to our official archive of Chile fly fishing expeditions. This portal delivers verified technical field logs, precision hatch calendars, and local water intelligence designed for dedicated anglers targeting wild trout across the unpressured river beats of Coyhaique, Patagonia."
             imageUrl="assets/images/rainbow-trout-two-anglers-in-a-boat-coyaique.avif"
             buttonText="Analyze Field Logs"
             buttonHref="#intelligence-grid"
           />
 
-          {/* INVOCAMOS LA NUEVA GRILLA AUTOMATIZADA CON FILTROS Y FADE EFECTO SCROLL */}
           <BlogGridClient 
             blogPosts={blogPosts} 
             destinationsRegistry={destinationsRegistry} 

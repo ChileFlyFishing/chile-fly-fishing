@@ -4,7 +4,7 @@ import { generateJsonLd } from "@/utils/seo";
 import { SchemaData } from "@/types/seo";
 
 import Navbar from "@/components/organisms/Navbar";
-import InternalHero from "@/components/organisms/InternalHero"; // <-- Organismo unificado
+import InternalHero from "@/components/organisms/InternalHero"; 
 import Testimonials from "@/components/organisms/Testimonials";
 import CinematicVideo from "@/components/organisms/CinematicVideo";
 import Footer from "@/components/organisms/Footer";
@@ -13,15 +13,16 @@ import Footer from "@/components/organisms/Footer";
 // OPTIMIZACIÓN SEO: METADATA DE SERVIDOR (SSR)
 // ========================================================
 export const metadata: Metadata = {
-  title: "Patagonia Fly Fishing Destinations | Coyhaique Beats",
-  description: "Explore pristine freestone rivers, private high-desert spring creeks, and isolated alpine lakes in Coyhaique, Chilean Patagonia.",
+  title: "Patagonia Fly Fishing Destinations | Coyhaique River Beats",
+  description: "Explore elite Patagonia fly fishing destinations. Guided access to the Simpson, Ñirehuao, and Paloma river systems from our base in Coyhaique, Chile.",
   alternates: {
     canonical: "https://chileflyfishingexpeditions.com/fishing-destinations",
   },
   openGraph: {
-    title: "Patagonia Fly Fishing Destinations | Coyhaique Beats",
-    description: "Explore pristine freestone rivers, private high-desert spring creeks, and isolated alpine lakes in Coyhaique, Chilean Patagonia.",
+    title: "Patagonia Fly Fishing Destinations | Coyhaique River Beats",
+    description: "Explore elite Patagonia fly fishing destinations. Guided access to the Simpson, Ñirehuao, and Paloma river systems from our base in Coyhaique, Chile.",
     url: "https://chileflyfishingexpeditions.com/fishing-destinations",
+    type: "website",
   },
 };
 
@@ -29,26 +30,26 @@ export default function FishingDestinationsPage() {
   const waterBeats = [
     {
       title: "Patagonia Freestone Rivers",
-      location: "Simpson, Ñirehuao & Hidden Valleys",
-      description: "Cast large terrestrial imitations or heavy streamers into deep cutbanks and fast currents. Our freestone rivers near Coyhaique offer aggressive wild brown and rainbow trout populations that haven't seen public angling pressure in weeks.",
+      location: "Simpson, Ñirehuao & Paloma River Systems",
+      description: "Cast large terrestrial beetle imitations or heavy baitfish streamers into deep cutbanks and complex currents. Our freestone rivers near Coyhaique offer aggressive wild brown and rainbow trout populations that haven't seen public angling pressure in weeks.",
       tag: "Active Drifts"
     },
     {
       title: "Technical Spring Creeks",
-      location: "Private High-Desert Valleys",
-      description: "The ultimate challenge for the purist. Slower, glass-like waters that require matching the hatch with micro-patterns, long light leaders, and flawless approaches. A premium dry-fly ecosystem in the heart of Chilean Patagonia.",
+      location: "Private High-Desert Valleys near the Argentine Border",
+      description: "The ultimate challenge for the dry-fly purist. Slower, glass-like waters that require matching the hatch with micro-patterns, long light leaders, and flawless stealth approaches. A premium trout ecosystem in the heart of Chilean Patagonia.",
       tag: "Sight Fishing"
     },
     {
       title: "High-Andes Lakes",
-      location: "Deep Crystal Basins",
-      description: "Cruising monster browns in pristine alpine lakes surrounded by ancient forests. We utilize specialized watercraft to target trophy fish feeding selectively along drop-offs and rocky shorelines where clarity is absolute.",
+      location: "Deep Crystal Basins & Lake Zenteno Environs",
+      description: "Cruising monster brown trout in pristine alpine lakes surrounded by native Patagonian forests. We utilize specialized watercraft and catarafts to target trophy fish feeding selectively along steep drop-offs and rocky shorelines where clarity is absolute.",
       tag: "Trophy Browns"
     },
     {
       title: "Isolated Patagonian Lagoons",
       location: "Backcountry Wilderness Stillwaters",
-      description: "Untouched, nameless bodies of water located within private access limits. These rich stillwaters hold surprising numbers of massive trout that smash dragonflies and beetles on the surface with violence.",
+      description: "Untouched, nameless bodies of water located within private land access limits. These rich stillwaters hold surprising numbers of massive resident trout that smash dragonflies and terrestrial grasshoppers on the surface with violence.",
       tag: "Wilderness Action"
     }
   ];
@@ -59,7 +60,7 @@ export default function FishingDestinationsPage() {
   const destinationSchemaConfig: SchemaData = {
     type: "Place",
     name: "Patagonia Fly Fishing Destinations Matrix",
-    description: "Our private operation covers a vast matrix of water structures in Central Patagonia.",
+    description: "Our private operation covers a vast matrix of water structures and exclusive river beats in Central Patagonia, operating out of Coyhaique.",
     url: "https://chileflyfishingexpeditions.com/fishing-destinations",
     image: "assets/images/guide-and-anglers-fishing-patagonia.avif"
   };
@@ -68,7 +69,7 @@ export default function FishingDestinationsPage() {
 
   return (
     <>
-      {/* Inyección estructural de datos para rastreadores de motores de búsqueda */}
+      {/* Inyección estructural de datos para rastreadores de motores de búsqueda e IA */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -78,17 +79,17 @@ export default function FishingDestinationsPage() {
         <Navbar />
 
         <main>
-          {/* IMPLEMENTACIÓN DEL ORGANISMO INTERNAL HERO REUTILIZABLE */}
+          {/* OPTIMIZACIÓN AEO: Alineación de keywords core e intención informativa directa */}
           <InternalHero 
             subtitle="Coyhaique Private Beats"
-            title="Patagonia Fly Fishing Destinations: The Untouched Waters of Chile"
-            paragraph="Our private operation covers a vast matrix of water structures in Central Patagonia. From technical dry-fly creeks near the Argentine border to heavy freestones winding through the rainforest, we build your daily itinerary based on real-time hatch conditions."
+            title="Patagonia Fly Fishing Destinations: The Core Waters of Chile"
+            paragraph="Our private operation covers a vast matrix of pristine fly fishing destinations in Chilean Patagonia. From technical dry-fly spring creeks near the Argentine border to legendary freestone rivers like the Simpson and Ñirehuao, we design your daily drift based on real-time hatch conditions."
             imageUrl="assets/images/guide-and-anglers-fishing-patagonia.avif"
             buttonText="Explore the Beats"
             buttonHref="#beats-matrix"
           />
 
-          {/* Listado Técnico de Aguas */}
+          {/* Listado Técnico de Aguas - Manteniendo tus clases de diseño intactas */}
           <section id="beats-matrix" className="w-full py-px92 px-px24 md:px-px48 bg-brand-charcoal scroll-mt-px24">
             <div className="max-w-[1260px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-px48">
               {waterBeats.map((beat, index) => (

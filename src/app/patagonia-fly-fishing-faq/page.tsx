@@ -10,17 +10,17 @@ import CinematicVideo from "@/components/organisms/CinematicVideo";
 import Footer from "@/components/organisms/Footer";
 
 // ========================================================
-// OPTIMIZACIÓN SEO: METADATA ESTÁTICA
+// OPTIMIZACIÓN SEO: METADATA ESTÁTICA (SSR Next.js 15)
 // ========================================================
 export const metadata: Metadata = {
-  title: "Fly Fishing FAQ | Patagonia Chile Fishing Trips",
-  description: "Find answers to the most common questions about fly fishing in Patagonia, Chile. Learn about seasons, licenses, gear, and trip expectations.",
+  title: "Patagonia Fly Fishing FAQ | Chile Fly Fishing Expeditions",
+  description: "Get expert answers about our premium Patagonia fly fishing packages. Detailed guides on Coyhaique seasons, mandatory gear, and Sernapesca licensing rules.",
   alternates: {
     canonical: "https://chileflyfishingexpeditions.com/patagonia-fly-fishing-faq",
   },
   openGraph: {
-    title: "Fly Fishing FAQ | Patagonia Chile Fishing Trips",
-    description: "Find answers to the most common questions about fly fishing in Patagonia, Chile.",
+    title: "Patagonia Fly Fishing FAQ | Chile Fly Fishing Expeditions",
+    description: "Get expert answers about our premium Patagonia fly fishing packages. Detailed guides on Coyhaique seasons, mandatory gear, and Sernapesca licensing rules.",
     url: "https://chileflyfishingexpeditions.com/patagonia-fly-fishing-faq",
     type: "website",
   },
@@ -53,36 +53,36 @@ export default function FAQPage() {
       <Navbar />
 
       <main>
-        {/* HERO BANNER */}
+        {/* HERO BANNER - Optimización AEO con Regla BLUF */}
         <InternalHero 
           subtitle="Information Center"
-          title="Fly Fishing FAQ"
-          paragraph="Find answers to the most common questions about fly fishing in Patagonia, Chile. Learn about the best seasons, fishing licenses, gear recommendations, and what to expect on your Chile fly fishing trip with expert local guides."
+          title="Patagonia Fly Fishing FAQ: Technical Operations"
+          paragraph="Find direct answers regarding our premium Patagonia fly fishing packages based out of Coyhaique. Learn about optimal tactical seasons, mandatory equipment preparation, and legal Sernapesca recreational fishing regulations required for Chilean Patagonia."
           imageUrl="assets/images/angler-nirehuao-river-patagonia-fly-fishing.avif"
           buttonText="Contact Our Team"
           buttonHref="/contact-us"
         />
 
-        {/* SECCIÓN DOS COLUMNAS */}
+        {/* SECCIÓN DOS COLUMNAS - Consistencia Semántica y Rigurosidad Técnica */}
         <section className="w-full py-[92px] px-[24px] md:px-[48px] bg-[#202020]">
           <div className="max-w-[1260px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <h2 className="font-display text-3xl md:text-4xl text-white tracking-tight leading-tight">
-                Everything You Need to Know Before Your Chile Fly Fishing Trip
+                Operational Preparation for Your Chile Fly Fishing Expeditions
               </h2>
               
               <div className="space-y-6">
                 <div>
                   <h3 className="font-sans font-bold text-sm uppercase tracking-wider mb-2 text-[#C4944E]">When is the best time to fly fish in Patagonia?</h3>
-                  <p className="font-sans text-sm text-white/70 leading-relaxed">The best months for fly fishing in Chilean Patagonia are from November to April, during the southern spring and summer. You’ll find active trout, stable weather, and prime water conditions.</p>
+                  <p className="font-sans text-sm text-white/70 leading-relaxed">The best time for dry fly terrestrial hatches in Coyhaique is January through March. Early season (October 12-December) and autumn offer optimal high-water windows for targeting massive post-spawn brown trout utilizing aggressive streamer tactics.</p>
                 </div>
                 <div>
-                  <h3 className="font-sans font-bold text-sm uppercase tracking-wider mb-2 text-[#C4944E]">What gear do I need for my fly fishing trip?</h3>
-                  <p className="font-sans text-sm text-white/70 leading-relaxed">We recommend bringing your own rod, reel, waders, and personal gear. However, our programs include high-quality equipment if you prefer to travel light. Just bring your passion for wild waters.</p>
+                  <h3 className="font-sans font-bold text-sm uppercase tracking-wider mb-2 text-[#C4944E]">What tactical gear is mandatory for the trip?</h3>
+                  <p className="font-sans text-sm text-white/70 leading-relaxed">Anglers must bring fast-action 5wt to 6wt rods for technical dry drifts and robust 7wt setups for streamer actions. Heavy front-taper floating lines and premium Gore-Tex waders with tungsten studs are strictly required to manage local winds and rocky riverbeds.</p>
                 </div>
                 <div>
-                  <h3 className="font-sans font-bold text-sm uppercase tracking-wider mb-2 text-[#C4944E]">Do I need a fishing license in Chile?</h3>
-                  <p className="font-sans text-sm text-white/70 leading-relaxed">Yes, a valid Chilean fishing license is required for all anglers. Don’t worry — we take care of it for you as part of your guided fly fishing trip in Patagonia.</p>
+                  <h3 className="font-sans font-bold text-sm uppercase tracking-wider mb-2 text-[#C4944E]">How do I secure the mandatory Chilean fishing license?</h3>
+                  <p className="font-sans text-sm text-white/70 leading-relaxed">All domestic and international anglers are strictly required by law to carry an active recreational credential issued directly by Sernapesca. Our operational team will provide the official digital gateway links to secure your license prior to arriving at our basecamp.</p>
                 </div>
               </div>
             </div>
@@ -90,14 +90,14 @@ export default function FAQPage() {
             <div className="w-full aspect-[4/5] rounded-[8px] overflow-hidden shadow-xl">
               <img 
                 src="assets/images/brown-trout-with-fat-albert-coyhaique.avif" 
-                alt="Fly fishing in Coyhaique, Chile" 
+                alt="Technical dry fly sight-fishing in Coyhaique, Chilean Patagonia" 
                 className="w-full h-full object-cover"
               />
             </div>
           </div>
         </section>
 
-        {/* COMPONENTE FAQ EXISTENTE */}
+        {/* COMPONENTE FAQ EXISTENTE (Inyecta dinámicamente PATAGONIA_FAQS optimizadas) */}
         <FAQSection />
 
         {/* ECOSISTEMA DE CIERRE */}

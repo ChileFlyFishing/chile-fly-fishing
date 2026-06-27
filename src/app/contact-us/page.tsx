@@ -83,7 +83,7 @@ export default function ContactUsPage() {
             <div className="max-w-[1260px] mx-auto">
               <div className="border-b border-white/5 pb-[66px]">
                 <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-white font-normal tracking-tight mb-[54px] max-w-4xl leading-tight">
-                  Your next fly-fishing adventure in Patagonia is here. <br className="hidden md:block"/>The choice is yours.
+                  Your next fly-fishing adventure in Patagonia is here. The choice is yours.
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
                   <div className="flex flex-col items-start text-left">
