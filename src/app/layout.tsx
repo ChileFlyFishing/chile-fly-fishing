@@ -4,6 +4,8 @@ import ScrollProvider from "@/components/providers/ScrollProvider"; // Integraci
 import TextAnimationProvider from "@/components/providers/TextAnimationProvider"; // Animación de tipografías nativa
 import "../styles/globals.css";
 
+
+
 const inter = Inter({
   variable: "--font-sans",
   subsets: ["latin"],

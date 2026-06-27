@@ -15,18 +15,20 @@ import Link from 'next/link';
 // OPTIMIZACIÓN SEO: METADATA ESTÁTICA HOME (SSR Next.js 15)
 // ========================================================
 export const metadata: Metadata = {
-  title: "Chile Fly Fishing | Premium Coyhaique Expeditions",
-  description: "Technical dry fly fishing operations in Coyhaique, Chile. Experience exclusive catch-and-release expeditions in deep Patagonian waters.",
+  title: "Chile Fly Fishing Guides & Expeditions | Coyhaique Base",
+  description: "Technical fly fishing expeditions in Chilean Patagonia. Scout legendary spring creeks and rivers from our Coyhaique base. Plan your hosted trip.",
   alternates: {
     canonical: "https://chileflyfishingexpeditions.com",
   },
   openGraph: {
-    title: "Chile Fly Fishing | Premium Coyhaique Expeditions",
-    description: "Technical dry fly fishing operations in Coyhaique, Chile. Experience exclusive catch-and-release expeditions in deep Patagonian waters.",
+    title: "Chile Fly Fishing Guides & Expeditions | Coyhaique Base",
+  description: "Technical fly fishing expeditions in Chilean Patagonia. Scout legendary spring creeks and rivers from our Coyhaique base. Plan your hosted trip.",
     url: "https://chileflyfishingexpeditions.com",
     type: "website",
   },
 };
+
+
 
 export default function HomePage() {
   return (
@@ -53,13 +55,21 @@ export default function HomePage() {
           
           <div className="max-w-[1440px] mx-auto w-full relative z-10 pt-24">
             <span className="font-sans text-xs md:text-sm uppercase tracking-[0.2em] text-[#C4944E] font-semibold mb-6 block">
-              Exclusive Operations • Coyhaique, Chile
+              Exclusive Fly Fishing Operations • Coyhaique, Chile
             </span>
             {/* Añadimos la clase animate-text para probar el comportamiento sensorial en el título principal */}
             <h1 className="animate-text font-display text-4xl md:text-6xl lg:text-7xl text-white font-normal tracking-tight max-w-4xl leading-[1.05] mb-6">
-              Chile Fly Fishing: Remote Patagonia <br />
-              <span className="font-display italic text-white/90">Fly Fishing Expeditions</span>
+              Chile Fly Fishing Expeditions 
+              <span className="font-display italic text-white/90">based in Coyhaique</span>
             </h1>
+            <div className="max-w-3xl space-y-4 font-sans text-sm md:text-base text-neutral-300 leading-relaxed mb-8">
+              <p>
+                We operate technical fly fishing expeditions across the structural river diversity of the Aysén Region. From our strategic base in Coyhaique, our crew provides daily access to productive dry fly action, remote spring creeks, and deep streamer setups tailored for wild brown trout proficiency.
+              </p>
+              <p>
+                Our targeted scouting matrix allows anglers to master pristine Patagonian waters, covering the prolific terrestrial hatches of the Ñirehuao River, the technical pools of the Simpson River, and the multi-channeled currents of the Paloma River system to ensure clean, drag-free drifts.
+              </p>
+            </div>
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mt-12">
               <a href="/contact-us" className="inline-flex items-center justify-center px-12 py-4 font-sans font-semibold text-[#202020] bg-[#C4944E] rounded-[20px] shadow-xl hover:bg-white transition-all uppercase text-xs tracking-wider">
                 Secure Your Dates
