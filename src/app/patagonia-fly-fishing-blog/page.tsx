@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Patagonia Fly Fishing Field Reports | Chile Fly Fishing Blog",
     description: "Technical intelligence, river mapping, and seasonal logs for fly fishing in Coyhaique, Chile.",
-    url: "https://chileflyfishingexpeditions.com/blog",
+    url: "https://www.chileflyfishingexpeditions.com/patagonia-fly-fishing-blog",
     type: "website",
   },
 };
@@ -35,13 +35,13 @@ export default function PatagoniaFlyFishingBlog() {
       tag: "Chilean Patagonia"
     },
     {
-      slug: "migratory-trout-in-coyhaique-fly-fishing-season",
+      slug: "angler-nirehuao-river-patagonia-fly-fishing",
       excerpt: "Tracking the massive brown and rainbow trout autumn runs. Learn the exact flow mechanics and heavy fly configurations needed.",
       date: "2026",
       tag: "Chilean Patagonia"
     },
     {
-      slug: "discover-why-patagonia-chile-ultimate-wild-fly-fishing-destination",
+      slug: "anglers-fishing-blue-river-and-lake",
       excerpt: "Why pure mountain isolation and strict catch-and-release protocols protect an ecosystem that cannot be replicated globally.",
       date: "2026",
       tag: "Chilean Patagonia"
