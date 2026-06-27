@@ -1,25 +1,36 @@
-import { MetadataRoute } from 'next'
+import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    {
-      url: 'https://chileflyfishingexpeditions.com',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 1,
-    },
-    {
-      url: 'https://chileflyfishingexpeditions.com/patagonia-fly-fishing',
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://chileflyfishingexpeditions.com/contact-us',
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 0.5,
-    },
-    // Agrega aquí el resto de tus páginas
-  ]
+  // Aquí defines tus rutas estáticas
+  const routes = [
+    '',
+    '/patagonia-fly-fishing',
+    '/fishing-season',
+    '/about-us',
+    '/contact-us',
+    '/fishing-destinations',
+    '/patagonia-fly-fishing-faq',
+    '/privacy-policy',
+    '/blog',
+  ];
+
+  const baseUrl = 'https://chileflyfishingexpeditions.com';
+
+  const staticRoutes = routes.map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: route === '' ? 1 : 0.8,
+  }));
+
+  // SI TUVIERAS RUTAS DINÁMICAS (Ej: posts del blog):
+  // const posts = await getPosts(); // Tu función para traer los slugs
+  // const dynamicRoutes = posts.map((post) => ({
+  //   url: `${baseUrl}/blog/${post.slug}`,
+  //   lastModified: new Date(post.updatedAt),
+  //   changeFrequency: 'monthly' as const,
+  //   priority: 0.6,
+  // }));
+
+  return [...staticRoutes /*, ...dynamicRoutes*/];
 }
