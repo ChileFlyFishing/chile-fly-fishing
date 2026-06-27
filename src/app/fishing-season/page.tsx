@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 // Componentes del Sistema Core (Organismos)
 import Navbar from "@/components/organisms/Navbar";
 import InternalHero from "@/components/organisms/InternalHero";
-import ImageGallery from "@/components/organisms/ImageGallery"; // <-- 1. IMPORTACIÓN DE LA GALERÍA DE IMÁGENES AQUÍ
+import ImageGallery from "@/components/organisms/ImageGallery"; 
 import Testimonials from "@/components/organisms/Testimonials";
 import CinematicVideo from "@/components/organisms/CinematicVideo";
 import Footer from "@/components/organisms/Footer";
@@ -11,20 +11,20 @@ import Link from 'next/link';
 
 // Componentes Específicos de la Ruta (Segmentados)
 import SeasonCard from "@/components/molecules/SeasonCard";
-import LiveHatchSimulator from "@/components/atoms/LiveHatchSimulator"; // <-- 1. IMPORTACIÓN DEL SIMULADOR AQUÍ
+import LiveHatchSimulator from "@/components/atoms/LiveHatchSimulator"; 
 
 // ========================================================
-// OPTIMIZACIÓN SEO: METADATA ESTATICA (SSR)
+// OPTIMIZACIÓN SEO: METADATA ESTATICA (SSR Next.js 15)
 // ========================================================
 export const metadata: Metadata = {
-  title: "Patagonia Fly Fishing Season & Regulations | Coyhaique",
-  description: "Technical operational blueprint for fly fishing in Coyhaique, Chile. Detailed hatch timelines, weather dynamics, mandatory gear, and legal licensing rules.",
+  title: "Best Time to Fly Fish in Patagonia | Patagonia Fishing Seasons",
+  description: "Discover the best time to fly fish in Patagonia. Complete guide to Coyhaique fishing seasons, brown trout hatch charts, weather, and regulations.",
   alternates: {
     canonical: "https://chileflyfishingexpeditions.com/fishing-season",
   },
   openGraph: {
-    title: "Patagonia Fly Fishing Season & Regulations | Coyhaique",
-    description: "Technical operational blueprint for fly fishing in Coyhaique, Chile. Detailed hatch timelines, weather dynamics, mandatory gear, and legal licensing rules.",
+    title: "Best Time to Fly Fish in Patagonia | Patagonia Fishing Seasons",
+    description: "Discover the best time to fly fish in Patagonia. Complete guide to Coyhaique fishing seasons, brown trout hatch charts, weather, and regulations.",
     url: "https://chileflyfishingexpeditions.com/fishing-season",
     type: "website",
   },
@@ -36,19 +36,19 @@ export default function FishingSeasonPage() {
       period: "October 12 - December",
       name: "Early Season Dynamics",
       tactics: "Streamers & Heavy Nymphing",
-      description: "Our official operations kick off on October 12th. Post-spawning wild trout feed aggressively after the Patagonian winter. High water levels mean fish stick to the banks and structure. Exceptional time for targeting massive migratory browns with large streamers and sinking lines in deep freestone channels near Coyhaique."
+      description: "Our official operations kick off on October 12th. Post-spawning wild brown and rainbow trout feed aggressively after the Patagonian winter. High water levels in freestone rivers like the Simpson and Paloma force trophy fish near the banks. This is an exceptional window for targeting massive trout with large baitfish streamer patterns and 200-250 grain sinking lines."
     },
     {
       period: "January - March",
       name: "Peak Dry Fly & Terrestrials",
       tactics: "Match the Hatch / Sight Fishing",
-      description: "The absolute climax for the dry-fly purist. Warmer temperatures trigger massive hatches of beetles, grasshoppers, and caddisflies. The technical spring creeks become active sight-fishing arenas where presentation, long light leaders, and stealth are critically required."
+      description: "The absolute climax for the dry-fly purist and the premier window for Patagonia fly fishing trips. Warmer temperatures trigger massive hatches of grasshoppers, beetles, and caddisflies along the famous Ñirehuao river. Technical spring creeks become active sight-fishing arenas where perfect drag-free drifts, long light leaders, and extreme stealth are mandatory."
     },
     {
       period: "April - First Week of May",
       name: "Late Season Autumn Runs",
       tactics: "Technical Dries & Large Streamers",
-      description: "Operations conclude during the first week of May. As the fall colors transform the valleys, large brown trout begin their pre-spawn migrations. Days are cooler, wind drops, and mayfly hatches dominate the quiet afternoons. A peaceful, highly rewarding time for seasoned anglers seeking legendary trophies in isolated waters."
+      description: "Operations conclude during the first week of May. As fall foliage transforms the valleys of the Aysén region, large brown trout begin their pre-spawn migrations. Days are cooler, wind intensity drops, and intense mayfly hatches dominate quiet afternoons. A peaceful, highly rewarding timeline for seasoned anglers seeking legendary trophy trout in isolated waters."
     }
   ];
 
@@ -88,11 +88,11 @@ export default function FishingSeasonPage() {
 
         {/* CUERPO CENTRAL DE LA EXPERIENCIA */}
         <main>
-          {/* REEMPLAZO POR EL INTERNALHERO UNIFICADO CON TODOS SES ATRIBUTOS */}
+          {/* OPTIMIZACIÓN AEO: Aplicación de la regla BLUF en el párrafo introductorio */}
           <InternalHero 
             subtitle="Operational Blueprint"
-            title="Coyhaique Fly Fishing Season: Operations in the Heart of Patagonia"
-            paragraph="Executing a successful expedition in the heart of Patagonia requires a tactical reading of water levels, hatch cycles, and weather patterns. Coyhaique fly fishing is defined by its operational diversity. From high-water streamer tactics to technical dry fly presentations, this report details the exact conditions you will face and the logistics required to navigate the premier waters of Chilean Patagonia."
+            title="Patagonia Fly Fishing Seasons: Best Time to Fish Coyhaique"
+            paragraph="The best time to fly fish in Patagonia is between January and March for peak dry fly terrestrial action, while the early season starting October 12 and late autumn offer optimal windows for trophy trout on streamers. Successfully navigating the diverse Patagonia fishing seasons requires a tactical reading of hatches, wind proficiency, and water levels across the Aysén region."
             imageUrl="assets/images/guide-and-anglers-fishing-patagonia.avif"
             buttonText="View Mandatory Gear"
             buttonHref="#technical-gear"
@@ -137,7 +137,7 @@ export default function FishingSeasonPage() {
                   Mandatory Gear and Technical Preparation
                 </h2>
                 <p className="font-sans text-white/60 text-base leading-relaxed">
-                  Success in Patagonia is dictated by preparation. The conditions in Coyhaique demand reliable, high-performance equipment capable of handling wind and highly technical casting scenarios.
+                  Success across the different Patagonia fishing seasons is dictated by equipment preparation. The volatile weather conditions in Coyhaique demand reliable, high-performance gear capable of handling heavy winds and technical dry fly casting scenarios.
                 </p>
               </div>
 
@@ -145,19 +145,19 @@ export default function FishingSeasonPage() {
                 <div className="border-l border-[#C4944E]/20 pl-[24px]">
                   <h3 className="font-display text-xl text-[#C4944E] mb-[12px]">Rod Selection</h3>
                   <p className="font-sans text-sm text-white/70 leading-relaxed">
-                    A fast-action 6-weight rod is the mandatory primary tool for penetrating the Patagonian wind and turning over heavy terrestrial rigs. A 7 or 8-weight rod is required for streamer operations on lakes and larger river systems.
+                    A fast-action 6-weight rod is the mandatory primary tool for penetrating the Patagonian wind and turning over heavy terrestrial beetle and hopper rigs. A robust 7 or 8-weight rod is strictly required for heavy streamer operations on lakes and large river systems.
                   </p>
                 </div>
                 <div className="border-l border-[#C4944E]/20 pl-[24px]">
                   <h3 className="font-display text-xl text-[#C4944E] mb-[12px]">Fly Lines</h3>
                   <p className="font-sans text-sm text-white/70 leading-relaxed">
-                    Standard lines will underperform in these conditions. Equip weight-forward floating lines with an aggressive front taper (half-size heavy) to load fast-action rods quickly with minimal false casting. For early season freestone rivers, a 200-250 grain sink-tip line is required.
+                    Standard lines underperform in Aysén. Equip weight-forward floating lines with an aggressive front taper (half-size heavy) to load fast-action rods quickly with minimal false casting. For early season freestone settings, a 200-250 grain sink-tip line is required.
                   </p>
                 </div>
                 <div className="border-l border-[#C4944E]/20 pl-[24px]">
                   <h3 className="font-display text-xl text-[#C4944E] mb-[12px]">Technical Apparel</h3>
                   <p className="font-sans text-sm text-white/70 leading-relaxed">
-                    The weather in the heart of Patagonia is volatile. A strict technical layering system is required. Premium Gore-Tex waders and wading boots with tungsten studs are non-negotiable for safe navigation across our rocky riverbeds.
+                    Weather in the heart of Patagonia is highly volatile. A strict technical layering system is required. Premium Gore-Tex waders and wading boots with tungsten studs are non-negotiable for safe navigation across our slick, rocky riverbeds.
                   </p>
                 </div>
               </div>
@@ -172,7 +172,7 @@ export default function FishingSeasonPage() {
                   Legal Requirement: Recreational Fishing License
                 </h2>
                 <p className="font-sans text-sm text-white/70 leading-relaxed">
-                  To fish legally in the Aysén region, all domestic and foreign anglers are strictly required by Chilean law to carry an active recreational fishing license issued by <strong>Sernapesca</strong>. Our guiding team coordinates beats within highly regulated areas where enforcement is mandatory. Please secure your credential prior to arrival.
+                  To fish legally during the Patagonia fly fishing season, all domestic and foreign anglers are strictly required by Chilean law to carry an active recreational fishing license issued by <strong>Sernapesca</strong>. Our guiding team coordinates beats within highly regulated areas where enforcement is mandatory. Please secure your credential prior to arrival.
                 </p>
               </div>
               <Link
