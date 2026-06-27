@@ -105,7 +105,7 @@ export default function FishingSeasonPage() {
 
           {/* Desglose Cronológico de Temporadas */}
           <section className="w-full py-[92px] px-[24px] md:px-[48px] bg-[#202020]">
-            <div className="max-w-[1440px] mx-auto space-y-[72px]">
+            <div className="max-w-[1260px] mx-auto space-y-[72px]">
               {seasonsDetailed.map((season, index) => (
                 <div key={index} className="border-t border-white/10 pt-[36px] grid grid-cols-1 md:grid-cols-12 gap-[24px]">
                   <div className="md:col-span-4">
@@ -131,7 +131,7 @@ export default function FishingSeasonPage() {
 
           {/* SECCIÓN: Mandatory Gear and Technical Preparation */}
           <section id="technical-gear" className="w-full py-[92px] px-[24px] md:px-[48px] bg-neutral-900 border-t border-b border-white/5 scroll-mt-[42px]">
-            <div className="max-w-[1440px] mx-auto">
+            <div className="max-w-[1260px] mx-auto">
               <div className="mb-[60px] max-w-3xl">
                 <h2 className="font-display text-3xl md:text-4xl text-white tracking-tight mb-[18px]">
                   Mandatory Gear and Technical Preparation
@@ -166,7 +166,7 @@ export default function FishingSeasonPage() {
 
           {/* SECCIÓN: Regulación Legal / Licencia de Pesca Sernapesca */}
           <section className="w-full py-[92px] px-[24px] md:px-[48px] bg-[#202020]">
-            <div className="max-w-[1440px] mx-auto border border-[#C4944E]/20 bg-[#C4944E]/5 rounded-[8px] p-[36px] md:p-[48px] flex flex-col md:flex-row items-start md:items-center justify-between gap-[30px]">
+            <div className="max-w-[1260px] mx-auto border border-[#C4944E]/20 bg-[#C4944E]/5 rounded-[8px] p-[36px] md:p-[48px] flex flex-col md:flex-row items-start md:items-center justify-between gap-[30px]">
               <div className="max-w-3xl">
                 <h2 className="font-display text-2xl md:text-3xl text-white font-normal mb-[12px]">
                   Legal Requirement: Recreational Fishing License
