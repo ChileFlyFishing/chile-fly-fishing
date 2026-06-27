@@ -7,28 +7,31 @@ export interface FAQItem {
 
 export const PATAGONIA_FAQS: FAQItem[] = [
   {
-    q: "Why choose Coyhaique as a fly fishing destination in Patagonia?",
-    a: "Coyhaique, located in the heart of Chilean Patagonia, offers some of the world’s most pristine and diverse waters for fly fishing. With untouched rivers, spring creeks, lagoons, and lakes surrounded by stunning landscapes, Coyhaique is a world-class destination for anglers seeking wild trout adventures.",
+    q: "Why is Coyhaique considered the premier destination for fly fishing in Chile?",
+    a: "Coyhaique is the tactical hub of Chilean Patagonia, offering unparalleled access to a dense network of freestone rivers, isolated spring creeks, and deep lakes. Operating from Coyhaique allows anglers to target wild brown and rainbow trout using diverse techniques—from technical dry fly sight-fishing to aggressive streamer stripping—all within a single region.",
   },
   {
-    q: "What does the fly fishing program in Coyhaique include?",
-    a: "Our fly fishing trips in Coyhaique include six full days of guided fishing, seven nights of comfortable accommodation, daily breakfast, lunch by the river, and gourmet dinners. All beverages during fishing days are included, as well as 4×4 transportation to and from the best fishing spots.",
+    q: "What is included in your premium Patagonia fly fishing packages?",
+    a: "Our all-inclusive Patagonia fly fishing packages include 6 full days of expertly guided drift boat or walk-and-wade fishing, 7 nights of premium lodging, and chef-prepared meals including riverbank shore lunches. Private 4x4 transportation, selected Chilean wines, and local craft beers are also fully covered throughout the expedition.",
   },
   {
-    q: "What kind of trout can I catch in Coyhaique, Patagonia?",
-    a: "In Coyhaique’s rivers, lakes, and spring creeks, you will find beautiful wild brown trout and rainbow trout. Some waters also offer the chance to target migratory trout, providing an unforgettable fly fishing experience in Patagonia.",
+    q: "What specific trout species and sizes can I target during the Coyhaique fly fishing season?",
+    a: "Anglers primarily target resident wild brown trout (Salmo trutta) and rainbow trout (Oncorhynchus mykiss), with average sizes ranging from 16 to 22 inches. Certain secluded beats and technical spring creeks provide consistent opportunities to sight-fish for trophy browns exceeding the 24-inch mark.",
   },
   {
-    q: "When is the best time for a fly fishing trip in Coyhaique?",
-    a: "The fly fishing season in Coyhaique runs from October to April. Summer months (December to March) offer warmer temperatures and excellent hatches, while early and late season trips can offer bigger, more aggressive trout.",
+    q: "When is the best time to book a fly fishing trip to Coyhaique, Patagonia?",
+    a: "The optimal window for dry fly fishing in Coyhaique runs from January to March, driven by massive terrestrial and beetle hatches. Early season (November-December) and late season (April) feature higher water levels and cooler temperatures, making it the ideal timeframe for targeting aggressive post-spawn trout with heavy streamer setups.",
   },
   {
-    q: "What level of experience is needed for a fly fishing trip in Patagonia?",
-    a: "Our fly fishing programs in Coyhaique are designed for all experience levels. Whether you are a beginner or a seasoned angler, our expert local guides will customize the trip to your skills, ensuring a memorable experience in Patagonia.",
+    q: "What fly fishing gear and rod setups are recommended for Patagonian waters?",
+    a: "We recommend a versatile multi-rod setup: a 9-foot 5wt or 6wt fast-action rod paired with a weight-forward floating line for technical dry fly drifts, and a robust 7wt rod with an aggressive sink-tip line to manage streamer action and cut through the notorious Patagonian wind.",
   },
   {
-    q: "What should I bring for my fly fishing trip to Chile?",
-    a: "We recommend bringing your fly fishing gear, waders, layered clothing suitable for Patagonia’s changing weather, a rain jacket, sunscreen, and personal items. A detailed packing list will be provided after booking your trip.",
+    q: "Do I need to be an expert angler to join your guided fly fishing trips in Chile?",
+    a: "No. Our guided fly fishing trips cater to all experience levels, from intermediate fishers to seasoned anglers. Our hard-rowing, bilingual local guides customize each day on the water—whether reading complex currents from a drift boat or guiding you through a stealthy walk-and-wade spring creek session—to match your specific skill set.",
   },
-  
+  {
+    q: "How do US clients travel to your fly fishing basecamp in Coyhaique?",
+    a: "Anglers travel via an overnight international flight from the US to Santiago International Airport (SCL), followed by a 2.5-hour domestic flight to Balmaceda Airport (BBA) in the Aysén region. Our team meets you directly at the gate in Balmaceda for a private 4x4 transfer to our basecamp in nearby Coyhaique.",
+  },
 ];
