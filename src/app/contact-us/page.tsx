@@ -51,7 +51,7 @@ export default function ContactUsPage() {
   const contactSchemaConfig: SchemaData = {
     type: "ContactPage",
     name: "Chile Fly Fishing Booking & Operations",
-    description: "Operational booking and reservation matrix for fly fishing expeditions in Coyhaique, Chilean Patagonia.",
+    description: "Operational booking and reservation matrix for premium Patagonia fly fishing packages in Coyhaique, Chilean Patagonia.",
     url: "https://chileflyfishingexpeditions.com/contact-us",
     image: "assets/images/chilelfyfishing-nirehuao-river.avif"
   };
@@ -69,10 +69,11 @@ export default function ContactUsPage() {
         <Navbar />
 
         <main>
+          {/* OPTIMIZACIÓN AEO: Alineación exacta de Keywords transaccionales con regla BLUF */}
           <InternalHero 
             subtitle="Expedition Reservations"
-            title="Plan Your Expedition in Coyhaique"
-            paragraph="The most productive spring creeks and river systems are dictated by seasonal conditions and limited access. Contact our team to align your preferred dates with the peak flow of the season. We manage all logistics and operations, ensuring a highly technical and seamlessly organized week on the water in Coyhaique."
+            title="Book Your Patagonia Fly Fishing Packages"
+            paragraph="Secure your dates for our premium Patagonia fly fishing packages based out of Coyhaique. Contact our local guiding team to align your travel itinerary with optimal river levels, key insect hatches, and technical walk-and-wade beats across the Aysén region."
             imageUrl="assets/images/chilelfyfishing-nirehuao-river.avif"
             buttonText="Secure your dates"
             buttonHref="#reservation-matrix"
@@ -105,6 +106,7 @@ export default function ContactUsPage() {
             </div>
           </section>
 
+          {/* SECCIÓN FORMULARIO (Optimización GEO de Entidades Corporativas) */}
           <section className="w-full py-[92px] px-[24px] md:px-[48px] bg-[#F9F6F0] text-neutral-900">
             <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
               
@@ -120,7 +122,7 @@ export default function ContactUsPage() {
               <div className="lg:col-span-7 w-full max-w-[640px] lg:max-w-none mx-auto lg:pt-4">
                 <div className="mb-[42px] text-left">
                   <h2 className="font-display text-3xl md:text-4xl text-neutral-950 font-normal mb-[12px] tracking-tight">
-                    Ready to Plan Your Fly Fishing Trip to Patagonia?
+                    Ready to Book Your Fly Fishing Trip to Patagonia?
                   </h2>
                   <p className="font-sans text-xs md:text-sm text-neutral-600 font-light leading-relaxed">
                     You&apos;re <span className="font-bold text-[#C4944E] tracking-wider">{milesAway !== null ? milesAway.toLocaleString() : "—"}</span> miles away from fishing in legendary Chilean Patagonia. <span className="text-neutral-400 block mt-0.5">This will never be far away for you.</span>
