@@ -21,8 +21,8 @@ const items: GalleryItem[] = [
     rod: "#7 or #8 weight",
     flies: "Heavy streamers (Sculpin patterns)",
     lines: "Fast sinking (Type 6 or 7)",
-    usaMedia: "assets/images/apertura-temporada-flyfishing-rainbow-trout.avif", 
-    otherMedia: "assets/images/apertura-temporada-flyfishing-rainbow-trout.avif" 
+    usaMedia: "apertura-temporada-flyfishing-rainbow-trout.avif", 
+    otherMedia: "apertura-temporada-flyfishing-rainbow-trout.avif" 
   },
   { 
     title: "High Season: World-Class Dry Fly", 
