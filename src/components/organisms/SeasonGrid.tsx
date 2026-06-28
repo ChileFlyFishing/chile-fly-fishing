@@ -4,7 +4,7 @@ export default function SeasonGrid() {
   const seasons = [
     {
       title: "Early Season: Big Rainbows",
-      dates: "October 12 - December",
+      dates: "October 12 - November",
       description: "High water velocity and aggressive pre-hatch feeding. Target migratory and massive resident rainbow trout tight against the structure using heavy streamers and sink-tips.",
       imageSrc: "assets/images/apertura-temporada-flyfishing-rainbow-trout.avif"
     },

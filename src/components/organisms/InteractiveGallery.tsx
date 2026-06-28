@@ -17,7 +17,7 @@ const items: GalleryItem[] = [
   { 
     title: "Early Season: Big Rainbows Trout", 
     desc: "High water velocity and aggressive pre-hatch feeding. Target migratory and massive resident rainbow trout tight against the structure using heavy streamers and sink-tips.",
-    season: "November - December",
+    season: "October - November",
     rod: "#7 or #8 weight",
     flies: "Heavy streamers (Sculpin patterns)",
     lines: "Fast sinking (Type 6 or 7)",
