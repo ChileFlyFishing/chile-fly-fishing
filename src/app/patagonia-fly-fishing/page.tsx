@@ -9,6 +9,7 @@ import FAQSection from "@/components/organisms/FAQSection";
 import InteractiveGallery from "@/components/organisms/InteractiveGallery";
 import Testimonials from "@/components/organisms/Testimonials";
 import CinematicVideo from "@/components/organisms/CinematicVideo";
+import TrophyCatchGallery from "@/components/organisms/TrophyCatchGallery";
 import Footer from "@/components/organisms/Footer";
 import LogisticsGuide from "@/components/organisms/LogisticsGuide"; // <-- Importación invocada
 import { PATAGONIA_FAQS } from "@/config/faqs";
@@ -129,6 +130,7 @@ export default function PatagoniaFlyFishingPage() {
             </div>
           </div>
         </section>
+        <TrophyCatchGallery />
 
         {/* COMPONENTE INVOCADO: Inteligencia Logística Personalizada */}
         <LogisticsGuide />
