@@ -87,7 +87,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/fishing-program" className="hover:text-white transition-colors">
+                <Link href="/patagonia-fly-fishing" className="hover:text-white transition-colors">
                   Fishing Program
                 </Link>
               </li>

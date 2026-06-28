@@ -20,25 +20,24 @@ const logisticsIntelligence: Record<string, any> = {
 
 export default function LogisticsGuide() {
   const headersList = headers();
-  // Vercel inyecta este header automáticamente
   const country = headersList.get('x-vercel-ip-country'); 
   
   const info = country === 'US' ? logisticsIntelligence['US'] : logisticsIntelligence['DEFAULT'];
 
   return (
     <section className="w-full py-px92 px-px24 bg-brand-charcoal text-white">
-      <div className="max-w-[1000px] mx-auto border border-white/10 p-px48 rounded-[8px]">
+      <div className="max-w-[1260px] mx-auto border border-white/10 p-px48 rounded-[8px]">
         <h2 className="font-display text-2xl mb-px36 text-brand-gold">
           Logistics for your expedition from {info.originLabel}
         </h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-px36">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-px36 mb-px36">
           <div className="space-y-px18">
             <p className="text-white/60 text-sm uppercase tracking-wider font-semibold">Recommended Hub</p>
             <p className="text-lg">{info.hub}</p>
             
             <p className="text-white/60 text-sm uppercase tracking-wider font-semibold mt-px24">Optimal Route</p>
-            <p className="text-sm leading-relaxed">{info.text || info.route}</p>
+            <p className="text-sm leading-relaxed">{info.route}</p>
           </div>
           
           <div className="space-y-px18">
@@ -50,6 +49,13 @@ export default function LogisticsGuide() {
             </div>
           </div>
         </div>
+
+        <a 
+          href="/contact-us" 
+          className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-px16 px-px32 rounded-[4px] transition-colors duration-300"
+        >
+          Secure your date
+        </a>
       </div>
     </section>
   );
