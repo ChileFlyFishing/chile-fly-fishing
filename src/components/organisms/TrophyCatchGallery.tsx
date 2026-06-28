@@ -5,13 +5,13 @@ export default function TrophyCatchGallery() {
   const speciesData = [
     {
       title: "Rainbow Trout",
-      image: "/assets/images/fisherman-holding-a-rainbow-trout-on-the-water-s-s-2026-01-08-00-28-30-utc.jpg",
+      image: "/assets/images/rainbow-trout-release.avif",
       habitat: ["Lakes", "Rivers", "Spring Creeks"],
       flies: ["Streamer", "Dragon Fly", "Hopper", "Fat Albert", "Chernobyl", "Mayflies"]
     },
     {
       title: "Brown Trout",
-      image: "/assets/images/brown-trout-in-a-landing-net-in-a-northern-minneso-2026-01-07-00-25-11-utc.jpg",
+      image: "/assets/images/brown-trout-on-the-net.avif",
       habitat: ["Lakes", "Rivers", "Spring Creeks"],
       flies: ["Streamer", "Dragon Fly", "Hopper", "Fat Albert", "Chernobyl", "Mayflies"]
     }
