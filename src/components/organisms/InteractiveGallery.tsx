@@ -15,7 +15,7 @@ interface GalleryItem {
 
 const items: GalleryItem[] = [
   { 
-    title: "Early Season: Big Rainbows", 
+    title: "Early Season: Big Rainbows Trout", 
     desc: "High water velocity and aggressive pre-hatch feeding. Target migratory and massive resident rainbow trout tight against the structure using heavy streamers and sink-tips.",
     season: "November - December",
     rod: "#7 or #8 weight",
