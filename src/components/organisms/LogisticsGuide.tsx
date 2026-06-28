@@ -52,7 +52,7 @@ export default function LogisticsGuide() {
 
         <a 
           href="/contact-us" 
-          className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-px16 px-px32 rounded-[4px] transition-colors duration-300"
+          className="mt-[30px] inline-flex items-center justify-center px-[36px] py-[18px] font-sans font-medium text-white bg-[#006DC6] rounded-[30px] shadow-lg hover:bg-[#006DC6]/90 active:scale-[0.98] transition-all duration-200 cursor-pointer text-sm tracking-wide uppercase font-semibold"
         >
           Secure your date
         </a>
