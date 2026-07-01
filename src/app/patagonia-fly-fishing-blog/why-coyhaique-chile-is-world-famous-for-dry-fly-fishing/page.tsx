@@ -1,4 +1,4 @@
-// src/app/fly-fishing-blog/[nombre-del-articulo]/page.tsx
+// src/app/fly-fishing-blog/why-coyhaique-chile-is-world-famous-for-dry-fly-fishing/page.tsx
 import type { Metadata } from "next";
 import Navbar from "@/components/organisms/Navbar";
 import InternalHero from "@/components/organisms/InternalHero";
@@ -6,19 +6,20 @@ import ImageGallery from "@/components/organisms/ImageGallery";
 import Testimonials from "@/components/organisms/Testimonials";
 import CinematicVideo from "@/components/organisms/CinematicVideo";
 import Footer from "@/components/organisms/Footer";
+import Link from 'next/link';
 
 // ========================================================
-// OPTIMIZACIÓN SEO: METADATA INDIVIDUAL POR ARTÍCULO
+// OPTIMIZACIÓN SEO: METADATA CRÍTICA PARA EL ARTÍCULO
 // ========================================================
 export const metadata: Metadata = {
-  title: "Article Title | Chile Fly Fishing Blog",
-  description: "Technical overview and operational notes regarding this specific beat in Coyhaique, Patagonia.",
+  title: "Why Coyhaique, Chile Is World-Famous for Dry Fly Fishing | Patagonia",
+  description: "An in-depth analysis of why the Aysén region remains the undisputed surface-action sanctuary of South America for wild brown trout.",
   alternates: {
-    canonical: "https://chileflyfishingexpeditions.com/fly-fishing-blog/nombre-del-articulo",
+    canonical: "https://chileflyfishingexpeditions.com/fly-fishing-blog/why-coyhaique-chile-is-world-famous-for-dry-fly-fishing",
   },
 };
 
-export default function FlyFishingArticleDetail() {
+export default function WhyCoyhaiqueDryFlyArticle() {
   return (
     <div className="w-full min-h-screen relative bg-brand-charcoal text-white selection:bg-[#C4944E]/30 antialiased overflow-x-hidden">
       <Navbar />
@@ -26,10 +27,10 @@ export default function FlyFishingArticleDetail() {
       <main>
         {/* HERO BANNER */}
         <InternalHero 
-          subtitle="Technical Field Report"
-          title="The Dry Fly Sanctuary: Mastering Coyhaique Surface Action"
-          paragraph="An operational breakdown of seasonal flow mechanics, terrestrial hatches, and insect behaviors required to target trophy brown trout."
-          imageUrl="/assets/images/rainbow-trout-two-anglers-in-a-boat-coyaique.avif"
+          subtitle="Technical Field Report • Dry Fly"
+          title="The Dry Fly Capital: Why Coyhaique is World-Famous for Surface Action"
+          paragraph="An in-depth biological and geological analysis of why the Aysén region remains the undisputed surface-action sanctuary of South America."
+          imageUrl="https://chileflyfishingexpeditions.com/wp-content/uploads/2026/05/brown-trout-fishing-spring-creek-patagonia.avif"
           buttonText="Examine Report Data"
           buttonHref="#article-density"
         />
@@ -44,7 +45,7 @@ export default function FlyFishingArticleDetail() {
             </div>
             <div className="lg:col-span-8">
               <p className="font-sans text-sm md:text-base text-white/70 leading-relaxed max-w-3xl">
-                Every river matrix behaves differently under changing pressure levels. Understanding the precise timing of macro-invertebrate movements provides demanding anglers with an undisputed operational advantage on the water.
+                Coyhaique's undisputed global standing as a dry fly paradise is dictated by its clear spring creeks, consistent mayfly and caddis hatches, and low angling pressure. While other Patagonian operations rely on heavy sinking lines and generic streamer stripping, our home waters near Coyhaique trigger consistent surface responses from wild brown trout hunting beetles, grasshoppers, and selective midges in technical current seams.
               </p>
             </div>
           </div>
@@ -54,11 +55,11 @@ export default function FlyFishingArticleDetail() {
         <section className="w-full py-20 px-6 md:px-12 bg-brand-charcoal">
           <div className="max-w-[800px] mx-auto font-sans text-base md:text-lg text-white/80 leading-relaxed space-y-8">
             <p>
-              When navigating the complex structural pools of the main systems near Coyhaique, presentation is everything. Drag-free drifts are hard to achieve without proper line selection and technical wading configurations.
+              When navigating the complex structural pools of the main systems near Coyhaique, presentation is everything. Drag-free drifts are hard to achieve without proper line selection and technical wading configurations. Iconic rivers like Río Ñirehuao and Río Emperador Guillermo demand precision, stealth, and flawless drift mechanics, offering seasoned anglers a topwater arena that cannot be replicated anywhere else on the planet.
             </p>
             <h3 className="font-display text-2xl text-white pt-4">Micro-Hatch Synchronization</h3>
             <p>
-              As water temperatures rise toward midday, terrestrial structures become active along the willow lines. This shift requires rapid pattern adjustments and a delicate casting rhythm to avoid spooking active feeders.
+              As water temperatures rise toward midday, terrestrial structures become active along the willow lines. This shift requires rapid pattern adjustments and a delicate casting rhythm to avoid spooking active feeders. Timing your execution directly with these cycles is key to intercepting trophy fish. You can study these intervals closely in our technical overview of the <Link href="/fishing-season" className="text-[#C4944E] hover:underline font-semibold">Patagonia fishing season</Link>.
             </p>
           </div>
         </section>
@@ -70,18 +71,18 @@ export default function FlyFishingArticleDetail() {
             {/* Columna Texto (Izquierda) */}
             <div className="space-y-6">
               <h2 className="font-display text-3xl text-white font-normal leading-tight">
-                Advanced Gear Selection for Technical Spring Creeks
+                Advanced Presentation for Glass-Water Creeks
               </h2>
               <p className="font-sans text-sm md:text-base text-white/70 leading-relaxed">
-                To master glass-water environments, standard setups fall short. Fast-action 5-weight rods paired with long, delicate leaders are essential to turn over subtle beetle patterns without disturbing the smooth current lines.
+                To master glass-water environments, standard setups fall short. Long 12ft technical leaders, low-profile bank approaches, and immaculate beetle and hopper presentations are mandatory to bypass the selective vision of trophy brown trout tracking micro-currents.
               </p>
             </div>
 
             {/* Columna Imagen (Derecha) */}
             <div className="w-full h-[400px] relative overflow-hidden rounded-lg bg-brand-charcoal border border-white/5">
               <img 
-                src="/assets/images/rainbow-trout-two-anglers-in-a-boat-coyaique.avif" 
-                alt="Technical gear selection for fly fishing"
+                src="https://chileflyfishingexpeditions.com/wp-content/uploads/2026/05/brown-trout-fishing-spring-creek-patagonia.avif" 
+                alt="Dry fly fishing presentation in Coyhaique spring creeks"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
