@@ -64,7 +64,7 @@ export default function WhyCoyhaiqueDryFlyArticle() {
             subtitle="Technical Field Report • Dry Fly"
             title="The Dry Fly Capital: Why Coyhaique is World-Famous for Surface Action"
             paragraph="An in-depth biological and geological analysis of why the Aysén region remains the undisputed surface-action sanctuary of South America."
-            imageUrl="assets/images/trophy-brown-trout-catch-release-coyhaique-patagonia.avif"
+            imageUrl="/assets/images/trophy-brown-trout-catch-release-coyhaique-patagonia.avif"
             buttonText="Examine Report Data"
             buttonHref="#article-density"
           />
