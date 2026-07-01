@@ -54,61 +54,59 @@ export default function BlogGridClient({ blogPosts, destinationsRegistry }: Blog
     articles.forEach((article) => observer.observe(article));
 
     return () => observer.disconnect();
-  }, [selectedYear, selectedCategory]); // Se vuelve a ejecutar al cambiar cualquier filtro
+  }, [selectedYear, selectedCategory]);
 
   return (
     <section id="intelligence-grid" className="w-full py-32 px-6 md:px-12 bg-brand-charcoal scroll-mt-24">
       <div className="max-w-[1260px] mx-auto">
         
-        {/* BARRA DE FILTROS DOBLE (AÑO Y TIPO DE PESCA) */}
-        <div className="flex flex-col gap-6 mb-16 border-b border-white/5 pb-8">
+        {/* BARRA DE FILTROS MINIMALISTA (SELECTORES ESTILIZADOS) */}
+        <div className="flex flex-col sm:flex-row gap-6 md:gap-12 mb-16 border-b border-white/5 pb-8 items-start sm:items-center">
           
-          {/* Filtro por Año */}
-          <div className="flex items-center gap-6">
-            <span className="font-sans text-xs uppercase tracking-widest text-white/40 font-medium min-w-[120px]">
-              Filter by Year:
+          {/* Selector por Año */}
+          <div className="flex flex-col gap-2 w-full sm:w-auto">
+            <span className="font-sans text-[10px] uppercase tracking-widest text-white/40 font-semibold">
+              Filter by Year
             </span>
-            <div className="flex items-center gap-4">
-              {["ALL", "2025", "2026"].map((year) => (
-                <button
-                  key={year}
-                  onClick={() => setSelectedYear(year)}
-                  className={`font-sans text-xs uppercase tracking-widest pb-2 border-b transition-all duration-300 ${
-                    selectedYear === year
-                      ? "text-brand-gold border-brand-gold font-semibold"
-                      : "text-white/40 border-transparent hover:text-white"
-                  }`}
-                >
-                  {year === "ALL" ? "All Years" : year}
-                </button>
-              ))}
+            <div className="relative min-w-[180px]">
+              <select
+                value={selectedYear}
+                onChange={(e) => setSelectedYear(e.target.value)}
+                className="w-full bg-neutral-900 text-white font-sans text-xs uppercase tracking-wider px-4 py-3 pr-10 border border-white/10 rounded-sm appearance-none focus:outline-none focus:border-brand-gold transition-colors cursor-pointer text-left"
+              >
+                <option value="ALL">All Years</option>
+                <option value="2025">2025 Archival</option>
+                <option value="2026">2026 Active</option>
+              </select>
+              <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-white/40">
+                <svg className="fill-current h-3 w-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+                </svg>
+              </div>
             </div>
           </div>
 
-          {/* Filtro por Tipo de Pesca */}
-          <div className="flex items-center gap-6">
-            <span className="font-sans text-xs uppercase tracking-widest text-white/40 font-medium min-w-[120px]">
-              Tactical Focus:
+          {/* Selector por Enfoque Táctico */}
+          <div className="flex flex-col gap-2 w-full sm:w-auto">
+            <span className="font-sans text-[10px] uppercase tracking-widest text-white/40 font-semibold">
+              Tactical Focus
             </span>
-            <div className="flex items-center gap-4 flex-wrap">
-              {[
-                { id: "ALL", label: "All Techniques" },
-                { id: "Dry Fly", label: "Dry Fly" },
-                { id: "Streamer", label: "Streamer" },
-                { id: "Nymph", label: "Nimph" }
-              ].map((cat) => (
-                <button
-                  key={cat.id}
-                  onClick={() => setSelectedCategory(cat.id)}
-                  className={`font-sans text-xs uppercase tracking-widest pb-2 border-b transition-all duration-300 ${
-                    selectedCategory === cat.id
-                      ? "text-brand-gold border-brand-gold font-semibold"
-                      : "text-white/40 border-transparent hover:text-white"
-                  }`}
-                >
-                  {cat.label}
-                </button>
-              ))}
+            <div className="relative min-w-[220px]">
+              <select
+                value={selectedCategory}
+                onChange={(e) => setSelectedCategory(e.target.value)}
+                className="w-full bg-neutral-900 text-white font-sans text-xs uppercase tracking-wider px-4 py-3 pr-10 border border-white/10 rounded-sm appearance-none focus:outline-none focus:border-brand-gold transition-colors cursor-pointer text-left"
+              >
+                <option value="ALL">All Techniques</option>
+                <option value="Dry Fly">Dry Fly Systems</option>
+                <option value="Streamer">Streamer Configurations</option>
+                <option value="Nymph">Nymph Mechanics</option>
+              </select>
+              <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-white/40">
+                <svg className="fill-current h-3 w-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+                </svg>
+              </div>
             </div>
           </div>
 
