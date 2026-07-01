@@ -58,7 +58,7 @@ export default function TravelToCoyhaiqueFlyFishingArticle() {
             subtitle="Logistics Blueprint • Route Mapping"
             title="How to Travel to Coyhaique in Patagonia Chile for Fly Fishing"
             paragraph="An analytical structural breakdown of flight paths, regional tarmac connections, and entry frameworks required to reach the surface-action sanctuary of Aysén."
-            imageUrl="/assets/images/travel-logistics-coyhaique-patagonia-fly-fishing.avif"
+            imageUrl="/assets/images/travel-to-coyhaique.webp"
             buttonText="Examine Logistics Data"
             buttonHref="#article-density"
           />
@@ -107,7 +107,7 @@ export default function TravelToCoyhaiqueFlyFishingArticle() {
                 {/* BOTÓN OBLIGATORIO DE CONTACTO CON ESTILO DEL HERO BANNER */}
                 <Link 
                   href="/contact-us" 
-                  className="inline-block mt-4 px-8 py-4 bg-brand-gold hover:bg-brand-gold-dark text-brand-charcoal font-sans text-xs tracking-widest uppercase transition-all rounded-sm font-semibold shadow-sm"
+                  className="inline-flex items-center justify-center px-[36px] py-[18px] font-sans text-white bg-[#006DC6] rounded-[30px] hover:bg-[#006DC6]/90 transition-all uppercase text-xs tracking-wider font-semibold group"
                 >
                   Inquire About Guided Trips
                 </Link>
