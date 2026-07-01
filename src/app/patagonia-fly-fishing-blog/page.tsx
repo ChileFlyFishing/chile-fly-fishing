@@ -46,7 +46,7 @@ export default function FlyFishingBlogHub() {
       excerpt: "Mastering sight-presentation on private glass-water ecosystems. How to bypass the selective vision of trophy brown trout.",
       date: "2026",
       tag: "Nymph"
-    }
+    },
     {
       slug: "explore-best-fly-fishing-waters-in-coyhaique-chile",
       excerpt: "A complete structural overview of our home waters: from the mighty Simpson River freestones to hidden limestone spring creeks.",
