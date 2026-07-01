@@ -162,7 +162,7 @@ export default function BlogGridClient({ blogPosts, destinationsRegistry }: Blog
                   {/* Footer de Tarjeta */}
                   <div className="pt-4 border-t border-white/5 flex items-center justify-end">
                     <Link
-                      href={`/fly-fishing-blog/${post.slug}`}
+                      href={`/patagonia-fly-fishing-blog${post.slug}`}
                       className="font-sans text-xs uppercase tracking-widest text-[#C4944E] font-semibold border-b border-[#C4944E]/20 pb-1 hover:border-[#C4944E] transition-all"
                     >
                       Examine Report

@@ -1,4 +1,4 @@
-// src/app/fly-fishing-blog/why-coyhaique-chile-is-world-famous-for-dry-fly-fishing/page.tsx
+// src/app/patagonia-fly-fishing-blog/why-coyhaique-chile-is-world-famous-for-dry-fly-fishing/page.tsx
 import type { Metadata } from "next";
 import Navbar from "@/components/organisms/Navbar";
 import InternalHero from "@/components/organisms/InternalHero";
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: "Why Coyhaique, Chile Is World-Famous for Dry Fly Fishing | Patagonia",
   description: "An in-depth analysis of why the Aysén region remains the undisputed surface-action sanctuary of South America for wild brown trout.",
   alternates: {
-    canonical: "https://chileflyfishingexpeditions.com/fly-fishing-blog/why-coyhaique-chile-is-world-famous-for-dry-fly-fishing",
+    canonical: "https://chileflyfishingexpeditions.com/patagonia-fly-fishing-blog/why-coyhaique-chile-is-world-famous-for-dry-fly-fishing",
   },
 };
 
