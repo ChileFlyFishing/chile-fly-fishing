@@ -58,7 +58,7 @@ export default function MigratoryTroutAutumnRunsArticle() {
             subtitle="Technical Field Report • Autumn Migration"
             title="Migratory Trout Mechanics & Autumn River Runs"
             paragraph="An analytical investigation into the thermal thresholds, structural holding seams, and territorial triggers of migrating wild brown trout within the Aysén water networks."
-            imageUrl="/assets/images/migratory-brown-trout-autumn-run-coyhaique.avif"
+            imageUrl="/assets/images/two-anglers-and-two-trophy-brown-trout-coyhaique-patagonia.avif"
             buttonText="Examine Migration Data"
             buttonHref="#article-density"
           />

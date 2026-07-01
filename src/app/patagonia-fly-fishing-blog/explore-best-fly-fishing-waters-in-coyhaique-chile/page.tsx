@@ -58,7 +58,7 @@ export default function CoyhaiqueSpringCreeksTechnicalArticle() {
             subtitle="Technical Field Report • Sight Presentation"
             title="Coyhaique Spring Creeks: Technical Guide to Sight Presentation"
             paragraph="An analytical review of the gear configurations, angling mechanics, and stealth parameters required to intercept wild brown trout in glass-water environments."
-            imageUrl="/assets/images/sight-fishing-spring-creeks-coyhaique-patagonia.avif"
+            imageUrl="assets/images/chileflyfishing-patagonia.webp"
             buttonText="Examine Presentation Data"
             buttonHref="#article-density"
           />
