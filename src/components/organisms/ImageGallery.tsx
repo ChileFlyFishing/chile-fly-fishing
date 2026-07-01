@@ -14,16 +14,16 @@ export default function ImageGallery() {
 
   // 1. Base de datos completa con tus imágenes de la carpeta public/assets/images
   const allImages: GalleryImage[] = [
-    { id: 1, url: "assets/images/cataraft-dragonfly-trout-fishing-lake-zenteno-dragon-fly.avif", alt: "Drone view of a cataraft fly fishing at Lake Zenteno, Coyhaique" },
-    { id: 2, url: "assets/images/cantaria-patagonia-flyfishing.webp", alt: "Close-up of a live Cantaria beetle insect in Patagonia" },
-    { id: 3, url: "assets/images/brown-trout-with-fat-albert-coyhaique.avif", alt: "Massive wild brown trout captured with a Fat Albert in Coyhaique" },
-    { id: 4, url: "assets/images/brown-trout-in-a-boat-coyhaique.avif", alt: "Fly fisherman showcasing a trophy brown trout inside a jet boat" },
-    { id: 5, url: "assets/images/brown-trout-fishing-spring-creek-patagonia.avif", alt: "Colorful wild brown trout at a private spring creek" },
-    { id: 6, url: "assets/images/brow-trout-patagonia-fly-fishing.avif", alt: "Releasing a healthy wild brown trout back into the Aysén river system" },
-    { id: 7, url: "assets/images/angler-nirehuao-river-patagonia-fly-fishing.avif", alt: "Anglers fishing in chilean patagonia" },
-    { id: 8, url: "assets/images/anglers-fishing-blue-river-and-lake.avif", alt: "Panoramic landscape of a cataraft drifting down a turquoise river" },
-    { id: 9, url: "assets/images/apertura-temporada-flyfishing-rainbow-trout.avif", alt: "Big rainbow trout in chilean patagonia" },
-    { id: 10, url: "assets/images/angler-nirehuao-river-patagonia-fly-fishing.avif", alt: "Technical angler casting dry flies on the Ñirehuao River" },
+    { id: 1, url: "/assets/images/cataraft-dragonfly-trout-fishing-lake-zenteno-dragon-fly.avif", alt: "Drone view of a cataraft fly fishing at Lake Zenteno, Coyhaique" },
+    { id: 2, url: "/assets/images/cantaria-patagonia-flyfishing.webp", alt: "Close-up of a live Cantaria beetle insect in Patagonia" },
+    { id: 3, url: "/assets/images/brown-trout-with-fat-albert-coyhaique.avif", alt: "Massive wild brown trout captured with a Fat Albert in Coyhaique" },
+    { id: 4, url: "/assets/images/brown-trout-in-a-boat-coyhaique.avif", alt: "Fly fisherman showcasing a trophy brown trout inside a jet boat" },
+    { id: 5, url: "/assets/images/brown-trout-fishing-spring-creek-patagonia.avif", alt: "Colorful wild brown trout at a private spring creek" },
+    { id: 6, url: "/assets/images/brow-trout-patagonia-fly-fishing.avif", alt: "Releasing a healthy wild brown trout back into the Aysén river system" },
+    { id: 7, url: "/assets/images/angler-nirehuao-river-patagonia-fly-fishing.avif", alt: "Anglers fishing in chilean patagonia" },
+    { id: 8, url: "/assets/images/anglers-fishing-blue-river-and-lake.avif", alt: "Panoramic landscape of a cataraft drifting down a turquoise river" },
+    { id: 9, url: "/assets/images/apertura-temporada-flyfishing-rainbow-trout.avif", alt: "Big rainbow trout in chilean patagonia" },
+    { id: 10, url: "/assets/images/angler-nirehuao-river-patagonia-fly-fishing.avif", alt: "Technical angler casting dry flies on the Ñirehuao River" },
   ];
 
   useEffect(() => {

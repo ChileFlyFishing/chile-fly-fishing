@@ -14,7 +14,7 @@ export default function Footer() {
             {/* Logo más grande y legible */}
             <div className="relative w-[280px] h-[65px] mb-4">
               <Image 
-                src="assets/images/logo-chileflyfishing-white.svg" 
+                src="/assets/images/logo-chileflyfishing-white.svg" 
                 alt="Chile Fly Fishing"
                 fill
                 className="object-contain object-left"

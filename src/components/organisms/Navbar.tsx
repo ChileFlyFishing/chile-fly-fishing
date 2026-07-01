@@ -55,7 +55,7 @@ export default function Navbar() {
         {/* LOGO PRINCIPAL ESCRITORIO */}
         <Link href="/" className="transition-opacity hover:opacity-90 block relative w-[240px] sm:w-[300px] h-[100px] z-50">
           <Image 
-            src="assets/images/logo-chileflyfishing.svg" 
+            src="/assets/images/logo-chileflyfishing.svg" 
             alt="Chile Fly Fishing"
             fill
             className="object-contain object-left scale-110"

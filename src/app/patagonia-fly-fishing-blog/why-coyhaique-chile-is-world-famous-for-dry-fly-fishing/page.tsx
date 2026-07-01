@@ -19,6 +19,45 @@ export const metadata: Metadata = {
   },
 };
 
+// Dentro de tu función WhyCoyhaiqueDryFlyArticle()
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Why Coyhaique, Chile Is World-Famous for Dry Fly Fishing",
+  "description": "An in-depth analysis of why the Aysén region remains the undisputed surface-action sanctuary of South America for wild brown trout.",
+  "image": "https://chileflyfishingexpeditions.com/wp-content/uploads/2026/05/brown-trout-fishing-spring-creek-patagonia.avif",
+  "datePublished": "2026-05-01", // Ajusta la fecha estimada
+  "author": {
+    "@type": "Person",
+    "name": "Matías Araneda",
+    "url": "https://chileflyfishingexpeditions.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Chile Fly Fishing Expeditions",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://chileflyfishingexpeditions.com/assets/images/logo.png" // Asegura la ruta de tu logo real
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://chileflyfishingexpeditions.com/patagonia-fly-fishing-blog/why-coyhaique-chile-is-world-famous-for-dry-fly-fishing"
+  }
+};
+
+return (
+  <>
+    {/* Inyección del Schema */}
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+    />
+
+    <div className="w-full min-h-screen relative bg-brand-charcoal text-white...">
+      <Navbar />
+      {/* ... resto de tus secciones ... */}
+
 export default function WhyCoyhaiqueDryFlyArticle() {
   return (
     <div className="w-full min-h-screen relative bg-brand-charcoal text-white selection:bg-[#C4944E]/30 antialiased overflow-x-hidden">
@@ -81,7 +120,7 @@ export default function WhyCoyhaiqueDryFlyArticle() {
             {/* Columna Imagen (Derecha) */}
             <div className="w-full h-[400px] relative overflow-hidden rounded-lg bg-brand-charcoal border border-white/5">
               <img 
-                src="https://chileflyfishingexpeditions.com/wp-content/uploads/2026/05/brown-trout-fishing-spring-creek-patagonia.avif" 
+                src="assets/images/brown-trout-fishing-spring-creek-patagonia.avif" 
                 alt="Dry fly fishing presentation in Coyhaique spring creeks"
                 className="w-full h-full object-cover"
                 loading="lazy"
