@@ -7,7 +7,7 @@ interface BlogPost {
   slug: string;
   excerpt: string;
   date: string;
-  tag: string;
+  tag: string; // Representa el tipo de pesca (e.g., "Dry Fly", "Streamer", "Nymph")
 }
 
 interface BlogGridClientProps {
@@ -16,37 +16,37 @@ interface BlogGridClientProps {
 }
 
 export default function BlogGridClient({ blogPosts, destinationsRegistry }: BlogGridClientProps) {
-  // Estado para el año seleccionado (por defecto muestra todos)
+  // Estados para los filtros cruzados
   const [selectedYear, setSelectedYear] = useState<string>("ALL");
+  const [selectedCategory, setSelectedCategory] = useState<string>("ALL");
   const gridRef = useRef<HTMLDivElement>(null);
 
-  // Filtrado de reportes basado en el estado
+  // Filtrado combinado por año y tipo de pesca
   const filteredPosts = blogPosts.filter((post) => {
-    if (selectedYear === "ALL") return true;
-    return post.date === selectedYear;
+    const matchesYear = selectedYear === "ALL" || post.date === selectedYear;
+    const matchesCategory = selectedCategory === "ALL" || post.tag === selectedCategory;
+    return matchesYear && matchesCategory;
   });
 
-  // Efecto Fade In al hacer Scroll usando Intersection Observer
+  // Efecto Fade In al hacer Scroll mediante Intersection Observer
   useEffect(() => {
     const gridElement = gridRef.current;
     if (!gridElement) return;
 
-    // Seleccionamos todos los artículos de la grilla
     const articles = gridElement.querySelectorAll(".fade-card");
     
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            // Cuando la tarjeta entra en pantalla, se activa la opacidad
             entry.target.classList.add("opacity-100", "translate-y-0");
             entry.target.classList.remove("opacity-0", "translate-y-8");
-            observer.unobserve(entry.target); // Dejamos de observar una vez visible
+            observer.unobserve(entry.target);
           }
         });
       },
       {
-        threshold: 0.15, // Se activa cuando el 15% de la tarjeta es visible
+        threshold: 0.15,
         rootMargin: "0px 0px -50px 0px"
       }
     );
@@ -54,35 +54,67 @@ export default function BlogGridClient({ blogPosts, destinationsRegistry }: Blog
     articles.forEach((article) => observer.observe(article));
 
     return () => observer.disconnect();
-  }, [selectedYear]); // Se vuelve a ejecutar al cambiar el filtro para animar los nuevos resultados
+  }, [selectedYear, selectedCategory]); // Se vuelve a ejecutar al cambiar cualquier filtro
 
   return (
-    <section id="intelligence-grid" className="w-full py-32 px-6 md:px-12 bg-brand-charcoal scroll-mt-px36">
+    <section id="intelligence-grid" className="w-full py-32 px-6 md:px-12 bg-brand-charcoal scroll-mt-24">
       <div className="max-w-[1260px] mx-auto">
         
-        {/* Barra de Filtros Premium (Quiet Luxury Style) */}
-        <div className="flex items-center gap-6 mb-16 border-b border-white/5 pb-6">
-          <span className="font-sans text-xs uppercase tracking-widest text-white/40 font-medium">
-            Filter by Year:
-          </span>
-          <div className="flex items-center gap-4">
-            {["ALL", "2025", "2026"].map((year) => (
-              <button
-                key={year}
-                onClick={() => setSelectedYear(year)}
-                className={`font-sans text-xs uppercase tracking-widest pb-2 border-b transition-all duration-300 ${
-                  selectedYear === year
-                    ? "text-brand-gold border-brand-gold font-semibold"
-                    : "text-white/40 border-transparent hover:text-white"
-                }`}
-              >
-                {year === "ALL" ? "All Reports" : year}
-              </button>
-            ))}
+        {/* BARRA DE FILTROS DOBLE (AÑO Y TIPO DE PESCA) */}
+        <div className="flex flex-col gap-6 mb-16 border-b border-white/5 pb-8">
+          
+          {/* Filtro por Año */}
+          <div className="flex items-center gap-6">
+            <span className="font-sans text-xs uppercase tracking-widest text-white/40 font-medium min-w-[120px]">
+              Filter by Year:
+            </span>
+            <div className="flex items-center gap-4">
+              {["ALL", "2025", "2026"].map((year) => (
+                <button
+                  key={year}
+                  onClick={() => setSelectedYear(year)}
+                  className={`font-sans text-xs uppercase tracking-widest pb-2 border-b transition-all duration-300 ${
+                    selectedYear === year
+                      ? "text-brand-gold border-brand-gold font-semibold"
+                      : "text-white/40 border-transparent hover:text-white"
+                  }`}
+                >
+                  {year === "ALL" ? "All Years" : year}
+                </button>
+              ))}
+            </div>
           </div>
+
+          {/* Filtro por Tipo de Pesca */}
+          <div className="flex items-center gap-6">
+            <span className="font-sans text-xs uppercase tracking-widest text-white/40 font-medium min-w-[120px]">
+              Tactical Focus:
+            </span>
+            <div className="flex items-center gap-4 flex-wrap">
+              {[
+                { id: "ALL", label: "All Techniques" },
+                { id: "Dry Fly", label: "Pesca con mosca Seca" },
+                { id: "Streamer", label: "Streamer" },
+                { id: "Nymph", label: "Ninfas" }
+              ].map((cat) => (
+                <button
+                  key={cat.id}
+                  onClick={() => setSelectedCategory(cat.id)}
+                  className={`font-sans text-xs uppercase tracking-widest pb-2 border-b transition-all duration-300 ${
+                    selectedCategory === cat.id
+                      ? "text-brand-gold border-brand-gold font-semibold"
+                      : "text-white/40 border-transparent hover:text-white"
+                  }`}
+                >
+                  {cat.label}
+                </button>
+              ))}
+            </div>
+          </div>
+
         </div>
 
-        {/* Grilla de Reportes con Referencia de Animación */}
+        {/* GRILLA DE REPORTES (MARKETING CARDS) */}
         <div ref={gridRef} className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
           {filteredPosts.map((post, idx) => {
             const registryData = destinationsRegistry[post.slug];
@@ -93,7 +125,7 @@ export default function BlogGridClient({ blogPosts, destinationsRegistry }: Blog
                 key={idx}
                 className="fade-card flex flex-col border border-white/5 bg-neutral-900 rounded-lg overflow-hidden group hover:border-[#C4944E]/30 flex-grow relative opacity-0 translate-y-8 transition-all duration-1000 ease-out"
               >
-                {/* Contenedor Visual Limpio */}
+                {/* Contenedor de Imagen */}
                 <div className="w-full h-[260px] relative overflow-hidden bg-brand-charcoal">
                   <img
                     src={registryData.imageUrl}
@@ -104,12 +136,12 @@ export default function BlogGridClient({ blogPosts, destinationsRegistry }: Blog
                   <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 via-neutral-900/40 to-transparent opacity-100" />
                 </div>
 
-                {/* Bloque de Contenido y Datos */}
+                {/* Bloque de Contenido */}
                 <div className="p-8 flex flex-col justify-between flex-grow bg-neutral-900">
                   <div>
                     <div className="flex justify-between items-center mb-4">
                       <span className="font-sans text-xs text-[#C4944E] uppercase tracking-wider font-semibold">
-                        {post.tag}
+                        {post.tag === "Dry Fly" ? "Pesca con mosca Seca" : post.tag === "Nymph" ? "Ninfas" : post.tag}
                       </span>
                       <span className="font-sans text-xs text-white/30">
                         {post.date}
@@ -117,9 +149,9 @@ export default function BlogGridClient({ blogPosts, destinationsRegistry }: Blog
                     </div>
 
                     <h2 className="font-display text-2xl text-white font-normal leading-snug mb-3 group-hover:text-[#C4944E] transition-colors duration-300">
-                      <a href={`/${post.slug}`}>
+                      <Link href={`/fly-fishing-blog/${post.slug}`}>
                         {registryData.title}
-                      </a>
+                      </Link>
                     </h2>
 
                     <p className="font-sans text-sm text-white/60 leading-relaxed mb-6 font-light">
@@ -127,10 +159,10 @@ export default function BlogGridClient({ blogPosts, destinationsRegistry }: Blog
                     </p>
                   </div>
 
-                  {/* Footer de Tarjeta Optimizado: Eliminamos "Aysén System • Core Intel" */}
+                  {/* Footer de Tarjeta */}
                   <div className="pt-4 border-t border-white/5 flex items-center justify-end">
                     <Link
-                      href={`/${post.slug}`}
+                      href={`/fly-fishing-blog/${post.slug}`}
                       className="font-sans text-xs uppercase tracking-widest text-[#C4944E] font-semibold border-b border-[#C4944E]/20 pb-1 hover:border-[#C4944E] transition-all"
                     >
                       Examine Report
@@ -142,10 +174,12 @@ export default function BlogGridClient({ blogPosts, destinationsRegistry }: Blog
           })}
         </div>
         
-        {/* Aviso de no resultados */}
+        {/* Estado sin resultados */}
         {filteredPosts.length === 0 && (
           <div className="w-full py-12 text-center border border-white/5 rounded-lg">
-            <p className="font-sans text-sm text-white/40 font-light">No field reports archived for the selected parameters.</p>
+            <p className="font-sans text-sm text-white/40 font-light">
+              No field reports archived for the selected parameters.
+            </p>
           </div>
         )}
 

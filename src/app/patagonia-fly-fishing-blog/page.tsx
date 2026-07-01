@@ -1,4 +1,4 @@
-// src/app/blog/page.tsx
+// src/app/fly-fishing-blog/page.tsx
 import type { Metadata } from "next";
 import Navbar from "@/components/organisms/Navbar";
 import InternalHero from "@/components/organisms/InternalHero";
@@ -10,83 +10,42 @@ import BlogGridClient from "@/components/organisms/BlogGridClient";
 import { destinationsRegistry } from "../data";
 
 // ========================================================
-// OPTIMIZACIÓN SEO: METADATA DE SERVIDOR (SSR Next.js 15)
+// OPTIMIZACIÓN SEO: METADATA ESTRUCTURADA
 // ========================================================
 export const metadata: Metadata = {
   title: "Patagonia Fly Fishing Field Reports | Chile Fly Fishing Blog",
   description: "Technical intelligence, river mapping, and seasonal logs for fly fishing in Coyhaique, Chile. Expert hatch calendars and gear advice for Patagonian trout.",
   alternates: {
-    canonical: "https://chileflyfishingexpeditions.com/blog",
+    canonical: "https://chileflyfishingexpeditions.com/fly-fishing-blog",
   },
   openGraph: {
     title: "Patagonia Fly Fishing Field Reports | Chile Fly Fishing Blog",
     description: "Technical intelligence, river mapping, and seasonal logs for fly fishing in Coyhaique, Chile.",
-    url: "https://www.chileflyfishingexpeditions.com/patagonia-fly-fishing-blog",
+    url: "https://www.chileflyfishingexpeditions.com/fly-fishing-blog",
     type: "website",
   },
 };
 
-export default function PatagoniaFlyFishingBlog() {
+export default function FlyFishingBlogHub() {
+  // Data estructurada con tags de tipo de pesca y año para el filtrado dinámico
   const blogPosts = [
     {
       slug: "why-coyhaique-chile-is-world-famous-for-dry-fly-fishing",
       excerpt: "An in-depth biological and geological analysis of why the Aysén region remains the undisputed surface-action sanctuary of South America.",
       date: "2026",
-      tag: "Chilean Patagonia"
+      tag: "Dry Fly"
     },
     {
       slug: "angler-nirehuao-river-patagonia-fly-fishing",
       excerpt: "Tracking the massive brown and rainbow trout autumn runs. Learn the exact flow mechanics and heavy fly configurations needed.",
       date: "2026",
-      tag: "Chilean Patagonia"
-    },
-    {
-      slug: "anglers-fishing-blue-river-and-lake",
-      excerpt: "Why pure mountain isolation and strict catch-and-release protocols protect an ecosystem that cannot be replicated globally.",
-      date: "2026",
-      tag: "Chilean Patagonia"
-    },
-    {
-      slug: "explore-best-fly-fishing-waters-in-coyhaique-chile",
-      excerpt: "A complete structural overview of our home waters: from the mighty Simpson River freestones to hidden limestone spring creeks.",
-      date: "2026",
-      tag: "Chilean Patagonia"
-    },
-    {
-      slug: "how-to-travel-to-coyhaique-in-patagonia-chile",
-      excerpt: "Eliminating travel friction. A flawless logistical manual covering commercial transits, airport receptions, and private transfers.",
-      date: "2026",
-      tag: "Chilean Patagonia"
-    },
-    {
-      slug: "best-time-to-go-fly-fishing-in-coyhaique-patagonia-chile",
-      excerpt: "Timing the hatch perfectly. Your guide to high-water early seasons, mid-summer terrestrial explosions, and windless autumn days.",
-      date: "2025", 
-      tag: "Chilean Patagonia"
-    },
-    {
-      slug: "why-fly-fishing-in-patagonia-chile-is-bucket-list-experience",
-      excerpt: "True luxury is defined by silence. Explore the raw aesthetic of holding a rod beneath hanging glaciers and untouched pampa valleys.",
-      date: "2026",
-      tag: "Chilean Patagonia"
-    },
-    {
-      slug: "essential-fly-fishing-gear-to-bring-patagonia-trip-coyhaique",
-      excerpt: "A rigorous equipment list. Fast-action 6-weight rods, aggressive front-taper floating lines, and mandatory technical wading layers.",
-      date: "2025", 
-      tag: "Chilean Patagonia"
+      tag: "Streamer"
     },
     {
       slug: "coyhaique-spring-creeks-technical-guide-terrestrial-fly-patterns",
       excerpt: "Mastering sight-presentation on private glass-water ecosystems. How to bypass the selective vision of trophy brown trout.",
       date: "2026",
-      tag: "Chilean Patagonia"
-    },
-    {
-      slug: "definitive-all-inclusive-trout-fishing-trip-chilean-patagonia",
-      excerpt: "Secure your dates for the upcoming 2026-2027 season. Complete package details, boutique wilderness comfort, and private guiding beats.",
-      date: "2026",
-      tag: "Chilean Patagonia"
+      tag: "Nymph"
     }
   ];
 
@@ -95,22 +54,20 @@ export default function PatagoniaFlyFishingBlog() {
     "@type": "CollectionPage",
     "name": "Patagonia Fly Fishing Intelligence Reports",
     "description": "Comprehensive index of tactical and biological field reports for fly fishing in Coyhaique, Chile.",
-    "url": "https://chileflyfishingexpeditions.com/blog",
+    "url": "https://chileflyfishingexpeditions.com/fly-fishing-blog",
     "mainEntity": {
       "@type": "ItemList",
-      "itemListElement": blogPosts
-        .map((post, idx) => {
-          const registry = destinationsRegistry[post.slug];
-          if (!registry) return null;
-          return {
-            "@type": "ListItem",
-            "position": idx + 1,
-            "url": `https://chileflyfishingexpeditions.com/${post.slug}`,
-            "name": registry.title,
-            "description": post.excerpt
-          };
-        })
-        .filter(Boolean)
+      "itemListElement": blogPosts.map((post, idx) => {
+        const registry = destinationsRegistry[post.slug];
+        if (!registry) return null;
+        return {
+          "@type": "ListItem",
+          "position": idx + 1,
+          "url": `https://chileflyfishingexpeditions.com/fly-fishing-blog/${post.slug}`,
+          "name": registry.title,
+          "description": post.excerpt
+        };
+      }).filter(Boolean)
     }
   };
 
@@ -125,16 +82,33 @@ export default function PatagoniaFlyFishingBlog() {
         <Navbar />
 
         <main>
-          {/* OPTIMIZACIÓN AEO: Alineación exacta de intenciones y uso de la regla BLUF en el párrafo */}
+          {/* HERO BANNER */}
           <InternalHero 
             subtitle="Chile Fly Fishing Expeditions"
             title="Patagonia Fly Fishing Intelligence: Coyhaique Field Logs"
             paragraph="Welcome to our official archive of Chile fly fishing expeditions. This portal delivers verified technical field logs, precision hatch calendars, and local water intelligence designed for dedicated anglers targeting wild trout across the unpressured river beats of Coyhaique, Patagonia."
             imageUrl="assets/images/rainbow-trout-two-anglers-in-a-boat-coyaique.avif"
             buttonText="Analyze Field Logs"
-            buttonHref="#intelligence-grid"
+            buttonHref="#content-density-section"
           />
 
+          {/* SECTION 1: DENSIDAD DE CONTENIDO (Título Izquierda, Párrafo Derecha) */}
+          <section id="content-density-section" className="w-full pt-32 px-6 md:px-12 bg-brand-charcoal scroll-mt-24">
+            <div className="max-w-[1260px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 border-b border-white/5 pb-16">
+              <div className="lg:col-span-4">
+                <h2 className="font-display text-3xl md:text-4xl text-white font-normal leading-tight">
+                  Local Water Tactics & Biological Intel
+                </h2>
+              </div>
+              <div className="lg:col-span-8">
+                <p className="font-sans text-sm md:text-base text-white/70 leading-relaxed max-w-3xl">
+                  Our targeted scouting matrix allows anglers to master pristine Patagonian waters during their custom Patagonia fishing trip. We cover the prolific terrestrial hatches of the Ñirehuao River, the technical pools of the Simpson River, and the multi-channeled currents of the Paloma River system to ensure clean, drag-free drifts across the finest trout beats in South America.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* SECTION 1 - COMPONENTE CLIENTE: LISTADO DE ARTÍCULOS CON FILTROS AVANZADOS */}
           <BlogGridClient 
             blogPosts={blogPosts} 
             destinationsRegistry={destinationsRegistry} 
