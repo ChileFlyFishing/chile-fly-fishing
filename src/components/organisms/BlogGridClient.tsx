@@ -149,7 +149,7 @@ export default function BlogGridClient({ blogPosts, destinationsRegistry }: Blog
                     </div>
 
                     <h2 className="font-display text-2xl text-white font-normal leading-snug mb-3 group-hover:text-[#C4944E] transition-colors duration-300">
-                      <Link href={`/fly-fishing-blog/${post.slug}`}>
+                      <Link href={`/patagonia-fly-fishing-blog/${post.slug}`}>
                         {registryData.title}
                       </Link>
                     </h2>
