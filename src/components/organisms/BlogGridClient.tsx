@@ -93,9 +93,9 @@ export default function BlogGridClient({ blogPosts, destinationsRegistry }: Blog
             <div className="flex items-center gap-4 flex-wrap">
               {[
                 { id: "ALL", label: "All Techniques" },
-                { id: "Dry Fly", label: "Pesca con mosca Seca" },
+                { id: "Dry Fly", label: "Dry Fly" },
                 { id: "Streamer", label: "Streamer" },
-                { id: "Nymph", label: "Ninfas" }
+                { id: "Nymph", label: "Nimph" }
               ].map((cat) => (
                 <button
                   key={cat.id}
@@ -162,10 +162,10 @@ export default function BlogGridClient({ blogPosts, destinationsRegistry }: Blog
                   {/* Footer de Tarjeta */}
                   <div className="pt-4 border-t border-white/5 flex items-center justify-end">
                     <Link
-                      href={`/patagonia-fly-fishing-blog${post.slug}`}
+                      href={`/patagonia-fly-fishing-blog/${post.slug}`}
                       className="font-sans text-xs uppercase tracking-widest text-[#C4944E] font-semibold border-b border-[#C4944E]/20 pb-1 hover:border-[#C4944E] transition-all"
                     >
-                      Examine Report
+                      Review the article
                     </Link>
                   </div>
                 </div>

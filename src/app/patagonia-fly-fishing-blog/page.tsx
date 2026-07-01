@@ -52,6 +52,12 @@ export default function FlyFishingBlogHub() {
       excerpt: "A complete structural overview of our home waters: from the mighty Simpson River freestones to hidden limestone spring creeks.",
       date: "2026",
       tag: "Dry Fly"
+    },
+    {
+      slug: "explore-best-fly-fishing-waters-in-coyhaique-chile",
+      excerpt: "A complete structural overview of our home waters: from the mighty Simpson River freestones to hidden limestone spring creeks.",
+      date: "2026",
+      tag: "Dry Fly"
     }
   ];
 

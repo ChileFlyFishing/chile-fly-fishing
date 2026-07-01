@@ -106,8 +106,8 @@ export default function MigratoryTroutAutumnRunsArticle() {
                 </p>
                 {/* BOTÓN OBLIGATORIO DE CONTACTO */}
                 <Link 
-                  href="/contact" 
-                  className="inline-block mt-4 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-sans text-sm tracking-wider uppercase transition-colors rounded-md font-medium"
+                  href="/contact-us" 
+                  className="inline-flex items-center justify-center px-[36px] py-[18px] font-sans text-white bg-[#006DC6] rounded-[30px] hover:bg-[#006DC6]/90 transition-all uppercase text-xs tracking-wider font-semibold group"
                 >
                   Inquire About Guided Trips
                 </Link>
