@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import SeasonCard from "../molecules/SeasonCard";
 
 export default function SeasonGrid() {
