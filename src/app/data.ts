@@ -19,7 +19,7 @@ export const destinationsRegistry: Record<string, DestinationData> = {
     subtitle: "The Dry Fly Capital of South America",
     waterType: "Technical Field Note",
     bestMonths: "January - March (Terrestrial Climax)",
-    imageUrl: "/assets/images/chileflyfishing-patagonia.webp",
+    imageUrl: "/assets/images/nirehuao-river-patagonia.avif",
     description: "Coyhaique's undisputed global standing as a dry fly paradise is dictated by its clear spring creeks, consistent mayfly and caddis hatches, and low angling pressure.",
     tactics: ["Beetles & Hopper Presentation", "Sight Fishing in Glass-Water Creeks", "Long 12ft Technical Leaders"]
   },

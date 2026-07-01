@@ -1,4 +1,3 @@
-// src/app/patagonia-fly-fishing-blog/why-coyhaique-chile-is-world-famous-for-dry-fly-fishing/page.tsx
 import type { Metadata } from "next";
 import Navbar from "@/components/organisms/Navbar";
 import InternalHero from "@/components/organisms/InternalHero";
@@ -8,11 +7,8 @@ import CinematicVideo from "@/components/organisms/CinematicVideo";
 import Footer from "@/components/organisms/Footer";
 import Link from 'next/link';
 
-// ========================================================
-// OPTIMIZACIÓN SEO: METADATA CRÍTICA PARA EL ARTÍCULO
-// ========================================================
 export const metadata: Metadata = {
-  title: "Why Coyhaique, Chile Is World-Famous for Dry Fly Fishing | Patagonia",
+  title: "Why Coyhaique Is World-Famous for Dry Fly Fishing",
   description: "An in-depth analysis of why the Aysén region remains the undisputed surface-action sanctuary of South America for wild brown trout.",
   alternates: {
     canonical: "https://chileflyfishingexpeditions.com/patagonia-fly-fishing-blog/why-coyhaique-chile-is-world-famous-for-dry-fly-fishing",
@@ -20,14 +16,13 @@ export const metadata: Metadata = {
 };
 
 export default function WhyCoyhaiqueDryFlyArticle() {
-  // Constante del Schema estructurada limpiamente para evitar errores de sintaxis
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "headline": "Why Coyhaique, Chile Is World-Famous for Dry Fly Fishing",
+    "headline": "Why Coyhaique Is World-Famous for Dry Fly Fishing",
     "description": "An in-depth analysis of why the Aysén region remains the undisputed surface-action sanctuary of South America for wild brown trout.",
-    "image": "https://chileflyfishingexpeditions.com/wp-content/uploads/2026/05/brown-trout-fishing-spring-creek-patagonia.avif",
-    "datePublished": "2026-05-01",
+    "image": "https://chileflyfishingexpeditions.com/assets/images/trophy-brown-trout-catch-release-coyhaique-patagonia.avif",
+    "datePublished": "2026-07-01",
     "author": {
       "@type": "Person",
       "name": "Matías Araneda",
@@ -49,7 +44,6 @@ export default function WhyCoyhaiqueDryFlyArticle() {
 
   return (
     <>
-      {/* Inyección nativa del Schema en el servidor */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
@@ -89,7 +83,7 @@ export default function WhyCoyhaiqueDryFlyArticle() {
           <section className="w-full py-20 px-6 md:px-12 bg-brand-charcoal">
             <div className="max-w-[1260px] mx-auto font-sans text-base md:text-lg text-white/80 leading-relaxed space-y-8">
               <p>
-                When navigating the complex structural pools of the main systems near Coyhaique, presentation is everything. Drag-free drifts are hard to achieve without proper line selection and technical wading configurations. Iconic rivers like Río Ñirehuao and Río Emperador Guillermo demand precision, stealth, and flawless drift mechanics, offering seasoned anglers a topwater arena that cannot be replicated anywhere else on the planet.
+                When navigating the complex structural pools of the main systems near Coyhaique, presentation is everything. Drag-free drifts are hard to achieve without proper line selection and technical wading configurations. Iconic rivers like Río Ñirehuao, Río Simpson, and Río Paloma demand precision, stealth, and flawless drift mechanics, offering seasoned anglers a topwater arena that cannot be replicated anywhere else on the planet.
               </p>
               <h3 className="font-display text-2xl text-white pt-4">Micro-Hatch Synchronization</h3>
               <p>
@@ -115,7 +109,7 @@ export default function WhyCoyhaiqueDryFlyArticle() {
               {/* Columna Imagen (Derecha) */}
               <div className="w-full h-[400px] relative overflow-hidden rounded-lg bg-brand-charcoal border border-white/5">
                 <img 
-                  src="/assets/images/trophy-brown-trout-catch-release-coyhaique-patagonia.avif" 
+                  src="/assets/images/spring-creek-anglers-patagonia-fly-fishing.avif" 
                   alt="Dry fly fishing presentation in Coyhaique spring creeks"
                   className="w-full h-full object-cover"
                   loading="lazy"
