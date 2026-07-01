@@ -19,7 +19,7 @@ export const destinationsRegistry: Record<string, DestinationData> = {
     subtitle: "The Dry Fly Capital of South America",
     waterType: "Technical Field Note",
     bestMonths: "January - March (Terrestrial Climax)",
-    imageUrl: "assets/images/chileflyfishing-patagonia.webp",
+    imageUrl: "/assets/images/chileflyfishing-patagonia.webp",
     description: "Coyhaique's undisputed global standing as a dry fly paradise is dictated by its clear spring creeks, consistent mayfly and caddis hatches, and low angling pressure.",
     tactics: ["Beetles & Hopper Presentation", "Sight Fishing in Glass-Water Creeks", "Long 12ft Technical Leaders"]
   },
@@ -32,7 +32,7 @@ export const destinationsRegistry: Record<string, DestinationData> = {
     subtitle: "Tracking Massive Autumn and Early Season Runs",
     waterType: "Biological & Tactical Analysis",
     bestMonths: "October - November & April - May",
-    imageUrl: "assets/images/chileflyfishing-patagonia.webp",
+    imageUrl: "/assets/images/chileflyfishing-patagonia.webp",
     description: "The seasonal mechanics of migratory brown and rainbow trout in the Coyhaique river basins require strategic timing and heavy fly configurations.",
     tactics: ["Sink-Tip Lines (200-250 Grains)", "Articulated Streamer Strategies", "Autumn Run Pre-Spawn Routes"]
   },
@@ -45,7 +45,7 @@ export const destinationsRegistry: Record<string, DestinationData> = {
     subtitle: "Sight Fishing Mechanics on Glass-Water Ecosystems",
     waterType: "Angling Masterclass",
     bestMonths: "January - March",
-    imageUrl: "assets/images/chileflyfishing-patagonia.webp",
+    imageUrl: "/assets/images/chileflyfishing-patagonia.webp",
     description: "Spring creek fly fishing near Coyhaique demands an advanced approach. This guide outlines the exact tactical execution required to bypass selective vision.",
     tactics: ["Cantaria Beetle Imitations", "Low-Profile Bank Approaching", "15ft 5X Fluorocarbon Leaders"]
   },

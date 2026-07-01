@@ -87,7 +87,7 @@ export default function WhyCoyhaiqueDryFlyArticle() {
 
           {/* SECTION 2: CONTENIDO AL DETALLE DEL ARTÍCULO */}
           <section className="w-full py-20 px-6 md:px-12 bg-brand-charcoal">
-            <div className="max-w-[800px] mx-auto font-sans text-base md:text-lg text-white/80 leading-relaxed space-y-8">
+            <div className="max-w-[1260px] mx-auto font-sans text-base md:text-lg text-white/80 leading-relaxed space-y-8">
               <p>
                 When navigating the complex structural pools of the main systems near Coyhaique, presentation is everything. Drag-free drifts are hard to achieve without proper line selection and technical wading configurations. Iconic rivers like Río Ñirehuao and Río Emperador Guillermo demand precision, stealth, and flawless drift mechanics, offering seasoned anglers a topwater arena that cannot be replicated anywhere else on the planet.
               </p>
