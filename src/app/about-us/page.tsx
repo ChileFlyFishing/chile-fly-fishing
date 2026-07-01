@@ -94,7 +94,7 @@ export default function AboutUsPage() {
                   Our guiding philosophy rejects the rigid, over-engineered approach of standard commercial tourism. We treat our clients as true expedition partners, mapping out custom beats daily based on shifting hatches, real-time wind direction, and your personal casting goals.
                 </p>
                 <p>
-                  From technical dry-fly presentation in crystal-clear spring creeks to targeting trophy brown trout with heavy freestone streamers, our team brings decades of combined local water reading to your drift. No generic itineraries, just raw angling execution.
+                  From technical dry-fly presentation in crystal-clear spring creeks to targeting trophy brown trout with heavy freestone streamers, our team brings decades of combined <Link href="/fishing-season" className="text-brand-gold hover:underline transition-colors duration-200" > local water reading </Link> to your drift. No generic itineraries, just raw angling execution.
                 </p>
               </div>
             </div>
@@ -114,7 +114,7 @@ export default function AboutUsPage() {
                 <div>
                   <h2 className="font-display text-3xl md:text-4xl mb-6">Our Founders</h2>
                   <p className="font-sans text-base leading-relaxed text-neutral-600">
-                    Matías, our founder, and Sebastián, our co-founder, are professional local anglers born and raised in Coyhaique. Energetic and deeply connected to the hydrology of Aysén, they manage operations to ensure seamless execution, horizontal communication, and absolute technical proficiency on every hosted trip.
+                    Matías, our founder, and Sebastián, our co-founder, are professional local anglers born and raised in Coyhaique. Energetic and deeply connected to the hydrology of Aysén, they manage operations to ensure seamless execution, horizontal communication, and absolute technical proficiency on every <Link href="/fishing-season" className="text-brand-gold hover:underline transition-colors duration-200" > hosted trip </Link>.
                   </p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -139,18 +139,50 @@ export default function AboutUsPage() {
           <section className="w-full py-[92px] px-[24px] md:px-[48px] bg-[#202020] border-t border-white/5">
             <div className="max-w-[1260px] mx-auto text-center">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-                {[
-                  { t: "Native Water Reading", d: "Our expert guides are native to Coyhaique, providing technical access to exclusive trout beats and complex drifts." },
-                  { t: "Targeted Scouting Matrix", d: "Access isolated spring creeks, freestone rivers, and deep glacial lakes across the core of Chilean Patagonia." },
-                  { t: "Sophisticated Hospitality", d: "We maintain a direct, deeply human environment at our basecamp, ensuring dedicated anglers can seamlessly recharge." },
-                  { t: "Ecosystem Stewardship", d: "We strictly practice and enforce catch-and-release protocols to protect the wild brown trout populations of Aysén." }
-                ].map((item, i) => (
-                  <div key={i} className="flex flex-col items-center">
-                    <h3 className="font-display text-xl text-white mb-4">{item.t}</h3>
-                    <p className="font-sans text-sm text-white/60 leading-relaxed max-w-[280px]">{item.d}</p>
-                  </div>
-                ))}
-              </div>
+  {[
+    { 
+      t: "Native Water Reading", 
+      d: "Our expert guides are native to Coyhaique, providing technical access to exclusive trout beats and complex drifts." 
+    },
+    { 
+      t: "Targeted Scouting Matrix", 
+      d: "Access isolated spring creeks, freestone rivers, and deep glacial lakes across the core of Chilean Patagonia." 
+    },
+    { 
+      t: "Sophisticated Hospitality", 
+      d: "We maintain a direct, deeply human environment at our basecamp, ensuring dedicated anglers can seamlessly recharge." 
+    },
+    { 
+      t: "Ecosystem Stewardship", 
+      // Separamos el texto para envolver la palabra clave en el Link
+      d1: "We strictly practice and enforce catch-and-release protocols to protect the ",
+      linkText: "wild brown trout populations",
+      d2: " of Aysén."
+    }
+  ].map((item, i) => (
+    <div key={i} className="flex flex-col items-center text-center">
+      <h3 className="font-display text-xl text-white mb-4">{item.t}</h3>
+      <p className="font-sans text-sm text-white/60 leading-relaxed max-w-[280px]">
+        {/* Si el objeto tiene la propiedad d1, renderiza la estructura con el Link */}
+        {item.d1 ? (
+          <>
+            {item.d1}
+            <Link 
+              href="/fishing-season" 
+              className="text-brand-gold hover:underline transition-colors duration-200"
+            >
+              {item.linkText}
+            </Link>
+            {item.d2}
+          </>
+        ) : (
+          // Si no, renderiza la descripción normal
+          item.d 
+        )}
+      </p>
+    </div>
+  ))}
+</div>
               <Link 
                 href="/contact-us" 
                 className="inline-flex items-center justify-center px-10 py-4 bg-[#C4944E] hover:bg-[#C4944E]/90 text-white rounded-[20px] font-sans text-xs uppercase tracking-widest font-semibold transition-all duration-300"

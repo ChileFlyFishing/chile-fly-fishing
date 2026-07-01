@@ -35,7 +35,7 @@ export default function SeasonGrid() {
           <p className="font-sans text-base text-white/50 leading-relaxed font-light">
             The waters around Coyhaique evolve continuously. Whether you are hunting early-season giants, 
             chasing the adrenaline of dry fly sight-fishing, or stripping streamers for late-season migratory runs, 
-            we time your expedition for peak performance.
+            we time your expedition for peak performance. <Link href="/fishing-season" className="hover:text-brand-gold transition-colors duration-200 underline decoration-white/20 hover:decoration-brand-gold" > Three Seasons </Link>
           </p>
         </div>
 
