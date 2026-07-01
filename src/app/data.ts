@@ -45,7 +45,7 @@ export const destinationsRegistry: Record<string, DestinationData> = {
     subtitle: "Sight Fishing Mechanics on Glass-Water Ecosystems",
     waterType: "Angling Masterclass",
     bestMonths: "January - March",
-    imageUrl: "/assets/images/chileflyfishing-patagonia.webp",
+    imageUrl: "/assets/images/trophy-brown-trout-catch-release-coyhaique-patagonia.avif",
     description: "Spring creek fly fishing near Coyhaique demands an advanced approach. This guide outlines the exact tactical execution required to bypass selective vision.",
     tactics: ["Cantaria Beetle Imitations", "Low-Profile Bank Approaching", "15ft 5X Fluorocarbon Leaders"]
   },
