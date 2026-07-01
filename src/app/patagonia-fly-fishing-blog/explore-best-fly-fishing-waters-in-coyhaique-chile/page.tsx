@@ -8,21 +8,21 @@ import Footer from "@/components/organisms/Footer";
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: "Migratory Trout Mechanics & Autumn River Runs",
-  description: "A technical report on wild brown trout migration triggers, thermal thresholds, and advanced streamer swing tactics in Coyhaique, Chile.",
+  title: "Coyhaique Spring Creeks: Technical Sight Presentation",
+  description: "Master the technical presentation strategies, long leaders, and stealth approaches required for sight-fishing wild brown trout in clear spring creeks.",
   alternates: {
-    canonical: "https://chileflyfishingexpeditions.com/patagonia-fly-fishing-blog/migratory-trout-mechanics-and-autumn-river-runs",
+    canonical: "https://chileflyfishingexpeditions.com/patagonia-fly-fishing-blog/coyhaique-spring-creeks-technical-guide-to-sight-presentation",
   },
 };
 
-export default function MigratoryTroutAutumnRunsArticle() {
+export default function CoyhaiqueSpringCreeksTechnicalArticle() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "headline": "Migratory Trout Mechanics & Autumn River Runs",
-    "description": "A technical report on wild brown trout migration triggers, thermal thresholds, and advanced streamer swing tactics in Coyhaique, Chile.",
-    "image": "https://chileflyfishingexpeditions.com/assets/images/migratory-brown-trout-autumn-run-coyhaique.avif",
-    "datePublished": "2026-04-15",
+    "headline": "Coyhaique Spring Creeks: Technical Guide to Sight Presentation",
+    "description": "Master the technical presentation strategies, long leaders, and stealth approaches required for sight-fishing wild brown trout in clear spring creeks.",
+    "image": "https://chileflyfishingexpeditions.com/assets/images/sight-fishing-spring-creeks-coyhaique-patagonia.avif",
+    "datePublished": "2026-07-01",
     "author": {
       "@type": "Person",
       "name": "Matías Araneda",
@@ -38,7 +38,7 @@ export default function MigratoryTroutAutumnRunsArticle() {
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://chileflyfishingexpeditions.com/patagonia-fly-fishing-blog/migratory-trout-mechanics-and-autumn-river-runs"
+      "@id": "https://chileflyfishingexpeditions.com/patagonia-fly-fishing-blog/coyhaique-spring-creeks-technical-guide-to-sight-presentation"
     }
   };
 
@@ -55,11 +55,11 @@ export default function MigratoryTroutAutumnRunsArticle() {
         <main>
           {/* HERO BANNER */}
           <InternalHero 
-            subtitle="Technical Field Report • Autumn Migration"
-            title="Migratory Trout Mechanics & Autumn River Runs"
-            paragraph="An analytical investigation into the thermal thresholds, structural holding seams, and territorial triggers of migrating wild brown trout within the Aysén water networks."
-            imageUrl="/assets/images/migratory-brown-trout-autumn-run-coyhaique.avif"
-            buttonText="Examine Migration Data"
+            subtitle="Technical Field Report • Sight Presentation"
+            title="Coyhaique Spring Creeks: Technical Guide to Sight Presentation"
+            paragraph="An analytical review of the gear configurations, angling mechanics, and stealth parameters required to intercept wild brown trout in glass-water environments."
+            imageUrl="/assets/images/sight-fishing-spring-creeks-coyhaique-patagonia.avif"
+            buttonText="Examine Presentation Data"
             buttonHref="#article-density"
           />
 
@@ -68,12 +68,12 @@ export default function MigratoryTroutAutumnRunsArticle() {
             <div className="max-w-[1260px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 border-b border-white/5 pb-16">
               <div className="lg:col-span-4">
                 <h2 className="font-display text-3xl md:text-4xl text-white font-normal leading-tight">
-                  Thermal Thresholds & Fluvial Staging Zones
+                  Glass-Water Micro-Hydrology & Trout Vision
                 </h2>
               </div>
               <div className="lg:col-span-8">
                 <p className="font-sans text-sm md:text-base text-white/70 leading-relaxed max-w-3xl">
-                  Anadromous and adfluvial migrations in the Coyhaique watershed stabilize when water temperatures drop below the 10°C mark. As the autumn photoperiod contracts across the Aysén region, mature lake-dwelling brown trout move into major river systems like the lower Río Simpson and Río Paloma. These large predators bypass traditional feeding lanes, positioning themselves within deep pool structures and technical current seams where they stack before entering upstream spawning gravel.
+                  Sight-fishing within the spring creeks of Coyhaique demands a complete rejection of rapid, uncalculated casting. These ultra-clear, slow-moving water channels near our base in the Aysén region offer wild brown trout an uncompromised field of vision, allowing them to detect unnatural leader footprints and line flash instantly. Success is dictated by low-profile bank approaches, careful observation of active feeding lines, and a thorough understanding of current seam mechanics.
                 </p>
               </div>
             </div>
@@ -83,11 +83,11 @@ export default function MigratoryTroutAutumnRunsArticle() {
           <section className="w-full py-20 px-6 md:px-12 bg-brand-charcoal">
             <div className="max-w-[1260px] mx-auto font-sans text-base md:text-lg text-white/80 leading-relaxed space-y-8">
               <p>
-                Navigating the late-season hydrology near Coyhaique requires a precise understanding of defensive trout mechanics. Migrating brown trout transition from opportunistic insect targeting to extreme territorial aggression. To effectively reach these deep staging lanes, technical anglers swap out traditional lines for heavy sink-tips, such as Scientific Anglers Sonar Titan clear configurations, swinging large articulated sculpin patterns and intruders closely along deep clay banks and submerged boulders.
+                To consistently bypass the selective defense of trophy trout tracking micro-currents, standard angling setups fall short. Wading must be minimized to avoid sending subsurface pressure waves downstream. Rod selections must lean toward moderate-action 4wt or 5wt setups, such as a Scott Centric or Winston Pure, paired with low-visibility fly lines that minimize impact acoustics on the surface layer.
               </p>
-              <h3 className="font-display text-2xl text-white pt-4">Hydrological Seam Interception</h3>
+              <h3 className="font-display text-2xl text-white pt-4">Leader Architecture & Drift Optimization</h3>
               <p>
-                As seasonal rainfall alters flow velocities, migrating trout consolidate inside slow-moving water seams directly adjacent to primary currents. Presenting a fly in these zones requires precise mending sequences to eliminate surface drag and maximize fly depth. Maintaining a slow, deep swing is critical to passing directly through the trout's narrow vision window. You can evaluate how these late-season weather patterns influence water levels in our deep dive on the <Link href="/fishing-season" className="text-[#C4944E] hover:underline font-semibold">Patagonia fishing season</Link>.
+                Long 12ft to 15ft technical leaders tapering down to 5X or 6X fluorocarbon tippets are mandatory when presenting small terrestrial patterns or tiny Baetis nymphs. The objective is to place the fly line completely outside the trout's focal window while maintaining enough line control to execute complex slack-line mends. Timing your cast to drop the fly precisely into the feeding seam during specific emergence cycles is paramount. You can analyze these optimal hatch windows across the season in our comprehensive report on the <Link href="/fishing-season" className="text-[#C4944E] hover:underline font-semibold">Patagonia fishing season</Link>.
               </p>
             </div>
           </section>
@@ -99,10 +99,10 @@ export default function MigratoryTroutAutumnRunsArticle() {
               {/* Columna Texto (Izquierda) */}
               <div className="space-y-6 flex flex-col items-start">
                 <h2 className="font-display text-3xl text-white font-normal leading-tight">
-                  Tactical Rigging for Deep Fluvial Runs
+                  Advanced Presentation Tactics for Selective Feeders
                 </h2>
                 <p className="font-sans text-sm md:text-base text-white/70 leading-relaxed">
-                  Overcoming deep, cold river currents requires high-performance gear configurations. Utilizing fast-action 7wt to 8wt rods paired with heavy composite tips allows for accurate casting of weighted patterns into heavy headwaters. Getting your presentation down instantly to the gravel bedrock is non-negotiable for bypassing non-active layers and stimulating a territorial strike from a trophy migrant.
+                  Perfecting the reach cast and pile cast ensures the fly lands ahead of the leader, granting the trout an unhindered view of the fly first. In these highly technical spring creeks, a single drag-induced micro-wake will instantly flush a resident brown trout into deep woody debris. Immaculate drift mechanics coupled with well-matched matching entomological imitations provide the only reliable path to success.
                 </p>
                 {/* BOTÓN OBLIGATORIO DE CONTACTO */}
                 <Link 
@@ -116,8 +116,8 @@ export default function MigratoryTroutAutumnRunsArticle() {
               {/* Columna Imagen (Derecha) */}
               <div className="w-full h-[400px] relative overflow-hidden rounded-lg bg-brand-charcoal border border-white/5">
                 <img 
-                  src="/assets/images/migratory-brown-trout-autumn-run-coyhaique.avif" 
-                  alt="Swinging heavy sink tips and articulated streamers for migratory brown trout in autumn river runs near Coyhaique"
+                  src="/assets/images/sight-fishing-spring-creeks-coyhaique-patagonia.avif" 
+                  alt="Angler making a highly technical sight-fishing presentation to a wild brown trout in a clear Coyhaique spring creek"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />

@@ -40,7 +40,7 @@ export const destinationsRegistry: Record<string, DestinationData> = {
   // ========================================================
   // REPORTE 3: NINFAS / SPRING CREEKS
   // ========================================================
-  "coyhaique-spring-creeks-technical-guide-terrestrial-fly-patterns": {
+  "coyhaique-spring-creeks-technical-guide-to-sight-presentation": {
     title: "Coyhaique Spring Creeks: Technical Guide to Sight Presentation",
     subtitle: "Sight Fishing Mechanics on Glass-Water Ecosystems",
     waterType: "Angling Masterclass",

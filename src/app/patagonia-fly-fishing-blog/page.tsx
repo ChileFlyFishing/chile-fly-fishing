@@ -36,8 +36,8 @@ export default function FlyFishingBlogHub() {
       tag: "Dry Fly"
     },
     {
-      slug: "angler-nirehuao-river-patagonia-fly-fishing",
-      excerpt: "Tracking the massive brown and rainbow trout autumn runs. Learn the exact flow mechanics and heavy fly configurations needed.",
+      slug: "migratory-trout-mechanics-and-autumn-river-runs",
+      excerpt: "The seasonal mechanics of migratory brown and rainbow trout in the Coyhaique river basins require strategic timing and heavy fly configurations.",
       date: "2026",
       tag: "Streamer"
     },
@@ -46,6 +46,12 @@ export default function FlyFishingBlogHub() {
       excerpt: "Mastering sight-presentation on private glass-water ecosystems. How to bypass the selective vision of trophy brown trout.",
       date: "2026",
       tag: "Nymph"
+    }
+    {
+      slug: "explore-best-fly-fishing-waters-in-coyhaique-chile",
+      excerpt: "A complete structural overview of our home waters: from the mighty Simpson River freestones to hidden limestone spring creeks.",
+      date: "2026",
+      tag: "Dry Fly"
     }
   ];
 
