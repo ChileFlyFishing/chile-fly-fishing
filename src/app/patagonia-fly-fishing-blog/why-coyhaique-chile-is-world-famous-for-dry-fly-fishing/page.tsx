@@ -115,7 +115,7 @@ export default function WhyCoyhaiqueDryFlyArticle() {
               {/* Columna Imagen (Derecha) */}
               <div className="w-full h-[400px] relative overflow-hidden rounded-lg bg-brand-charcoal border border-white/5">
                 <img 
-                  src="/assets/images/brown-trout-fishing-spring-creek-patagonia.avif" 
+                  src="/assets/images/trophy-brown-trout-catch-release-coyhaique-patagonia.avif" 
                   alt="Dry fly fishing presentation in Coyhaique spring creeks"
                   className="w-full h-full object-cover"
                   loading="lazy"
