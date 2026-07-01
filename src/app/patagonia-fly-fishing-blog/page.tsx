@@ -42,7 +42,7 @@ export default function FlyFishingBlogHub() {
       tag: "Streamer"
     },
     {
-      slug: "coyhaique-spring-creeks-technical-guide-terrestrial-fly-patterns",
+      slug: "coyhaique-spring-creeks-technical-guide-to-sight-presentation",
       excerpt: "Mastering sight-presentation on private glass-water ecosystems. How to bypass the selective vision of trophy brown trout.",
       date: "2026",
       tag: "Nymph"
@@ -54,8 +54,8 @@ export default function FlyFishingBlogHub() {
       tag: "Dry Fly"
     },
     {
-      slug: "explore-best-fly-fishing-waters-in-coyhaique-chile",
-      excerpt: "A complete structural overview of our home waters: from the mighty Simpson River freestones to hidden limestone spring creeks.",
+      slug: "how-to-travel-to-coyhaique-in-patagonia-chile",
+      excerpt: "Eliminating travel friction. A flawless logistical manual covering commercial transits, airport receptions, and private transfers.",
       date: "2026",
       tag: "Dry Fly"
     }

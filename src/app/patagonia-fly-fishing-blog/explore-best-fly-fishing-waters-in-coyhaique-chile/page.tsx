@@ -107,7 +107,7 @@ export default function CoyhaiqueSpringCreeksTechnicalArticle() {
                 {/* BOTÓN OBLIGATORIO DE CONTACTO */}
                 <Link 
                   href="/contact" 
-                  className="inline-block mt-4 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-sans text-sm tracking-wider uppercase transition-colors rounded-md font-medium"
+                  className="inline-flex items-center justify-center px-[36px] py-[18px] font-sans text-white bg-[#006DC6] rounded-[30px] hover:bg-[#006DC6]/90 transition-all uppercase text-xs tracking-wider font-semibold group"
                 >
                   Inquire About Guided Trips
                 </Link>
@@ -116,7 +116,7 @@ export default function CoyhaiqueSpringCreeksTechnicalArticle() {
               {/* Columna Imagen (Derecha) */}
               <div className="w-full h-[400px] relative overflow-hidden rounded-lg bg-brand-charcoal border border-white/5">
                 <img 
-                  src="/assets/images/sight-fishing-spring-creeks-coyhaique-patagonia.avif" 
+                  src="/assets/images/guide-and-anglers-fishing-patagonia.avif" 
                   alt="Angler making a highly technical sight-fishing presentation to a wild brown trout in a clear Coyhaique spring creek"
                   className="w-full h-full object-cover"
                   loading="lazy"
