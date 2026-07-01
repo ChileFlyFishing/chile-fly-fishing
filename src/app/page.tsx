@@ -134,7 +134,7 @@ export default function HomePage() {
               </div>
               <div className="lg:col-span-8">
                 <p className="font-sans text-sm md:text-base text-white/70 leading-relaxed max-w-3xl">
-                  Our targeted scouting matrix allows anglers to master pristine Patagonian waters during their custom Patagonia fishing trip. We cover the prolific terrestrial hatches of the Ñirehuao River, the technical pools of the Simpson River, and the multi-channeled currents of the Paloma River system to ensure clean, drag-free drifts across the finest trout beats in South America.
+                  Our targeted scouting matrix allows anglers to master pristine Patagonian waters during their custom Patagonia fishing trip. We cover the prolific terrestrial hatches of the Ñirehuao River, the technical pools of the Simpson River, and the multi-channeled currents of the Paloma River system to ensure clean, drag-free drifts across the finest trout beats in South America. <Link href="/fishing-season" className="text-brand-gold hover:underline transition-colors duration-200" > Terrestrial hatches </Link>
                 </p>
               </div>
             </div>
