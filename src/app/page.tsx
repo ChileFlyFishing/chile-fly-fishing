@@ -114,9 +114,9 @@ export default function HomePage() {
               
               {/* Mantenemos y damos mayor visibilidad a los CTA Core */}
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-8">
-                <a href="/contact-us" className="inline-flex items-center justify-center px-12 py-4 font-sans font-semibold text-[#202020] bg-[#C4944E] rounded-[20px] shadow-xl hover:bg-white transition-all uppercase text-xs tracking-wider">
+                <Link href="/contact-us" className="inline-flex items-center justify-center px-12 py-4 font-sans font-semibold text-[#202020] bg-[#C4944E] rounded-[20px] shadow-xl hover:bg-white transition-all uppercase text-xs tracking-wider">
                   Secure Your Dates
-                </a>
+                </Link>
                 <Link href="/patagonia-fly-fishing" className="inline-flex items-center justify-center px-8 py-4 font-sans font-semibold text-white border border-white/20 rounded-[20px] hover:bg-white/5 hover:border-white transition-all uppercase text-xs tracking-wider">
                   Explore Programs
                 </Link>
