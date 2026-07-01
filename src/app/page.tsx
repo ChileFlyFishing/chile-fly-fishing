@@ -96,7 +96,7 @@ export default function HomePage() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#202020] via-transparent to-transparent" />
             </div>
             
-            <div className="max-w-[1440px] mx-auto w-full relative z-10">
+            <div className="max-w-[1260px] mx-auto w-full relative z-10">
               <span className="font-sans text-xs md:text-sm uppercase tracking-[0.2em] text-[#C4944E] font-semibold mb-4 block">
                 Exclusive Fly Fishing Operations • Coyhaique, Chile
               </span>
@@ -126,7 +126,7 @@ export default function HomePage() {
 
           {/* NUEVA SECCIÓN: MANIFIESTO INTRODUCTORIO (Soporte SEO & GEO denso) */}
           <section className="w-full py-[80px] px-6 md:px-12 lg:px-24 bg-[#202020] border-b border-white/5">
-            <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            <div className="max-w-[1260px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
               <div className="lg:col-span-4">
                 <h2 className="font-display text-2xl md:text-3xl text-[#C4944E] font-normal tracking-tight leading-tight">
                   The Scouting Matrix:<br />Pristine Patagonian Waters

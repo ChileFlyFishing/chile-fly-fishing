@@ -27,12 +27,12 @@ export const destinationsRegistry: Record<string, DestinationData> = {
   // ========================================================
   // REPORTE 2: STREAMERS
   // ========================================================
-  "angler-nirehuao-river-patagonia-fly-fishing": {
+  "migratory-trout-mechanics-and-autumn-river-runs": {
     title: "Migratory Trout Mechanics & Autumn River Runs",
     subtitle: "Tracking Massive Autumn and Early Season Runs",
     waterType: "Biological & Tactical Analysis",
     bestMonths: "October - November & April - May",
-    imageUrl: "/assets/images/chileflyfishing-patagonia.webp",
+    imageUrl: "/assets/images/two-anglers-and-two-trophy-brown-trout-coyhaique-patagonia.avif",
     description: "The seasonal mechanics of migratory brown and rainbow trout in the Coyhaique river basins require strategic timing and heavy fly configurations.",
     tactics: ["Sink-Tip Lines (200-250 Grains)", "Articulated Streamer Strategies", "Autumn Run Pre-Spawn Routes"]
   },
