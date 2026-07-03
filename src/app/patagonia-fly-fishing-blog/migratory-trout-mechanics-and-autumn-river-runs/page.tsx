@@ -116,7 +116,7 @@ export default function MigratoryTroutAutumnRunsArticle() {
               {/* Columna Imagen (Derecha) */}
               <div className="w-full h-[400px] relative overflow-hidden rounded-lg bg-brand-charcoal border border-white/5">
                 <img 
-                  src="/assets/images/migratory-brown-trout-autumn-run-coyhaique.avif" 
+                  src="/assets/images/trophy-trout-patagonia-fly-fishing-close-season.avif" 
                   alt="Swinging heavy sink tips and articulated streamers for migratory brown trout in autumn river runs near Coyhaique"
                   className="w-full h-full object-cover"
                   loading="lazy"
