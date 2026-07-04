@@ -33,13 +33,13 @@ export default function FlyFishingBlogHub() {
       slug: "why-coyhaique-chile-is-world-famous-for-dry-fly-fishing",
       excerpt: "An in-depth biological and geological analysis of why the Aysén region remains the undisputed surface-action sanctuary of South America.",
       date: "2026",
-      tag: "Dry Fly"
+      tag: "Travel"
     },
     {
       slug: "migratory-trout-mechanics-and-autumn-river-runs",
       excerpt: "The seasonal mechanics of migratory brown and rainbow trout in the Coyhaique river basins require strategic timing and heavy fly configurations.",
       date: "2026",
-      tag: "Streamer"
+      tag: "Trout"
     },
     {
       slug: "coyhaique-spring-creeks-technical-guide-to-sight-presentation",
@@ -51,20 +51,20 @@ export default function FlyFishingBlogHub() {
       slug: "explore-best-fly-fishing-waters-in-coyhaique-chile",
       excerpt: "A complete structural overview of our home waters: from the mighty Simpson River freestones to hidden limestone spring creeks.",
       date: "2026",
-      tag: "Dry Fly"
+      tag: "Destinations"
     },
     {
       slug: "how-to-travel-to-coyhaique-in-patagonia-chile",
       excerpt: "Eliminating travel friction. A flawless logistical manual covering commercial transits, airport receptions, and private transfers.",
       date: "2026",
-      tag: "Dry Fly"
+      tag: "Travel"
     }
     ,
     {
       slug: "technical-patagonia-fly-fishing-packing-list",
       excerpt: "An exhaustive operational gear breakdown analyzing optimal fly rod actions, specific fly line grains, and premium technical apparel required to navigate the pristine watersheds of Coyhaique.",
       date: "2026",
-      tag: "Dry Fly"
+      tag: "Travel"
     }
   ];
 
