@@ -59,6 +59,13 @@ export default function FlyFishingBlogHub() {
       date: "2026",
       tag: "Dry Fly"
     }
+    ,
+    {
+      slug: "technical-patagonia-fly-fishing-packing-list",
+      excerpt: "An exhaustive operational gear breakdown analyzing optimal fly rod actions, specific fly line grains, and premium technical apparel required to navigate the pristine watersheds of Coyhaique.",
+      date: "2026",
+      tag: "Dry Fly"
+    }
   ];
 
   const jsonLd = {

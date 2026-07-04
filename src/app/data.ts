@@ -74,5 +74,18 @@ export const destinationsRegistry: Record<string, DestinationData> = {
     imageUrl: "assets/images/travel-to-coyhaique.webp",
     description: "Eliminating travel friction. A flawless logistical manual covering commercial transits, airport receptions, and private transfers.",
     tactics: ["Santiago to Balmaceda Flight Layout", "Private Ground Transfer Logistics", "1.5-Hour Transit Limit"]
+  },
+
+  // ========================================================
+  // Articulo Tecnico
+  // ========================================================
+  "how-to-travel-to-coyhaique-in-patagonia-chile": {
+    title: "The Technical Patagonia Fly Fishing Packing List: Rods, Lines, and Gear for Aysén",
+    subtitle: "Technical Field Report • Equipment Architecture",
+    waterType: "Logistical Blueprint",
+    bestMonths: "All Year Operational Planning",
+    imageUrl: "assets/images/travel-to-coyhaique.webp",
+    description: "An exhaustive operational gear breakdown analyzing optimal fly rod actions, specific fly line grains, and premium technical apparel required to navigate the pristine watersheds of Coyhaique.",
+    tactics: ["Santiago to Balmaceda Flight Layout", "Private Ground Transfer Logistics", "1.5-Hour Transit Limit"]
   }
 };
