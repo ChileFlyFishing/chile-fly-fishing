@@ -79,7 +79,7 @@ export const destinationsRegistry: Record<string, DestinationData> = {
   // ========================================================
   // Articulo Tecnico
   // ========================================================
-  "how-to-travel-to-coyhaique-in-patagonia-chile": {
+  "technical-patagonia-fly-fishing-packing-list": {
     title: "The Technical Patagonia Fly Fishing Packing List: Rods, Lines, and Gear for Aysén",
     subtitle: "Technical Field Report • Equipment Architecture",
     waterType: "Logistical Blueprint",
