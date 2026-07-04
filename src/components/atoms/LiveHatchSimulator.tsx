@@ -14,7 +14,7 @@ export default function LiveHatchSimulator() {
   if (!conditions) return null;
 
   return (
-    <div className="w-full bg-[#161616] border border-white/5 rounded-[4px] p-6 md:p-8 font-sans max-w-4xl mx-auto shadow-2xl relative overflow-hidden my-12">
+    <div className="w-full max-w-[1260px] bg-[#161616] border border-white/5 rounded-[4px] p-6 md:p-8 font-sans max-w-4xl mx-auto shadow-2xl relative overflow-hidden my-12">
       {/* Indicador de transmisión en vivo estilo radar */}
       <div className="absolute top-6 right-6 flex items-center space-x-2">
         <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
