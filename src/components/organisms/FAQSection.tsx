@@ -63,24 +63,23 @@ export default function FAQSection() {
       className="w-full bg-[#202020] py-[92px] px-[24px] md:px-[48px] border-t border-white/5"
       aria-labelledby="faq-heading"
     >
-      <div className="max-w-[none] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-[42px]">
-        
-        {/* Columna Izquierda: Título y Contexto Semántico */}
-        <div className="lg:col-span-4 flex flex-col justify-start">
+      <div className="max-w-[1260px] mx-auto">
+
+        {/* Título: arriba, alineado a la izquierda */}
+        <div className="mb-[60px] flex flex-col justify-start">
           <span className="font-sans text-[12px] uppercase tracking-[0.2em] text-[#C4944E] mb-[12px] block font-semibold">
             Expedition Logistics
           </span>
-          <h2 
-            id="faq-heading" 
+          <h2
+            id="faq-heading"
             className="font-serif text-[36px] md:text-[48px] leading-[1.1] text-white font-normal tracking-tight"
           >
-            Frequently <br className="hidden md:inline" />
-            Asked Questions.
+            Frequently Asked Questions.
           </h2>
         </div>
 
-        {/* Columna Derecha: Acordeón de Contenido */}
-        <div className="lg:col-span-8 bg-white/[0.02] p-[30px] md:p-[42px] rounded-sm border border-white/5">
+        {/* Acordeón: abajo, mismo ancho que el título */}
+        <div className="bg-white/[0.02] p-[30px] md:p-[42px] rounded-sm border border-white/5">
           <div className="flex flex-col">
             {PATAGONIA_FAQS.map((faq, index) => (
               <FAQAccordionItem
