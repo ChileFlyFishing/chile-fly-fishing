@@ -61,7 +61,8 @@ export default function PatagoniaFlyFishingPage() {
         <Navbar />
 
         {/* OPTIMIZACIÓN SEO/AEO: Intercepción exacta de Keywords Core e Intención Directa */}
-        <InternalHero 
+        <InternalHero
+          subtitle="Guided Trips • Coyhaique, Chile"
           title={<>Patagonia Fly Fishing Trips | Fly Fishing Coyhaique Chile</>}
           paragraph="Trade crowded rivers for our premium Patagonia fly fishing trips based out of Coyhaique, Chile. Our expert local guides take you to isolated spring creeks and freestone rivers to hunt trophy brown trout with technical dry fly tactics."
           imageUrl="assets/images/spring-creek-anglers-patagonia-fly-fishing.avif"

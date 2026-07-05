@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 export default function CinematicVideo() {
   const [shouldLoad, setShouldLoad] = useState(false);
-  const sectionRef = useRef<HTMLSectionElement>(null);
+  const sectionRef = useRef<HTMLElement>(null);
 
   // Ruta local eficiente apuntando a tu carpeta public/
   const videoUrl = "/assets/videos/spring-creek-chilean-patagonia.mp4";

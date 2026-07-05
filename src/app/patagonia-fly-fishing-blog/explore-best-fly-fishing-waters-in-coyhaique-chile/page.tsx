@@ -87,7 +87,7 @@ export default function CoyhaiqueSpringCreeksTechnicalArticle() {
               </p>
               <h3 className="font-display text-2xl text-white pt-4">Leader Architecture & Drift Optimization</h3>
               <p>
-                Long 12ft to 15ft technical leaders tapering down to 5X or 6X fluorocarbon tippets are mandatory when presenting small terrestrial patterns or tiny Baetis nymphs. The objective is to place the fly line completely outside the trout's focal window while maintaining enough line control to execute complex slack-line mends. Timing your cast to drop the fly precisely into the feeding seam during specific emergence cycles is paramount. You can analyze these optimal hatch windows across the season in our comprehensive report on the <Link href="/fishing-season" className="text-[#C4944E] hover:underline font-semibold">Patagonia fishing season</Link>.
+                Long 12ft to 15ft technical leaders tapering down to 5X or 6X fluorocarbon tippets are mandatory when presenting small terrestrial patterns or tiny Baetis nymphs. The objective is to place the fly line completely outside the trout&apos;s focal window while maintaining enough line control to execute complex slack-line mends. Timing your cast to drop the fly precisely into the feeding seam during specific emergence cycles is paramount. You can analyze these optimal hatch windows across the season in our comprehensive report on the <Link href="/fishing-season" className="text-[#C4944E] hover:underline font-semibold">Patagonia fishing season</Link>.
               </p>
             </div>
           </section>

@@ -51,7 +51,7 @@ export default function DestinationsGrid() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
           
           {/* Card 1: Patagonia Rivers (Caja Vertical Grande Izquierda) */}
-          <a
+          <Link
             href="/patagonia-fly-fishing"
             className="destination-fade-card opacity-0 translate-y-8 transition-all duration-1000 ease-out relative h-[640px] rounded-lg overflow-hidden group border border-white/5 bg-neutral-900 block cursor-pointer"
           >
@@ -73,7 +73,7 @@ export default function DestinationsGrid() {
                 Fly fish remote rivers in the heart of Chilean Patagonia.
               </p>
             </div>
-          </a>
+          </Link>
 
           {/* Columna Derecha: Bloque contenedor de Sub-Cajas */}
           <div className="flex flex-col gap-8 lg:gap-10">

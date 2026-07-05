@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 interface SeasonCardProps {
   title: string;
   dates: string;
@@ -7,8 +9,8 @@ interface SeasonCardProps {
 
 export default function SeasonCard({ title, dates, description, imageSrc }: SeasonCardProps) {
   return (
-    <a 
-      href="/patagonia-fly-fishing" 
+    <Link
+      href="/patagonia-fly-fishing"
       className="relative h-[620px] w-full rounded-lg overflow-hidden group border border-white/5 bg-neutral-900 block cursor-pointer transition-all duration-300 hover:border-brand-gold/30"
     >
       
@@ -37,6 +39,6 @@ export default function SeasonCard({ title, dates, description, imageSrc }: Seas
           {description}
         </p>
       </div>
-    </a>
+    </Link>
   );
 }

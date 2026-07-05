@@ -3,7 +3,7 @@ import { SchemaData } from "@/types/seo";
 
 // Usamos export para que pueda ser llamado desde cualquier página [slug]
 export function generateJsonLd(data: SchemaData) {
-  const baseSchema: Record<string, any> = {
+  const baseSchema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": data.type,
     "name": data.name,

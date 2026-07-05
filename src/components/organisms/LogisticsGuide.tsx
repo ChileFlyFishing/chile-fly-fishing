@@ -1,7 +1,16 @@
 // src/components/organisms/LogisticsGuide.tsx
+import Link from 'next/link';
 import { headers } from 'next/headers';
 
-const logisticsIntelligence: Record<string, any> = {
+interface LogisticsInfo {
+  originLabel: string;
+  hub: string;
+  route: string;
+  airlines: string;
+  gearTip: string;
+}
+
+const logisticsIntelligence: Record<string, LogisticsInfo> = {
   'US': {
     originLabel: "the United States",
     hub: "Dallas (DFW) or Miami (MIA)",
@@ -18,9 +27,9 @@ const logisticsIntelligence: Record<string, any> = {
   }
 };
 
-export default function LogisticsGuide() {
-  const headersList = headers();
-  const country = headersList.get('x-vercel-ip-country'); 
+export default async function LogisticsGuide() {
+  const headersList = await headers();
+  const country = headersList.get('x-vercel-ip-country');
   
   const info = country === 'US' ? logisticsIntelligence['US'] : logisticsIntelligence['DEFAULT'];
 
@@ -50,12 +59,12 @@ export default function LogisticsGuide() {
           </div>
         </div>
 
-        <a 
-          href="/contact-us" 
+        <Link
+          href="/contact-us"
           className="mt-[30px] inline-flex items-center justify-center px-[36px] py-[18px] font-sans font-medium text-white bg-[#006DC6] rounded-[30px] shadow-lg hover:bg-[#006DC6]/90 active:scale-[0.98] transition-all duration-200 cursor-pointer text-sm tracking-wide uppercase font-semibold"
         >
           Secure your date
-        </a>
+        </Link>
       </div>
     </section>
   );

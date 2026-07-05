@@ -99,7 +99,7 @@ export class WaterSceneController {
     if (!this.container) return;
     this.camera.aspect = this.container.clientWidth / this.container.clientHeight;
     this.camera.updateProjectionMatrix();
-    this.renderer.setSize(this.container.clientWidth, container.clientHeight);
+    this.renderer.setSize(this.container.clientWidth, this.container.clientHeight);
   };
 
   // LIMPIEZA ABSOLUTA DE MEMORIA GPU

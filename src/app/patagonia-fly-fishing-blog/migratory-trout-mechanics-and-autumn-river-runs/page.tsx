@@ -87,7 +87,7 @@ export default function MigratoryTroutAutumnRunsArticle() {
               </p>
               <h3 className="font-display text-2xl text-white pt-4">Hydrological Seam Interception</h3>
               <p>
-                As seasonal rainfall alters flow velocities, migrating trout consolidate inside slow-moving water seams directly adjacent to primary currents. Presenting a fly in these zones requires precise mending sequences to eliminate surface drag and maximize fly depth. Maintaining a slow, deep swing is critical to passing directly through the trout's narrow vision window. You can evaluate how these late-season weather patterns influence water levels in our deep dive on the <Link href="/fishing-season" className="text-[#C4944E] hover:underline font-semibold">Patagonia fishing season</Link>.
+                As seasonal rainfall alters flow velocities, migrating trout consolidate inside slow-moving water seams directly adjacent to primary currents. Presenting a fly in these zones requires precise mending sequences to eliminate surface drag and maximize fly depth. Maintaining a slow, deep swing is critical to passing directly through the trout&apos;s narrow vision window. You can evaluate how these late-season weather patterns influence water levels in our deep dive on the <Link href="/fishing-season" className="text-[#C4944E] hover:underline font-semibold">Patagonia fishing season</Link>.
               </p>
             </div>
           </section>

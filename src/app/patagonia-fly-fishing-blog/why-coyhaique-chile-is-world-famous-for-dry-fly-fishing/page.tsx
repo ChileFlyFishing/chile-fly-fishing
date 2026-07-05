@@ -73,7 +73,7 @@ export default function WhyCoyhaiqueDryFlyArticle() {
               </div>
               <div className="lg:col-span-8">
                 <p className="font-sans text-sm md:text-base text-white/70 leading-relaxed max-w-3xl">
-                  Coyhaique's undisputed global standing as a dry fly paradise is dictated by its clear spring creeks, consistent mayfly and caddis hatches, and low angling pressure. While other Patagonian operations rely on heavy sinking lines and generic streamer stripping, our home waters near Coyhaique trigger consistent surface responses from wild brown trout hunting beetles, grasshoppers, and selective midges in technical current seams.
+                  Coyhaique&apos;s undisputed global standing as a dry fly paradise is dictated by its clear spring creeks, consistent mayfly and caddis hatches, and low angling pressure. While other Patagonian operations rely on heavy sinking lines and generic streamer stripping, our home waters near Coyhaique trigger consistent surface responses from wild brown trout hunting beetles, grasshoppers, and selective midges in technical current seams.
                 </p>
               </div>
             </div>

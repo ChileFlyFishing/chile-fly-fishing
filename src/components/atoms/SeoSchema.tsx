@@ -1,7 +1,7 @@
 import React from "react";
 
 interface SeoSchemaProps {
-  jsonLd: Record<string, any>;
+  jsonLd: Record<string, unknown>;
 }
 
 export default function SeoSchema({ jsonLd }: SeoSchemaProps) {

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 interface GalleryItem {
   title: string;
@@ -89,9 +90,9 @@ export default function InteractiveGallery() {
                     <li><span className="block text-[#C4944E] text-xs uppercase tracking-widest">Flies</span>{item.flies}</li>
                     <li><span className="block text-[#C4944E] text-xs uppercase tracking-widest">Lines</span>{item.lines}</li>
                   </ul>
-                  <a href="/contact-us" className="inline-block mt-6 text-[#C4944E] font-semibold tracking-wide hover:underline underline-offset-4">
+                  <Link href="/contact-us" className="inline-block mt-6 text-[#C4944E] font-semibold tracking-wide hover:underline underline-offset-4">
                     Secure your fishing trip →
-                  </a>
+                  </Link>
                 </div>
               </div>
             </button>

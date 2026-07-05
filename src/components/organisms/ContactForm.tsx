@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { COUNTRIES } from "@/lib/contact-schema";
 
 export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -10,13 +11,13 @@ export default function ContactForm() {
     email: "",
     phone: "+1 ",
     country: "Chile",
-    dates: "",
-    experience: "",
     message: "",
     agree: false,
+    website: "", // honeypot: real users never fill this in
   });
+  const formLoadedAt = useRef(Date.now());
 
-  const countries = ["Chile", "United States", "Argentina", "Canada", "United Kingdom", "Australia", "New Zealand", "Others"];
+  const countries = COUNTRIES;
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value, type } = e.target;
@@ -36,7 +37,7 @@ export default function ContactForm() {
       const response = await fetch('/api/send', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, formRenderedAt: formLoadedAt.current }),
       });
 
       if (!response.ok) throw new Error('Failed to transmit.');
@@ -74,6 +75,17 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="w-full flex flex-col gap-6 text-left">
+      <input
+        type="text"
+        name="website"
+        value={formData.website}
+        onChange={handleChange}
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        className="hidden"
+      />
+
       <div className="flex flex-col gap-2">
         <label className="font-sans text-xs uppercase tracking-wider text-neutral-500 font-semibold">Full Name</label>
         <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="John Doe" required className={inputClasses} />

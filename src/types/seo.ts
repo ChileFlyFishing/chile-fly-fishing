@@ -1,5 +1,5 @@
 // src/types/seo.ts
-export type SchemaType = "Organization" | "Place" | "Product" | "Article";
+export type SchemaType = "Organization" | "Place" | "Product" | "Article" | "ContactPage";
 
 export interface SchemaData {
   type: SchemaType;
@@ -7,5 +7,5 @@ export interface SchemaData {
   description: string;
   url: string;
   image?: string;
-  additionalProps?: Record<string, any>;
+  additionalProps?: Record<string, unknown>;
 }
