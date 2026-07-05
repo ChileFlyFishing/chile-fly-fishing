@@ -99,7 +99,7 @@ export default function Navbar() {
         {/* TEXTURA FOTOGRÁFICA DE FONDO EDITORIAL */}
         <div className="absolute inset-0 w-full h-full -z-10 bg-neutral-950/95 overflow-hidden">
           <img 
-            src="assets/images/brown-trout-fishing-spring-creek-patagonia.avif"
+            src="/assets/images/brown-trout-fishing-spring-creek-patagonia.avif"
             alt="Brown trout fishing background texture"
             className="w-full h-full object-cover opacity-10 mix-blend-luminosity scale-105"
           />

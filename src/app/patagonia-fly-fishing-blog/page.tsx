@@ -27,39 +27,38 @@ export const metadata: Metadata = {
 };
 
 export default function FlyFishingBlogHub() {
-  // Data estructurada con tags de tipo de pesca y año para el filtrado dinámico
+  // Data estructurada con categoría (Travel/Waters) y año para el filtrado dinámico
   const blogPosts = [
     {
       slug: "why-coyhaique-chile-is-world-famous-for-dry-fly-fishing",
       excerpt: "An in-depth biological and geological analysis of why the Aysén region remains the undisputed surface-action sanctuary of South America.",
       date: "2026",
-      tag: "Travel"
+      tag: "Waters"
     },
     {
       slug: "migratory-trout-mechanics-and-autumn-river-runs",
       excerpt: "The seasonal mechanics of migratory brown and rainbow trout in the Coyhaique river basins require strategic timing and heavy fly configurations.",
       date: "2026",
-      tag: "Trout"
+      tag: "Waters"
     },
     {
       slug: "coyhaique-spring-creeks-technical-guide-to-sight-presentation",
       excerpt: "Mastering sight-presentation on private glass-water ecosystems. How to bypass the selective vision of trophy brown trout.",
       date: "2026",
-      tag: "Nymph"
+      tag: "Waters"
     },
     {
       slug: "explore-best-fly-fishing-waters-in-coyhaique-chile",
       excerpt: "A complete structural overview of our home waters: from the mighty Simpson River freestones to hidden limestone spring creeks.",
       date: "2026",
-      tag: "Destinations"
+      tag: "Waters"
     },
     {
       slug: "how-to-travel-to-coyhaique-in-patagonia-chile",
       excerpt: "Eliminating travel friction. A flawless logistical manual covering commercial transits, airport receptions, and private transfers.",
       date: "2026",
       tag: "Travel"
-    }
-    ,
+    },
     {
       slug: "technical-patagonia-fly-fishing-packing-list",
       excerpt: "An exhaustive operational gear breakdown analyzing optimal fly rod actions, specific fly line grains, and premium technical apparel required to navigate the pristine watersheds of Coyhaique.",

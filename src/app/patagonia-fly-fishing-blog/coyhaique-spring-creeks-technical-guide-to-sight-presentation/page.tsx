@@ -21,7 +21,7 @@ export default function CoyhaiqueSpringCreeksTechnicalArticle() {
     "@type": "BlogPosting",
     "headline": "Coyhaique Spring Creeks: Technical Guide to Sight Presentation",
     "description": "Master the technical presentation strategies, long leaders, and stealth approaches required for sight-fishing wild brown trout in clear spring creeks.",
-    "image": "https://chileflyfishingexpeditions.com/assets/images/sight-fishing-spring-creeks-coyhaique-patagonia.avif",
+    "image": "https://chileflyfishingexpeditions.com/assets/images/patagonia-flyfishing-spring-creek.webp",
     "datePublished": "2026-07-01",
     "author": {
       "@type": "Person",
@@ -87,7 +87,7 @@ export default function CoyhaiqueSpringCreeksTechnicalArticle() {
               </p>
               <h3 className="font-display text-2xl text-white pt-4">Leader Architecture & Drift Optimization</h3>
               <p>
-                Long 12ft to 15ft technical leaders tapering down to 5X or 6X fluorocarbon tippets are mandatory when presenting small terrestrial patterns or tiny Baetis nymphs. The objective is to place the fly line completely outside the trout's focal window while maintaining enough line control to execute complex slack-line mends. Timing your cast to drop the fly precisely into the feeding seam during specific emergence cycles is paramount. You can analyze these optimal hatch windows across the season in our comprehensive report on the <Link href="/fishing-season" className="text-[#C4944E] hover:underline font-semibold">Patagonia fishing season</Link>.
+                Long 12ft to 15ft technical leaders tapering down to 5X or 6X fluorocarbon tippets are mandatory when presenting small terrestrial patterns or tiny Baetis nymphs. The objective is to place the fly line completely outside the trout&apos;s focal window while maintaining enough line control to execute complex slack-line mends. Timing your cast to drop the fly precisely into the feeding seam during specific emergence cycles is paramount. You can analyze these optimal hatch windows across the season in our comprehensive report on the <Link href="/fishing-season" className="text-[#C4944E] hover:underline font-semibold">Patagonia fishing season</Link>.
               </p>
             </div>
           </section>
@@ -105,8 +105,8 @@ export default function CoyhaiqueSpringCreeksTechnicalArticle() {
                   Perfecting the reach cast and pile cast ensures the fly lands ahead of the leader, granting the trout an unhindered view of the fly first. In these highly technical spring creeks, a single drag-induced micro-wake will instantly flush a resident brown trout into deep woody debris. Immaculate drift mechanics coupled with well-matched matching entomological imitations provide the only reliable path to success.
                 </p>
                 {/* BOTÓN OBLIGATORIO DE CONTACTO */}
-                <Link 
-                  href="/contact" 
+                <Link
+                  href="/contact-us"
                   className="inline-block mt-4 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-sans text-sm tracking-wider uppercase transition-colors rounded-md font-medium"
                 >
                   Inquire About Guided Trips
@@ -115,9 +115,9 @@ export default function CoyhaiqueSpringCreeksTechnicalArticle() {
 
               {/* Columna Imagen (Derecha) */}
               <div className="w-full h-[400px] relative overflow-hidden rounded-lg bg-brand-charcoal border border-white/5">
-                <img 
-                  src="/assets/images/sight-fishing-spring-creeks-coyhaique-patagonia.avif" 
-                  alt="Angler making a highly technical sight-fishing presentation to a wild brown trout in a clear Coyhaique spring creek"
+                <img
+                  src="/assets/images/patagonia-flyfishing-spring-creek.webp"
+                  alt="Angler sight-fishing a narrow spring creek in the open Patagonian steppe near Coyhaique"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />

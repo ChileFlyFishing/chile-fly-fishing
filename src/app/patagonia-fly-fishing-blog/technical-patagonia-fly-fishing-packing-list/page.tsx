@@ -21,7 +21,7 @@ export default function TechnicalPackingListArticle() {
     "@type": "BlogPosting",
     "headline": "Technical Patagonia Fly Fishing Packing List: Rods, Lines, and Gear for Aysén",
     "description": "An exhaustive operational gear breakdown analyzing optimal fly rod actions, specific fly line grains, and premium technical apparel required to navigate the pristine watersheds of Coyhaique, Chile.",
-    "image": "https://chileflyfishingexpeditions.com/assets/images/technical-fly-fishing-gear-packing-list-patagonia.avif",
+    "image": "https://chileflyfishingexpeditions.com/assets/images/angler-flyfishing-simms-wader-patagonia.avif",
     "datePublished": "2026-07-04",
     "author": {
       "@type": "Person",
@@ -58,7 +58,7 @@ export default function TechnicalPackingListArticle() {
             subtitle="Technical Field Report • Equipment Architecture"
             title="The Technical Patagonia Fly Fishing Packing List: Rods, Lines, and Gear for Aysén"
             paragraph="An exhaustive operational gear breakdown analyzing optimal fly rod actions, specific fly line grains, and premium technical apparel required to navigate the pristine watersheds of Coyhaique."
-            imageUrl="/assets/images/technical-fly-fishing-gear-packing-list-patagonia.avif"
+            imageUrl="/assets/images/angler-flyfishing-simms-wader-patagonia.avif"
             buttonText="Examine Gear Specs"
             buttonHref="#gear-density"
           />
@@ -130,9 +130,9 @@ export default function TechnicalPackingListArticle() {
 
               {/* Columna Imagen (Derecha) */}
               <div className="w-full h-[400px] relative overflow-hidden rounded-lg bg-brand-charcoal border border-white/5">
-                <img 
-                  src="/assets/images/technical-fly-fishing-gear-packing-list-patagonia.avif" 
-                  alt="Premium fly fishing equipment setup including fast-action rods and technical wading gear for Patagonia expeditions"
+                <img
+                  src="/assets/images/angler-flyfishing-simms-wader-patagonia.avif"
+                  alt="Angler wearing waders and a fly fishing chest pack casting a rod in Patagonia"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />

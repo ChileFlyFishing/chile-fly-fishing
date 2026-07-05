@@ -7,6 +7,7 @@ export interface DestinationData {
   bestMonths: string;
   description: string;
   imageUrl: string;
+  imageAlt: string;
   tactics: string[];
 }
 
@@ -20,6 +21,7 @@ export const destinationsRegistry: Record<string, DestinationData> = {
     waterType: "Technical Field Note",
     bestMonths: "January - March (Terrestrial Climax)",
     imageUrl: "/assets/images/nirehuao-river-patagonia.avif",
+    imageAlt: "Aerial view of the Ñirehuao River winding through open Patagonian grassland near Coyhaique",
     description: "Coyhaique's undisputed global standing as a dry fly paradise is dictated by its clear spring creeks, consistent mayfly and caddis hatches, and low angling pressure.",
     tactics: ["Beetles & Hopper Presentation", "Sight Fishing in Glass-Water Creeks", "Long 12ft Technical Leaders"]
   },
@@ -33,6 +35,7 @@ export const destinationsRegistry: Record<string, DestinationData> = {
     waterType: "Biological & Tactical Analysis",
     bestMonths: "October - November & April - May",
     imageUrl: "/assets/images/two-anglers-and-two-trophy-brown-trout-coyhaique-patagonia.avif",
+    imageAlt: "Two anglers holding trophy brown trout caught during an autumn river run near Coyhaique",
     description: "The seasonal mechanics of migratory brown and rainbow trout in the Coyhaique river basins require strategic timing and heavy fly configurations.",
     tactics: ["Sink-Tip Lines (200-250 Grains)", "Articulated Streamer Strategies", "Autumn Run Pre-Spawn Routes"]
   },
@@ -46,6 +49,7 @@ export const destinationsRegistry: Record<string, DestinationData> = {
     waterType: "Angling Masterclass",
     bestMonths: "January - March",
     imageUrl: "/assets/images/trophy-brown-trout-catch-release-coyhaique-patagonia.avif",
+    imageAlt: "Angler releasing a wild brown trout caught on a Coyhaique spring creek",
     description: "Spring creek fly fishing near Coyhaique demands an advanced approach. This guide outlines the exact tactical execution required to bypass selective vision.",
     tactics: ["Cantaria Beetle Imitations", "Low-Profile Bank Approaching", "15ft 5X Fluorocarbon Leaders"]
   },
@@ -59,6 +63,7 @@ export const destinationsRegistry: Record<string, DestinationData> = {
     waterType: "River Mapping & Intel",
     bestMonths: "December - April",
     imageUrl: "assets/images/chileflyfishing-patagonia.webp",
+    imageAlt: "Aerial view of a turquoise Patagonian river valley in the Coyhaique fly fishing region",
     description: "A complete structural overview of our home waters: from the mighty Simpson River freestones to hidden limestone spring creeks.",
     tactics: ["Freestone Drift Boat Maneuvers", "Alpine Lake Watercraft Sightings", "Spring Creek Technical Approaches"]
   },
@@ -72,6 +77,7 @@ export const destinationsRegistry: Record<string, DestinationData> = {
     waterType: "Logistical Blueprint",
     bestMonths: "All Year Operational Planning",
     imageUrl: "assets/images/travel-to-coyhaique.webp",
+    imageAlt: "Angler hiking to a remote fishing spot past wild horses near Coyhaique, Patagonia",
     description: "Eliminating travel friction. A flawless logistical manual covering commercial transits, airport receptions, and private transfers.",
     tactics: ["Santiago to Balmaceda Flight Layout", "Private Ground Transfer Logistics", "1.5-Hour Transit Limit"]
   },
@@ -84,7 +90,8 @@ export const destinationsRegistry: Record<string, DestinationData> = {
     subtitle: "Technical Field Report • Equipment Architecture",
     waterType: "Logistical Blueprint",
     bestMonths: "All Year Operational Planning",
-    imageUrl: "assets/images/travel-to-coyhaique.webp",
+    imageUrl: "/assets/images/angler-flyfishing-simms-wader-patagonia.avif",
+    imageAlt: "Angler wearing waders and a fly fishing chest pack casting a rod in Patagonia",
     description: "An exhaustive operational gear breakdown analyzing optimal fly rod actions, specific fly line grains, and premium technical apparel required to navigate the pristine watersheds of Coyhaique.",
     tactics: ["Santiago to Balmaceda Flight Layout", "Private Ground Transfer Logistics", "1.5-Hour Transit Limit"]
   }

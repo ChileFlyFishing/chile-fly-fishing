@@ -2,17 +2,18 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from 'next/link';
+import { DestinationData } from "@/app/data";
 
 interface BlogPost {
   slug: string;
   excerpt: string;
   date: string;
-  tag: string; // Representa el tipo de pesca (e.g., "Dry Fly", "Streamer", "Nymph")
+  tag: string; // Categoría del artículo: "Travel" o "Waters"
 }
 
 interface BlogGridClientProps {
   blogPosts: BlogPost[];
-  destinationsRegistry: any;
+  destinationsRegistry: Record<string, DestinationData>;
 }
 
 export default function BlogGridClient({ blogPosts, destinationsRegistry }: BlogGridClientProps) {
@@ -75,8 +76,8 @@ export default function BlogGridClient({ blogPosts, destinationsRegistry }: Blog
                 className="w-full bg-neutral-900 text-white font-sans text-xs uppercase tracking-wider px-4 py-3 pr-10 border border-white/10 rounded-sm appearance-none focus:outline-none focus:border-brand-gold transition-colors cursor-pointer text-left"
               >
                 <option value="ALL">All Years</option>
-                <option value="2025">2025 Archival</option>
-                <option value="2026">2026 Active</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
               </select>
               <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-white/40">
                 <svg className="fill-current h-3 w-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -86,10 +87,10 @@ export default function BlogGridClient({ blogPosts, destinationsRegistry }: Blog
             </div>
           </div>
 
-          {/* Selector por Enfoque Táctico */}
+          {/* Selector por Categoría */}
           <div className="flex flex-col gap-2 w-full sm:w-auto">
             <span className="font-sans text-[10px] uppercase tracking-widest text-white/40 font-semibold">
-              Tactical Focus
+              Filter Category
             </span>
             <div className="relative min-w-[220px]">
               <select
@@ -97,10 +98,9 @@ export default function BlogGridClient({ blogPosts, destinationsRegistry }: Blog
                 onChange={(e) => setSelectedCategory(e.target.value)}
                 className="w-full bg-neutral-900 text-white font-sans text-xs uppercase tracking-wider px-4 py-3 pr-10 border border-white/10 rounded-sm appearance-none focus:outline-none focus:border-brand-gold transition-colors cursor-pointer text-left"
               >
-                <option value="ALL">All Techniques</option>
-                <option value="Dry Fly">Dry Fly Systems</option>
-                <option value="Streamer">Streamer Configurations</option>
-                <option value="Nymph">Nymph Mechanics</option>
+                <option value="ALL">All Categories</option>
+                <option value="Travel">Travel</option>
+                <option value="Waters">Waters</option>
               </select>
               <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-white/40">
                 <svg className="fill-current h-3 w-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -127,7 +127,7 @@ export default function BlogGridClient({ blogPosts, destinationsRegistry }: Blog
                 <div className="w-full h-[260px] relative overflow-hidden bg-brand-charcoal">
                   <img
                     src={registryData.imageUrl}
-                    alt={registryData.title}
+                    alt={registryData.imageAlt}
                     className="w-full h-full object-cover transition-transform duration-700 ease-out scale-100 group-hover:scale-[1.04]"
                     loading="lazy"
                   />
@@ -139,7 +139,7 @@ export default function BlogGridClient({ blogPosts, destinationsRegistry }: Blog
                   <div>
                     <div className="flex justify-between items-center mb-4">
                       <span className="font-sans text-xs text-[#C4944E] uppercase tracking-wider font-semibold">
-                        {post.tag === "Dry Fly" ? "Pesca con mosca Seca" : post.tag === "Nymph" ? "Ninfas" : post.tag}
+                        {post.tag}
                       </span>
                       <span className="font-sans text-xs text-white/30">
                         {post.date}
