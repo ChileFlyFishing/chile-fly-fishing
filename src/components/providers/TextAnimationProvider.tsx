@@ -10,7 +10,12 @@ export default function TextAnimationProvider({ children }: { children: React.Re
     if (!container) return;
 
     // Detectamos automáticamente todos los H1, H2, H3 y P dentro del Home
-    const textElements = container.querySelectorAll("h1, h2, h3, p");
+    // Excluimos el footer: es texto legal/boilerplate que no debe depender
+    // de un IntersectionObserver para mostrarse (evita que quede en opacity-0
+    // si el observer no llega a dispararse).
+    const textElements = Array.from(container.querySelectorAll("h1, h2, h3, p")).filter(
+      (el) => !el.closest("footer")
+    );
 
     // Configuramos los estilos iniciales de invisibilidad (sin parpadeos de carga)
     textElements.forEach((el) => {
