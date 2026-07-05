@@ -7,6 +7,7 @@ import ImageGallery from "@/components/organisms/ImageGallery";
 import Testimonials from "@/components/organisms/Testimonials";
 import Partners from "@/components/organisms/Partners";
 import CinematicVideo from "@/components/organisms/CinematicVideo";
+import HeroBackgroundVideo from "@/components/organisms/HeroBackgroundVideo";
 import Footer from "@/components/organisms/Footer";
 import TextAnimationProvider from "@/components/providers/TextAnimationProvider"; 
 import Link from 'next/link';
@@ -85,13 +86,7 @@ export default function HomePage() {
           {/* HERO BANNER - REESTRUCTURADO Y LIMPIO */}
           <header className="relative w-full h-[85vh] flex items-center pt-24 md:pt-32 justify-start px-6 md:px-12 lg:px-24 overflow-hidden bg-neutral-950">
             <div className="absolute inset-0 w-full h-full">
-              <div 
-                className="w-full h-full bg-cover bg-center bg-no-repeat opacity-40"
-                style={{ 
-                  backgroundImage: `url('assets/images/chilelfyfishing-nirehuao-river.avif')`,
-                  backgroundAttachment: 'fixed'
-                }}
-              />
+              <HeroBackgroundVideo />
               <div className="absolute inset-0 bg-gradient-to-r from-[#202020] via-[#202020]/40 to-transparent" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#202020] via-transparent to-transparent" />
             </div>
