@@ -64,6 +64,24 @@ export default function FlyFishingBlogHub() {
       excerpt: "An exhaustive operational gear breakdown analyzing optimal fly rod actions, specific fly line grains, and premium technical apparel required to navigate the pristine watersheds of Coyhaique.",
       date: "2026",
       tag: "Travel"
+    },
+    {
+      slug: "how-much-does-a-fly-fishing-trip-to-patagonia-cost",
+      excerpt: "A guided fly fishing trip to Patagonia costs USD $6,500 per person, double occupancy, for 7 nights / 6 full days, all-inclusive. See exactly what's included, the payment schedule, and cancellation terms.",
+      date: "2026",
+      tag: "Travel"
+    },
+    {
+      slug: "getting-to-coyhaique-complete-logistics-guide",
+      excerpt: "Fly to Santiago (SCL), connect to Balmaceda (BBA), then a 45-50 min transfer to Coyhaique. The complete route, step-by-step, and our 1:30-hour maximum transfer rule.",
+      date: "2026",
+      tag: "Travel"
+    },
+    {
+      slug: "uncrowded-patagonia-why-isolation-is-the-real-luxury",
+      excerpt: "Every guiding zone we fish sits within a 1:30-hour transfer radius of Coyhaique, guided in small groups on unpressured wild trout water. Here's what real isolation actually means.",
+      date: "2026",
+      tag: "Waters"
     }
   ];
 

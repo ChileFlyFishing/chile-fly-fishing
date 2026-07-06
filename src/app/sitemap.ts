@@ -15,7 +15,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/patagonia-fly-fishing-blog/coyhaique-spring-creeks-technical-guide-to-sight-presentation',
     '/patagonia-fly-fishing-blog/how-to-travel-to-coyhaique-in-patagonia-chile',
     '/patagonia-fly-fishing-blog/migratory-trout-mechanics-and-autumn-river-runs',
-    '/patagonia-fly-fishing-blog/why-coyhaique-chile-is-world-famous-for-dry-fly-fishing'
+    '/patagonia-fly-fishing-blog/why-coyhaique-chile-is-world-famous-for-dry-fly-fishing',
+    '/patagonia-fly-fishing-blog/explore-best-fly-fishing-waters-in-coyhaique-chile',
+    '/patagonia-fly-fishing-blog/technical-patagonia-fly-fishing-packing-list',
+    '/patagonia-fly-fishing-blog/how-much-does-a-fly-fishing-trip-to-patagonia-cost',
+    '/patagonia-fly-fishing-blog/getting-to-coyhaique-complete-logistics-guide',
+    '/patagonia-fly-fishing-blog/uncrowded-patagonia-why-isolation-is-the-real-luxury'
   ];
 
   const baseUrl = 'https://chileflyfishingexpeditions.com';

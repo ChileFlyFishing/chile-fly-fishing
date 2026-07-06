@@ -83,6 +83,48 @@ export const destinationsRegistry: Record<string, DestinationData> = {
   },
 
   // ========================================================
+  // BRIEF JULIO — ENCARGO 1: COSTO DEL PROGRAMA
+  // ========================================================
+  "how-much-does-a-fly-fishing-trip-to-patagonia-cost": {
+    title: "How Much Does a Fly Fishing Trip to Patagonia Cost?",
+    subtitle: "Technical Field Report • Program & Pricing",
+    waterType: "Program & Pricing",
+    bestMonths: "2026–2027 Season",
+    imageUrl: "/assets/images/matias-sebastian-owner-chileflyfishing.webp",
+    imageAlt: "Chile Fly Fishing founders Matías and Sebastián at the Coyhaique lodge basecamp",
+    description: "A guided fly fishing trip to Patagonia costs USD $6,500 per person, double occupancy, for 7 nights / 6 full days, all-inclusive.",
+    tactics: ["USD $6,500 per person, double occupancy", "50% deposit / 50% balance 30 days out", "60+/59-30/<30 day cancellation tiers"]
+  },
+
+  // ========================================================
+  // BRIEF JULIO — ENCARGO 2: PILAR 6, LOGÍSTICA
+  // ========================================================
+  "getting-to-coyhaique-complete-logistics-guide": {
+    title: "Getting to Coyhaique: The Complete Logistics Guide",
+    subtitle: "Technical Field Report • Logistics",
+    waterType: "Logistical Blueprint",
+    bestMonths: "All Year Operational Planning",
+    imageUrl: "/assets/images/welcome-to-coyhaique.webp",
+    imageAlt: "Anglers at the Bienvenidos a Coyhaique welcome sign after arriving from Balmaceda Airport",
+    description: "Fly to Santiago (SCL), connect to Balmaceda (BBA), then a 45-50 min transfer to Coyhaique under our strict 1:30-hour rule.",
+    tactics: ["Santiago (SCL) to Balmaceda (BBA) domestic connection", "45-50 minute private ground transfer", "1:30-hour maximum daily transfer rule"]
+  },
+
+  // ========================================================
+  // BRIEF JULIO — ENCARGO 3: PILAR 5, PAIN POINT DE AISLAMIENTO
+  // ========================================================
+  "uncrowded-patagonia-why-isolation-is-the-real-luxury": {
+    title: "Uncrowded Patagonia: Why Isolation Is the Real Luxury",
+    subtitle: "Technical Field Report • Positioning",
+    waterType: "Unpressured Water",
+    bestMonths: "All Seasons",
+    imageUrl: "/assets/images/remote-fly-fishing-expedition-coyhaique-patagonia-chile.avif",
+    imageAlt: "Aerial view of a lone drift boat on an empty remote lake near Coyhaique, Patagonia",
+    description: "Every Chile Fly Fishing guiding zone sits within a 1:30-hour transfer radius of Coyhaique — small groups, unpressured wild trout water, verified.",
+    tactics: ["1:30-hour maximum transfer radius", "Small guided groups, no outfitter rotation", "Strict catch-and-release handling"]
+  },
+
+  // ========================================================
   // Articulo Tecnico
   // ========================================================
   "technical-patagonia-fly-fishing-packing-list": {
