@@ -85,6 +85,16 @@ export default function PatagoniaFlyFishingPage() {
               </h2>
             </div>
 
+            {/* Precio canónico del programa — fuente única: knowledge/06-seo-geo-aeo/brief-claude-code-contenido-julio.md */}
+            <div className="mb-[54px] flex flex-col sm:flex-row sm:items-end gap-3 border-y border-white/10 py-[30px]">
+              <span className="font-display text-4xl md:text-5xl text-[#C4944E] font-normal tracking-tight">
+                USD $6,500
+              </span>
+              <span className="font-sans text-sm text-white/60 pb-1">
+                per person, double occupancy · 2026–2027 season · 7 nights / 6 full days of guided fishing
+              </span>
+            </div>
+
             {/* Grilla Simétrica adaptada a la Regla del 6 - Enriquecida semánticamente */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
               <div>

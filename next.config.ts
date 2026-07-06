@@ -16,6 +16,30 @@ const ContentSecurityPolicy = `
 `.replace(/\s{2,}/g, " ").trim();
 
 const nextConfig: NextConfig = {
+  async redirects() {
+    // Encargo 5 (auditoría de canibalización "chile trout fishing"):
+    // URLs legacy de WordPress sin equivalente actual, consolidadas hacia
+    // la página vigente de programa. Ver knowledge/06-seo-geo-aeo/brief-claude-code-contenido-julio.md
+    return [
+      {
+        // Next.js normaliza la barra final antes de evaluar redirects propios,
+        // así que esta única regla cubre tanto la variante con "/" como sin ella.
+        source: "/migratory-trout-a-legendary-moment-in-coyhaiques-fly-fishing-season",
+        destination: "/patagonia-fly-fishing",
+        permanent: true,
+      },
+      {
+        source: "/migratory-trout-in-coyhaique-fly-fishing-season",
+        destination: "/patagonia-fly-fishing",
+        permanent: true,
+      },
+      {
+        source: "/definitive-all-inclusive-trout-fishing-trip-chilean-patagonia",
+        destination: "/patagonia-fly-fishing",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {
