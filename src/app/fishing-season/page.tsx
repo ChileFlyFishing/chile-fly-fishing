@@ -54,24 +54,64 @@ export default function FishingSeasonPage() {
 
   // ========================================================
   // OPTIMIZACIÓN SEO: DATA ESTRUCTURADA JSON-LD
+  // Brief julio (Encargo 4): se agrega FAQPage + dateModified vía @graph,
+  // sin tocar el bloque EventSeries existente.
   // ========================================================
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "EventSeries",
-    "name": "Coyhaique Fly Fishing Season Operations",
-    "description": "Official operational blueprint and season analysis for fly fishing in the Aysén Region, Patagonia.",
-    "startDate": "2026-10-12",
-    "endDate": "2027-05-07",
-    "location": {
-      "@type": "Place",
-      "name": "Coyhaique, Chilean Patagonia",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Coyhaique",
-        "addressRegion": "Aysén",
-        "addressCountry": "CL"
+    "@graph": [
+      {
+        "@type": "EventSeries",
+        "name": "Coyhaique Fly Fishing Season Operations",
+        "description": "Official operational blueprint and season analysis for fly fishing in the Aysén Region, Patagonia.",
+        "startDate": "2026-10-12",
+        "endDate": "2027-05-07",
+        "location": {
+          "@type": "Place",
+          "name": "Coyhaique, Chilean Patagonia",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Coyhaique",
+            "addressRegion": "Aysén",
+            "addressCountry": "CL"
+          }
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://chileflyfishingexpeditions.com/fishing-season",
+        "dateModified": "2026-07-05"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What's the best month for dry fly fishing in Patagonia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "December and January are the strongest months for dry fly fishing in Patagonia, when terrestrial hatches on spring creeks bring brown trout up to hoppers and beetles on the surface."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When does the migratory brown trout run start?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The migratory brown trout run happens during the Patagonian autumn, when large brown trout begin pre-spawn migrations and articulated streamers on sinking lines become the primary tactic."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When does Chile Fly Fishing's season start and end?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our guided season runs from October 12 through the first week of May, covering the Early Season, High Season, and Migratory Run windows in the Aysén region."
+            }
+          }
+        ]
       }
-    }
+    ]
   };
 
   return (
@@ -97,6 +137,20 @@ export default function FishingSeasonPage() {
             buttonText="View Mandatory Gear"
             buttonHref="#technical-gear"
           />
+
+          {/* BRIEF JULIO (Encargo 4): Bloque de respuesta directa AEO, primer
+              bloque bajo el H1, antes de cualquier otro contenido existente. */}
+          <section className="w-full px-6 md:px-12 bg-[#202020] pt-12">
+            <div className="max-w-[1260px] mx-auto border-l-2 border-[#C4944E] pl-[24px] py-[6px]">
+              <p className="font-sans text-sm md:text-base text-white/80 leading-relaxed max-w-3xl">
+                The best time to fly fish Patagonia depends on your target. Early Season Giants
+                (October–November) delivers sight fishing for rainbow trout at Río Baker and Lago Brown.
+                High Season Magic (December–January) is prime dry fly season on spring creeks, with brown
+                trout rising to hoppers. The Migratory Run (autumn) brings articulated streamers and
+                sinking lines for migratory brown trout.
+              </p>
+            </div>
+          </section>
 
           {/* 2. INYECCIÓN DEL SIMULADOR EN VIVO (MÓDULO INTERACTIVO INTRODUCTORIO) */}
           <div className="w-full px-6 md:px-12 bg-[#202020] pt-12">
@@ -183,6 +237,40 @@ export default function FishingSeasonPage() {
               >
                 Obtain Official License
               </Link>
+            </div>
+          </section>
+
+          {/* BRIEF JULIO (Encargo 4): FAQ real al cierre, alineado 1:1 con FAQPage */}
+          <section className="w-full py-[92px] px-[24px] md:px-[48px] bg-[#202020]">
+            <div className="max-w-[1260px] mx-auto">
+              <h2 className="font-display text-3xl text-white font-normal leading-tight mb-10">
+                Frequently Asked Questions
+              </h2>
+              <div className="space-y-10 font-sans text-base text-white/80 leading-relaxed">
+                <div>
+                  <h3 className="font-display text-xl text-white pb-2">What&apos;s the best month for dry fly fishing in Patagonia?</h3>
+                  <p>
+                    December and January are the strongest months for dry fly fishing in Patagonia, when
+                    terrestrial hatches on spring creeks bring brown trout up to hoppers and beetles on the
+                    surface.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-display text-xl text-white pb-2">When does the migratory brown trout run start?</h3>
+                  <p>
+                    The migratory brown trout run happens during the Patagonian autumn, when large brown trout
+                    begin pre-spawn migrations and articulated streamers on sinking lines become the primary
+                    tactic.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-display text-xl text-white pb-2">When does Chile Fly Fishing&apos;s season start and end?</h3>
+                  <p>
+                    Our guided season runs from October 12 through the first week of May, covering the Early
+                    Season, High Season, and Migratory Run windows in the Aysén region.
+                  </p>
+                </div>
+              </div>
             </div>
           </section>
 
