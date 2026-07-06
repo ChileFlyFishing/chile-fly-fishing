@@ -1,11 +1,13 @@
 import { MetadataRoute } from 'next';
+import { destinationsRegistry } from './data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  // Aquí defines tus rutas estáticas
+  // Rutas estáticas
   const routes = [
     '',
     '/patagonia-fly-fishing',
     '/fishing-season',
+    '/logistical-guide-season',
     '/about-us',
     '/contact-us',
     '/fishing-destinations',
@@ -32,14 +34,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: route === '' ? 1 : 0.8,
   }));
 
-  // SI TUVIERAS RUTAS DINÁMICAS (Ej: posts del blog):
-  // const posts = await getPosts(); // Tu función para traer los slugs
-  // const dynamicRoutes = posts.map((post) => ({
-  //   url: `${baseUrl}/blog/${post.slug}`,
-  //   lastModified: new Date(post.updatedAt),
-  //   changeFrequency: 'monthly' as const,
-  //   priority: 0.6,
-  // }));
+  // Rutas dinámicas: páginas de destino en /[slug], generadas desde el mismo
+  // registry que alimenta las cards del blog (src/app/data.ts) — así una
+  // entrada nueva en destinationsRegistry queda en el sitemap automáticamente.
+  const dynamicRoutes = Object.keys(destinationsRegistry).map((slug) => ({
+    url: `${baseUrl}/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.6,
+  }));
 
-  return [...staticRoutes /*, ...dynamicRoutes*/];
+  return [...staticRoutes, ...dynamicRoutes];
 }
