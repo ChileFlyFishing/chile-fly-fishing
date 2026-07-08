@@ -117,7 +117,7 @@ export default function ContactForm() {
       <div className="flex items-start gap-3 my-2">
         <input type="checkbox" name="agree" id="agree" checked={formData.agree} onChange={handleChange} required className="mt-1 w-4 h-4 rounded border-neutral-300 text-[#C4944E] focus:ring-[#C4944E]/30 accent-[#C4944E] cursor-pointer" />
         <label htmlFor="agree" className="font-sans text-xs text-neutral-800 leading-relaxed font-light cursor-pointer select-none">
-          I acknowledge that premier river beats and guided excursions are strictly limited by seasonal capacity. My submission serves to initiate coordination of final booking dates with the operational guiding team in Coyhaique. I accept the <a href="https://www.chileflyfishingexpeditions.com/privacy-policy" target="_blank" className="text-[#C4944E] underline hover:text-[#006DC6]">privacy policies</a>.
+          I acknowledge that premier river beats and guided excursions are strictly limited by seasonal capacity. My submission serves to initiate coordination of final booking dates with the operational guiding team in Coyhaique. I accept the <a href="https://chileflyfishingexpeditions.com/privacy-policy" target="_blank" className="text-[#C4944E] underline hover:text-[#006DC6]">privacy policies</a>.
         </label>
       </div>
 
