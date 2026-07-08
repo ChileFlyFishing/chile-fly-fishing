@@ -17,10 +17,20 @@ const ContentSecurityPolicy = `
 
 const nextConfig: NextConfig = {
   async redirects() {
-    // Encargo 5 (auditoría de canibalización "chile trout fishing"):
-    // URLs legacy de WordPress sin equivalente actual, consolidadas hacia
-    // la página vigente de programa. Ver knowledge/06-seo-geo-aeo/brief-claude-code-contenido-julio.md
     return [
+      {
+        // Canonicalización www -> no-www: Search Console muestra 415 de 417
+        // impresiones totales de la homepage en la versión no-www, que se
+        // fija aquí como canónica. Va primero para que cualquier tráfico a
+        // www quede en no-www antes de evaluar el resto de las reglas.
+        source: "/:path*",
+        has: [{ type: "host", value: "www.chileflyfishingexpeditions.com" }],
+        destination: "https://chileflyfishingexpeditions.com/:path*",
+        permanent: true,
+      },
+      // Encargo 5 (auditoría de canibalización "chile trout fishing"):
+      // URLs legacy de WordPress sin equivalente actual, consolidadas hacia
+      // la página vigente de programa. Ver knowledge/06-seo-geo-aeo/brief-claude-code-contenido-julio.md
       {
         // Next.js normaliza la barra final antes de evaluar redirects propios,
         // así que esta única regla cubre tanto la variante con "/" como sin ella.
