@@ -58,10 +58,20 @@ function ChevronIcon({ direction }: { direction: "left" | "right" }) {
   );
 }
 
+const TRANSITION_MS = 300;
+
 export default function Testimonials() {
   const [index, setIndex] = useState(0);
+  const [visible, setVisible] = useState(true);
 
-  const goTo = (i: number) => setIndex((i + TESTIMONIALS.length) % TESTIMONIALS.length);
+  const goTo = (i: number) => {
+    if (!visible) return; // evita solapar transiciones si se hace click rápido
+    setVisible(false);
+    window.setTimeout(() => {
+      setIndex((i + TESTIMONIALS.length) % TESTIMONIALS.length);
+      setVisible(true);
+    }, TRANSITION_MS);
+  };
   const next = () => goTo(index + 1);
   const prev = () => goTo(index - 1);
 
@@ -83,8 +93,12 @@ export default function Testimonials() {
 
         {/* Carrusel de Testimonios */}
         <div className="flex flex-col items-center mt-px48">
-          <div className="w-full max-w-2xl flex flex-col items-center text-center">
-            <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-brand-gold/30 mb-px24 flex-shrink-0">
+          <div
+            className={`w-full max-w-3xl flex flex-col items-center text-center transition-all duration-300 ease-out ${
+              visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
+            }`}
+          >
+            <div className="w-28 h-28 rounded-full overflow-hidden border-2 border-brand-gold/30 mb-px24 flex-shrink-0">
               <img
                 src={current.image}
                 alt={current.author}
@@ -92,7 +106,7 @@ export default function Testimonials() {
               />
             </div>
 
-            <div className="min-h-[260px] sm:min-h-[220px] md:min-h-[180px] flex items-center justify-center">
+            <div className="min-h-[240px] sm:min-h-[200px] md:min-h-[160px] flex items-center justify-center">
               <blockquote className="font-sans text-white/90 text-base md:text-lg leading-relaxed italic">
                 &ldquo;{current.quote}&rdquo;
               </blockquote>
