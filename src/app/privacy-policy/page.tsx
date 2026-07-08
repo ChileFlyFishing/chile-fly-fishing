@@ -60,6 +60,16 @@ export default function PrivacyPolicyPage() {
       content: "Technical cookies isolate active sessions to streamline browser telemetry. These can be adjusted or restricted via individual client application parameters at any stage."
     },
     {
+      type: "list-block",
+      subtitle: "Cookie Consent and Location-Based Personalization",
+      listItems: [
+        { label: "Consent Banner:", text: "On your first visit, a banner asks you to accept or decline our use of cookies. By clicking \"Accept,\" or by continuing to browse the site after being presented with this notice, you agree to this Privacy Policy and to the terms of use described here." },
+        { label: "Approximate Location (Geo-IP):", text: "If you accept cookies, we query a third-party Geo-IP lookup service using your IP address to estimate your general location. This is used exclusively to personalize on-site content, such as showing your approximate distance to our Coyhaique basecamp, and is never used for precise or device-level location tracking." },
+        { label: "Analytics Cookies:", text: "We use Google Analytics (GA4) to understand aggregated traffic patterns and improve site performance. These cookies do not identify you personally." },
+        { label: "Declining Cookies:", text: "You can decline non-essential cookies from the consent banner at any time. Declining disables location-based personalization; core site navigation and booking requests are unaffected." }
+      ]
+    },
+    {
       type: "footer-note",
       title: "Framework Adjustments",
       content: "This system framework updates periodically. Structural updates will immediately appear under this public interface with their respective verification logs."

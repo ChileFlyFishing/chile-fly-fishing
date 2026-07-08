@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { getCookieConsent, onCookieConsentChange } from "@/lib/cookie-consent";
 
 
 export default function Navbar() {
@@ -31,21 +32,31 @@ export default function Navbar() {
       return Math.round(R * c);
     };
 
-    // Consulta silenciosa de Geo-IP basada en la ubicación del cliente
-    fetch("https://ipapi.co/json/")
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.latitude && data.longitude) {
-          const distance = calculateMiles(
-            data.latitude,
-            data.longitude,
-            COYHAIQUE_LAT,
-            COYHAIQUE_LON
-          );
-          setMilesAway(distance);
-        }
-      })
-      .catch((err) => console.error("Error fetching Geo-IP operational data:", err));
+    // Consulta de Geo-IP: solo se ejecuta si el visitante aceptó el uso de cookies
+    const runGeoLookup = () => {
+      fetch("https://ipapi.co/json/")
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.latitude && data.longitude) {
+            const distance = calculateMiles(
+              data.latitude,
+              data.longitude,
+              COYHAIQUE_LAT,
+              COYHAIQUE_LON
+            );
+            setMilesAway(distance);
+          }
+        })
+        .catch((err) => console.error("Error fetching Geo-IP operational data:", err));
+    };
+
+    if (getCookieConsent() === "accepted") runGeoLookup();
+
+    const unsubscribe = onCookieConsentChange((value) => {
+      if (value === "accepted") runGeoLookup();
+      else setMilesAway(null);
+    });
+    return unsubscribe;
   }, []);
 
   return (

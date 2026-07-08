@@ -3,6 +3,7 @@ import { Inter, Playfair_Display } from "next/font/google";
 import ScrollProvider from "@/components/providers/ScrollProvider"; // Integración de Lenis
 import TextAnimationProvider from "@/components/providers/TextAnimationProvider"; // Animación de tipografías nativa
 import { GoogleAnalytics } from "@next/third-parties/google"; // <-- 1. Importación del componente oficial de Vercel/Next.js
+import CookieConsentBanner from "@/components/organisms/CookieConsentBanner";
 import "../styles/globals.css";
 
 const inter = Inter({
@@ -60,6 +61,8 @@ export default function RootLayout({
 
         {/* 2. INYECCIÓN NATIVA Y OPTIMIZADA DE GA4 (No bloquea el renderizado) */}
         <GoogleAnalytics gaId="G-538364884" />
+
+        <CookieConsentBanner />
       </body>
     </html>
   );

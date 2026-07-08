@@ -4,6 +4,7 @@
 import { useState, useEffect } from "react";
 import { generateJsonLd } from "@/utils/seo";
 import { SchemaData } from "@/types/seo";
+import { getCookieConsent, onCookieConsentChange } from "@/lib/cookie-consent";
 
 // Componentes del Sistema Core (Organismos)
 import Navbar from "@/components/organisms/Navbar";
@@ -37,15 +38,26 @@ export default function ContactUsPage() {
       return Math.round(R * c);
     };
 
-    fetch("https://ipapi.co/json/")
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.latitude && data.longitude) {
-          const distance = calculateMiles(data.latitude, data.longitude, COYHAIQUE_LAT, COYHAIQUE_LON);
-          setMilesAway(distance);
-        }
-      })
-      .catch((err) => console.warn("Geo-IP operational matrix fallback activated smoothly:", err));
+    // Consulta de Geo-IP: solo se ejecuta si el visitante aceptó el uso de cookies
+    const runGeoLookup = () => {
+      fetch("https://ipapi.co/json/")
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.latitude && data.longitude) {
+            const distance = calculateMiles(data.latitude, data.longitude, COYHAIQUE_LAT, COYHAIQUE_LON);
+            setMilesAway(distance);
+          }
+        })
+        .catch((err) => console.warn("Geo-IP operational matrix fallback activated smoothly:", err));
+    };
+
+    if (getCookieConsent() === "accepted") runGeoLookup();
+
+    const unsubscribe = onCookieConsentChange((value) => {
+      if (value === "accepted") runGeoLookup();
+      else setMilesAway(null);
+    });
+    return unsubscribe;
   }, []);
 
   const contactSchemaConfig: SchemaData = {
