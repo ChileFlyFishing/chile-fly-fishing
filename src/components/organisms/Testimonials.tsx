@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 interface Testimonial {
   quote: string;
@@ -59,21 +59,56 @@ function ChevronIcon({ direction }: { direction: "left" | "right" }) {
 }
 
 const TRANSITION_MS = 300;
+const SWIPE_THRESHOLD = 40;
 
 export default function Testimonials() {
   const [index, setIndex] = useState(0);
   const [visible, setVisible] = useState(true);
+  const touchStart = useRef<{ x: number; y: number } | null>(null);
+
+  // Precarga las 4 fotos apenas monta el componente: sin esto, el <img>
+  // conserva el bitmap anterior en pantalla hasta que la nueva termina de
+  // descargar/decodificar, y el cambio se ve "pegado".
+  useEffect(() => {
+    TESTIMONIALS.forEach((t) => {
+      const img = new window.Image();
+      img.src = t.image;
+    });
+  }, []);
 
   const goTo = (i: number) => {
-    if (!visible) return; // evita solapar transiciones si se hace click rápido
+    if (!visible) return; // evita solapar transiciones si se hace click/swipe rápido
     setVisible(false);
     window.setTimeout(() => {
       setIndex((i + TESTIMONIALS.length) % TESTIMONIALS.length);
-      setVisible(true);
+      // Doble rAF: garantiza que el navegador pinte un frame con el
+      // contenido nuevo en opacity:0 ANTES de pasar a opacity:100. Si se
+      // cambian index y visible en el mismo tick, no hay frame intermedio
+      // y la transición de entrada no se alcanza a ver.
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => setVisible(true));
+      });
     }, TRANSITION_MS);
   };
   const next = () => goTo(index + 1);
   const prev = () => goTo(index - 1);
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    const t = e.touches[0];
+    touchStart.current = { x: t.clientX, y: t.clientY };
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    if (!touchStart.current) return;
+    const t = e.changedTouches[0];
+    const deltaX = t.clientX - touchStart.current.x;
+    const deltaY = t.clientY - touchStart.current.y;
+    touchStart.current = null;
+
+    if (Math.abs(deltaX) < SWIPE_THRESHOLD || Math.abs(deltaX) < Math.abs(deltaY)) return;
+    if (deltaX < 0) next();
+    else prev();
+  };
 
   const current = TESTIMONIALS[index];
 
@@ -94,7 +129,9 @@ export default function Testimonials() {
         {/* Carrusel de Testimonios */}
         <div className="flex flex-col items-center mt-px48">
           <div
-            className={`w-full max-w-3xl flex flex-col items-center text-center transition-all duration-300 ease-out ${
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
+            className={`w-full max-w-3xl flex flex-col items-center text-center transition-all duration-300 ease-out touch-pan-y ${
               visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
             }`}
           >
