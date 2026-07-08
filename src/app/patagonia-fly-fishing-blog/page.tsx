@@ -16,12 +16,12 @@ export const metadata: Metadata = {
   title: "Patagonia Fly Fishing Field Reports | Chile Fly Fishing Blog",
   description: "Technical intelligence, river mapping, and seasonal logs for fly fishing in Coyhaique, Chile. Expert hatch calendars and gear advice for Patagonian trout.",
   alternates: {
-    canonical: "https://chileflyfishingexpeditions.com/patagonia-fly-fishing-blog",
+    canonical: "https://chileflyfishingexpeditions.com/fly-fishing-blog",
   },
   openGraph: {
     title: "Patagonia Fly Fishing Field Reports | Chile Fly Fishing Blog",
     description: "Technical intelligence, river mapping, and seasonal logs for fly fishing in Coyhaique, Chile.",
-    url: "https://chileflyfishingexpeditions.com/patagonia-fly-fishing-blog",
+    url: "https://www.chileflyfishingexpeditions.com/fly-fishing-blog",
     type: "website",
   },
 };
