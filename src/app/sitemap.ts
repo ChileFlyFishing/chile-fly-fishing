@@ -23,6 +23,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/patagonia-fly-fishing-blog/how-much-does-a-fly-fishing-trip-to-patagonia-cost',
     '/patagonia-fly-fishing-blog/getting-to-coyhaique-complete-logistics-guide',
     '/patagonia-fly-fishing-blog/uncrowded-patagonia-why-isolation-is-the-real-luxury',
+    '/patagonia-fly-fishing-blog/when-is-early-season-fly-fishing-in-patagonia',
+    '/patagonia-fly-fishing-blog/sight-fishing-rio-baker-what-to-expect',
+    '/patagonia-fly-fishing-blog/rio-baker-vs-lago-brown-which-to-fish-first',
     '/beyond-patagonia',
     '/beyond-patagonia/madison-river-montana',
     '/beyond-patagonia/dubois-wyoming'

@@ -82,6 +82,24 @@ export default function FlyFishingBlogHub() {
       excerpt: "Every guiding zone we fish sits within a 1:30-hour transfer radius of Coyhaique, guided in small groups on unpressured wild trout water. Here's what real isolation actually means.",
       date: "2026",
       tag: "Waters"
+    },
+    {
+      slug: "when-is-early-season-fly-fishing-in-patagonia",
+      excerpt: "Early season fly fishing in Patagonia runs October through November, targeting big rainbow trout on Río Baker and Lago Brown after spring snowmelt.",
+      date: "2026",
+      tag: "Waters"
+    },
+    {
+      slug: "sight-fishing-rio-baker-what-to-expect",
+      excerpt: "What to expect sight fishing Río Baker during Patagonia's early season — big rainbow trout, high thaw-fed water, and floating-line presentations.",
+      date: "2026",
+      tag: "Waters"
+    },
+    {
+      slug: "rio-baker-vs-lago-brown-which-to-fish-first",
+      excerpt: "Río Baker is moving freestone water, Lago Brown is still water fished from a boat. How to think about the two during Patagonia's early season.",
+      date: "2026",
+      tag: "Waters"
     }
   ];
 

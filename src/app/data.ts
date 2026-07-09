@@ -136,5 +136,47 @@ export const destinationsRegistry: Record<string, DestinationData> = {
     imageAlt: "Angler wearing waders and a fly fishing chest pack casting a rod in Patagonia",
     description: "An exhaustive operational gear breakdown analyzing optimal fly rod actions, specific fly line grains, and premium technical apparel required to navigate the pristine watersheds of Coyhaique.",
     tactics: ["Santiago to Balmaceda Flight Layout", "Private Ground Transfer Logistics", "1.5-Hour Transit Limit"]
+  },
+
+  // ========================================================
+  // PILAR 2 — EARLY SEASON GIANTS: ENCARGO 1
+  // ========================================================
+  "when-is-early-season-fly-fishing-in-patagonia": {
+    title: "When Is Early Season Fly Fishing in Patagonia?",
+    subtitle: "Technical Field Report • Early Season",
+    waterType: "Seasonal Window",
+    bestMonths: "October - November",
+    imageUrl: "/assets/images/apertura-temporada-flyfishing-rainbow-trout.avif",
+    imageAlt: "Angler sight fishing for rainbow trout during Patagonia's early season",
+    description: "Early season fly fishing in Patagonia runs October through November, targeting big rainbow trout on Río Baker and Lago Brown after spring snowmelt.",
+    tactics: ["Sight Fishing Post-Thaw", "Big Resident & Migratory Rainbow Trout", "Río Baker & Lago Brown Zones"]
+  },
+
+  // ========================================================
+  // PILAR 2 — EARLY SEASON GIANTS: ENCARGO 2
+  // ========================================================
+  "sight-fishing-rio-baker-what-to-expect": {
+    title: "Sight Fishing Río Baker: What to Expect",
+    subtitle: "Technical Field Report • Sight Fishing",
+    waterType: "Angling Masterclass",
+    bestMonths: "October - November",
+    imageUrl: "/assets/images/big-rainbow-trout-big-trout-early-close-up-and-fly-rod-chilean-patagonia.avif",
+    imageAlt: "Close-up of a big rainbow trout and fly rod during early season sight fishing on Río Baker",
+    description: "What to expect sight fishing Río Baker during Patagonia's early season — big rainbow trout, high thaw-fed water, and floating-line presentations.",
+    tactics: ["Floating Weight-Forward Line", "Long, Drag-Free Leaders", "Fly Presented to a Sighted Fish"]
+  },
+
+  // ========================================================
+  // PILAR 2 — EARLY SEASON GIANTS: ENCARGO 3
+  // ========================================================
+  "rio-baker-vs-lago-brown-which-to-fish-first": {
+    title: "Río Baker vs Lago Brown: Which to Fish First",
+    subtitle: "Technical Field Report • Water Comparison",
+    waterType: "River & Lake Comparison",
+    bestMonths: "October - November",
+    imageUrl: "/assets/images/early-season-patagonia-flyfishing.avif",
+    imageAlt: "Guide and angler fishing during Patagonia's early season",
+    description: "Río Baker is moving freestone water, Lago Brown is still water fished from a boat. How to think about the two during Patagonia's early season.",
+    tactics: ["Río Baker: Wading or Drift Boat", "Lago Brown: Boat, Still-Water Sight Fishing", "Chosen Daily by Wind & Water Level"]
   }
 };
