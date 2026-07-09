@@ -122,7 +122,7 @@ export default function GettingToCoyhaiqueLogisticsGuide() {
                   a fixed operational rule, not a marketing claim: no daily transfer to the water ever exceeds it.
                   See the full{" "}
                   <Link href="/patagonia-fly-fishing" className="text-[#C4944E] hover:underline font-semibold">
-                    Patagonia fly fishing program
+                    fly fishing Patagonia program
                   </Link>{" "}
                   for what that access buys you once you&apos;re on the water.
                 </p>
