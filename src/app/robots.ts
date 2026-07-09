@@ -10,6 +10,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: [
           "/",
           "/patagonia-fly-fishing-blog", // Indexación total del Hub de contenidos
+          "/beyond-patagonia", // Indexación total del Hub editorial de destinos internacionales
           "/about-us",
           "/fishing-season",
           "/fishing-program",
@@ -29,6 +30,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: [
           "/",
           "/patagonia-fly-fishing-blog", // Permite explícitamente el rastreo para citabilidad en motores generativos
+          "/beyond-patagonia", // Contenido editorial citable para motores generativos (GEO/AEO)
           "/fishing-season",
         ],
       },
