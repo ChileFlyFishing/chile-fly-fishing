@@ -28,7 +28,7 @@ const items: GalleryItem[] = [
   { 
     title: "High Season: World-Class Dry Fly", 
     desc: "The terrestrial explosion. Beetles and grasshoppers drop from the banks, triggering violent surface strikes in hidden spring creeks. A dry fly sight-fishing experience unique in the world.",
-    season: "January - February",
+    season: "December - January",
     rod: "#5 or #6 weight",
     flies: "Terrestrials (Grasshoppers, Beetles)",
     lines: "Weight Forward Floating",
@@ -38,7 +38,7 @@ const items: GalleryItem[] = [
   { 
     title: "Close Season: Trophy Browns", 
     desc: "Cooler, windless afternoons and massive mayfly hatches. Legendary brown trout begin their pre-spawn migrations through stunning autumn valleys. Your chance at a true monster.",
-    season: "April - May",
+    season: "Autumn (Season Close)",
     rod: "#7 or #8 weight",
     flies: "Articulated streamers",
     lines: "Weight Forward Floating and sinking tip",

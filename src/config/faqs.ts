@@ -20,7 +20,7 @@ export const PATAGONIA_FAQS: FAQItem[] = [
   },
   {
     q: "When is the best time to book a fly fishing trip to Coyhaique, Patagonia?",
-    a: "The optimal window for dry fly fishing in Coyhaique runs from January to March, driven by massive terrestrial and beetle hatches. Early season (November-December) and late season (April) feature higher water levels and cooler temperatures, making it the ideal timeframe for targeting aggressive post-spawn trout with heavy streamer setups.",
+    a: "The optimal window for dry fly fishing in Coyhaique runs from December to January, driven by massive terrestrial and beetle hatches. Early season (October-November) and autumn feature higher water levels and cooler temperatures, making it the ideal timeframe for targeting aggressive post-spawn trout with heavy streamer setups.",
   },
   {
     q: "What fly fishing gear and rod setups are recommended for Patagonian waters?",
