@@ -67,6 +67,25 @@ export async function POST(request: Request) {
       `,
     });
 
+    // Inscribe al lead en el motor de journeys de RockyAI (secuencia de
+    // bienvenida automatizada). Best-effort: si falla, no debe romper la
+    // confirmacion que ve el visitante - el aviso por Resend de arriba ya
+    // le llego a Matias de todos modos.
+    if (process.env.ROCKYAI_WEBHOOK_SECRET) {
+      try {
+        await fetch('https://4r9t26otrd.execute-api.us-east-2.amazonaws.com/contact-lead', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'X-Webhook-Secret': process.env.ROCKYAI_WEBHOOK_SECRET,
+          },
+          body: JSON.stringify({ name, email, country, phone, message }),
+        });
+      } catch (rockyaiError) {
+        console.error('RockyAI enrollment error (non-blocking):', rockyaiError);
+      }
+    }
+
     return NextResponse.json({ success: true, data });
   } catch (error) {
     console.error("Resend error:", error);
